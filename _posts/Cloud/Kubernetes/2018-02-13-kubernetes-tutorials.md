@@ -7,7 +7,7 @@ parent_id: '0'
 published: true
 password: ''
 status: publish
-categories: [ServiceComputing, MicroService]
+categories: [Cloud, Kubernetes]
 tags:
 - Kubernetes
 meta:

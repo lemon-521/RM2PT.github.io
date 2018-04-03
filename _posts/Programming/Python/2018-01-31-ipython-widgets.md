@@ -7,7 +7,7 @@ parent_id: '0'
 published: true
 password: ''
 status: publish
-categories: [System, Windows]
+categories: [Programming, Python]
 tags:
 - jupyter
 - widgets

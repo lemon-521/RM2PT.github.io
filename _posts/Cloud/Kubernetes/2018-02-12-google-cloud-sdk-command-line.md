@@ -7,7 +7,7 @@ parent_id: '0'
 published: true
 password: ''
 status: publish
-categories: [System, Linux]
+categories: [Cloud, Kubernetes]
 tags:
 - Google cloud
 meta:

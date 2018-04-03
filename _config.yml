@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MCloud knowledge Center
+title: MCloud Knowledge Center
 shorttitle: MCloud Daas
 date: 2013-2018
 email: yylonly@gmail.com

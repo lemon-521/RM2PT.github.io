@@ -14,17 +14,20 @@ layout: default
 
 <div class="container">
   <!-- Example row of columns -->
-  <h2> Top 10 documents: </h2>
+  <h2> Recent 10 Knowledge: </h2>
+    {% assign recentposts = site.posts | sort : 'date' | reverse %}
 
-    {% for post in site.posts limit:10 %}
+    {% for post in recentposts limit : 10 %}
     <div class="list-group">
-  		 <li class="list-group-item"><span class="badge badge-pill badge-dark">Hot</span><a href="{{post.url}}">{{post.title | truncate:500 }}</a></li>
+  		 <li class="list-group-item"><span class="badge">Hot</span><a href="{{post.url}}">{{post.title | truncate:500 }}</a></li>
   	</div>
     {% endfor %}
 
+    <h2> Knowledge Categories: </h2>
+
     {% assign category_list = site.categories | sort %}
     <!-- level 0 -->
-    <ol>
+    <ul>
     {% for category0 in category_list %} <!-- change level here -->
         {% assign printed0 = false %} <!-- change level here -->
         {% for post in site.posts %}
@@ -32,15 +35,15 @@ layout: default
                 <li><a href="{{ site.category_dir | prepend: site.baseurl}}/{{ category0[0] | slugify }}">{{ category0[0] }}</a></li> <!-- change level here -->
                 {% assign printed0 = true %} <!-- change level here -->
     <!-- level 1 -->
-                <ol>
+                <ul>
                 {% for category1 in category_list %} <!-- change level here -->
                     {% assign printed1 = false %} <!-- change level here -->
                     {% for post in site.posts %}
                         {% if post.categories[0] == category0[0] and post.categories[1] == category1[0] and printed1 == false %} <!-- change level here -->
-                            <li><a href="{{ site.category_dir | prepend: site.baseurl}}/{{ category1[0] | slugify }}">{{ category1[0] }}</a></li> <!-- change level here -->
+                            <li><a href="{{ site.category_dir | prepend: site.baseurl}}/{{ category0[0] | slugify }}/{{ category1[0] | slugify }}">{{ category1[0] }}</a></li> <!-- change level here -->
                             {% assign printed1 = true %} <!-- change level here -->
                 <!-- level 2 -->
-                    <ol>
+                    <ul>
                     {% for category2 in category_list %} <!-- change level here -->
                         {% assign printed2 = false %} <!-- change level here -->
                         {% for post in site.posts %}
@@ -52,22 +55,22 @@ layout: default
                             {% endif %}
                         {% endfor %}
                     {% endfor %}
-                    </ol>
+                  </ul>
                 <!-- end of level 2 -->
                         {% endif %}
                     {% endfor %}
                 {% endfor %}
-                </ol>
+              </ul>
     <!-- end of level 1 -->
             {% endif %}
         {% endfor %}
     {% endfor %}
-    </ol>
+  </ul>
     <!-- end of level 0 -->
 
-    {{site.categories}}
+    <!-- {{site.categories}}
 
-    {{site.posts | map: 'categories'}}
+    {{site.posts | map: 'categories'}} -->
 
 
   </div>
