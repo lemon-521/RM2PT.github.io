@@ -1,0 +1,54 @@
+<header class="site-header" role="banner">
+
+<div class="wrapper">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">{{site.shorttitle}}</a>
+    </div>
+
+
+    <!-- {% assign site_categories = site.posts | map: 'categories' | compact | uniq  %} -->
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <!-- post category top level list -->
+        {% for category in site.categories %}
+          {% for post in site.posts %}
+            {% if category[0] == post.categories[0] %}
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ category[0] }}</a>
+            {% assign subcategory = site.posts | where: "categories", category[0] | map: 'categories' | uniq  %}
+            <ul class="dropdown-menu">
+              {% for subcate in subcategory %}
+                <!-- hidden parient category in submenu -->
+                {% if subcate != category[0] %}
+              <li><a href="{{site.baseurl}}/{{ category[0] | downcase }}/{{ subcate | downcase }}">{{ subcate }}</a></li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </li>
+              <!-- parient category only show once -->
+              {% break %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+        <!-- page list -->
+        {% for page in site.pages | compact %}
+            {% if page.title == 'About' %}
+        <li><a href="{{page.url}}">{{page.title}}</a></li>
+            {% endif %}
+        {% endfor %}
+      </ul>
+    </div><!--/.navbar-collapse -->
+
+
+  </div>
+</nav>
+</div>
+</header>
