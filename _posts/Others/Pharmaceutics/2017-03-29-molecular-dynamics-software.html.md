@@ -7,8 +7,7 @@ parent_id: '0'
 published: true
 password: ''
 status: publish
-categories:
-- Programming
+categories: [Other, Pharmaceutics]
 tags:
 - Molecular Dynamics
 meta:

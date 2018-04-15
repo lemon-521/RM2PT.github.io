@@ -19,7 +19,7 @@ date: 2013-2018
 email: yylonly@gmail.com
 description: Providing the verifed document for software developers and system administrators.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://lab.mydreamy.net" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://daas.mydreamy.net" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: yylonly
 github_username:  yylonly
 permalink: /:categories/:title.html
@@ -27,6 +27,9 @@ permalink: /:categories/:title.html
 # Build settings
 markdown: kramdown
 
+## add plugins
+plugins:
+  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
