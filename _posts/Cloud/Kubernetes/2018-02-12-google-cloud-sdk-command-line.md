@@ -21,11 +21,11 @@ author:
   first_name: ''
   last_name: ''
 ---
-> sudo apt-get update  
-> sudo apt-get remove google-cloud-sdk  
-> curl https://sdk.cloud.google.com | bash  
-> exec -l $SHELL  
-> gcloud init  
-> gcloud components list  
-> gcloud components install kubectl  
-> gcloud components list
+    $ sudo apt-get update  
+    $ sudo apt-get remove google-cloud-sdk  
+    $ curl https://sdk.cloud.google.com | bash  
+    $ exec -l $SHELL  
+    $ gcloud init  
+    $ gcloud components list  
+    $ gcloud components install kubectl  
+    $ gcloud components list

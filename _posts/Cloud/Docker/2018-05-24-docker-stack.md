@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Docker Swarm and Stack on Single Server
-date: 2018-01-26 14:43:17.000000000 +08:00
+date: 2018-05-24 14:43:17.000000000 +08:00
 type: post
 categories: [Cloud, Docker]
 author: yylhome
