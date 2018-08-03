@@ -7,30 +7,47 @@ categories: [DevOps, Git]
 author: yylhome
 ---
 
-git config —list
+  $ git config --list
 
-git config —golobal color.ui true
+## Git Basic Commands
 
-git add —all (-a) // adds all new or modified files
+  $ git config --global color.ui true
 
-git diff (HEAD)// show unstaged difference with current files
+adds all new or modified files
 
-git diff —staged
+  $ git add --all (-a) 
 
-git diff master branch1
+remove file
 
-git commit -a(—amend) -m “comments” // add all changes from all tracked files
+  $ git rm (untracked and remove real file)
 
-git reset —soft HEAD^ //undoing a commit, move head one behind
+  $ git rm --cached (only untracked)
 
-git reset —hard HEAD^ (If don’t commit, just HEAD)
+show unstaged difference with current files
 
-git remote -v
+  $ git diff (HEAD)
 
-git push -u(—set-up-steam) origin master (master:master)
+  $ git diff --staged
 
-git push origin branch1:branch2 (local:remote)
+  $ git diff master branch1
 
+add all changes from all tracked files
+
+  $ git commit -a(—amend) -m "comments"
+  
+undoing a commit, move head one behind  
+
+  $ git reset —soft HEAD^ 
+
+If don’t commit, just HEAD
+
+  $ git reset —hard HEAD^ 
+
+  $ git remote -v
+
+  $ git push -u(—set-up-steam) origin master (master:master)
+
+  $ git push origin branch1:branch2 (local:remote)
 
 
 git clone url new_name
@@ -76,7 +93,7 @@ git push —tags (push tags)
 git fetch
 
 
-rebase vs merge
+### rebase vs merge
 
 local vs remote
 
@@ -104,8 +121,6 @@ git config —global merge.tool opendiff
 
 git config —list
 
-git log —oneline —stat
+git log --oneline --stat
 
-git rm (untracked and remove real file)
 
-git rm —cached (only untracked)
