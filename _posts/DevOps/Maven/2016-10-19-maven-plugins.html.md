@@ -21,8 +21,27 @@ author:
   first_name: ''
   last_name: ''
 ---
-<p>maven-compiler  plugin : mvn compile</p>
-<p>exec-maven plugin : mvn exec:java (good alternatives for java -cp classpath package.mainclass)</p>
-<p>maven-shade-plugin : mvn package (good alternatives for eclipse export) big jar</p>
-<p>tycho : for eclipse plugin update-site and RCP</p>
-<p>&nbsp;</p>
+
+### maven-compiler plugin 
+```
+mvn compile
+```
+### exec-maven plugin (Alternatives for java -cp classpath package.mainclass)
+```
+mvn exec:java 
+``` 
+
+### maven-shade-plugin (good alternatives for eclipse export) big jar
+```
+mvn package 
+```
+
+### tycho plugin 
+for eclipse plugin update-site and RCP
+
+### javafx-maven-plugin
+javafx auto-package
+```
+mvn jfx:jar
+mvn jfx:native //assemble as installer
+```
