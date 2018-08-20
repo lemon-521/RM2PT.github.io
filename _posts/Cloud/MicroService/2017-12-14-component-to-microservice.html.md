@@ -11,7 +11,7 @@ author: yyl
 
 **MircoService** = `Component` + `Standard Interface` (RESTFul with JSON) + `Supported Environment` (Authentication / Health Check / Metrics / Tracing / Fault Tolerance / Standard API Document)
 
-### Java EE MicroServices 
+### Java EE MicroServices (MicroProfile)
 
 `MicroProfile` specifies a collection of Java EE APIs and technologies which together form a core baseline microservice that aims to deliver application portability across multiple runtimes.
 
@@ -35,7 +35,7 @@ Eclipse MicroProfile = `CDI` + `JAX-RS` + `JSON-P/JSON-B` + `MPs` (MP config / M
 
 #### * OpenAPI
 
-**OpenAPI** provides a unified Java API for the `[OpenAPI v3 specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md)` that all application developers can use to expose their API documentation
+**OpenAPI** provides a unified Java API for the [`OpenAPI v3 specification`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md) that all application developers can use to expose their API documentation
 
 #### * OpenTracing
 
