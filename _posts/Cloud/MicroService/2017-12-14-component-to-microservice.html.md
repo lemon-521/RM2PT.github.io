@@ -9,41 +9,41 @@ author: yyl
 
 ## MicroServices
 
-`MircoService` = Component + Standard Interface (RESTFul with JSON) + Supported Environment (Authentication / Health Check / Metrics / Tracing / Fault Tolerance / Standard API Document)
+**MircoService** = `Component` + `Standard Interface` (RESTFul with JSON) + `Supported Environment` (Authentication / Health Check / Metrics / Tracing / Fault Tolerance / Standard API Document)
 
 ### Java EE MicroServices 
 
 `MicroProfile` specifies a collection of Java EE APIs and technologies which together form a core baseline microservice that aims to deliver application portability across multiple runtimes.
 
-`Eclipse MicroProfile` = `CDI` + `JAX-RS` + `JSON-P/JSON-B` + `MPs` (MP config / MP Fault Tolerance / MP Health Check / JWT Authentication / MP Metrics/ OpenAPI / OpenTracing / Rest Client)
+Eclipse MicroProfile = `CDI` + `JAX-RS` + `JSON-P/JSON-B` + `MPs` (MP config / MP Fault Tolerance / MP Health Check / JWT Authentication / MP Metrics/ OpenAPI / OpenTracing / Rest Client)
 
 #### * Fault Tolerance
 
-`Eclipse MicroProfile Fault Tolerance` provides the ability to separate execution logic from business logic. Key aspects of the API include TimeOut, RetryPolicy, Fallback, Bulkhead, and Circuit Breaker processing.
+**Eclipse MicroProfile Fault Tolerance** provides the ability to separate execution logic from business logic. Key aspects of the API include TimeOut, RetryPolicy, Fallback, Bulkhead, and Circuit Breaker processing.
 
 #### * Health Check
 
-`Eclipse MicroProfile Health Check` provides the ability to probe the state of a computing node from another machine
+**Eclipse MicroProfile Health Check** provides the ability to probe the state of a computing node from another machine
 
 #### * JWT Authentication
 
-`JWT` Authentication provides role based access control (RBAC) microservice endpoints using OpenID Connect (OIDC) and JSON Web Tokens (JWT).
+**JWT** Authentication provides role based access control (RBAC) microservice endpoints using OpenID Connect (OIDC) and JSON Web Tokens (JWT).
 
 #### * Metrics
 
-`MicroProfile Metrics` provides a unified way for MicroProfile servers to export monitoring data to management agents. Metrics will also provide a common Java API for exposing their telemetry data.
+**MicroProfile Metrics** provides a unified way for MicroProfile servers to export monitoring data to management agents. Metrics will also provide a common Java API for exposing their telemetry data.
 
 #### * OpenAPI
 
-`OpenAPI` provides a unified Java API for the [OpenAPI v3 specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md) that all application developers can use to expose their API documentation
+**OpenAPI** provides a unified Java API for the `[OpenAPI v3 specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md)` that all application developers can use to expose their API documentation
 
 #### * OpenTracing
 
-`MicroProfile OpenTracing` defines an API and associated behaviors that allow services to easily participate in a distributed tracing environment.
+**MicroProfile OpenTracing** defines an API and associated behaviors that allow services to easily participate in a distributed tracing environment.
 
 #### * MicroProfile Rest Client
 
-`Eclipse MicroProfile Rest Client` provides a type-safe approach for invoking RESTful services over HTTP. The MicroProfile Rest Client builds upon the JAX-RS 2.1 APIs for consistency and ease-of-use.
+**Eclipse MicroProfile Rest Client** provides a type-safe approach for invoking RESTful services over HTTP. The MicroProfile Rest Client builds upon the JAX-RS 2.1 APIs for consistency and ease-of-use.
 
 ### MicroProfile Implementations:
 
@@ -58,20 +58,20 @@ author: yyl
 
 Reactive Systems are Responsive, Resilient, Elastic and Message Driven.
 
-* Responsive: The system responds in a timely manner if at all possible.
+* `Responsive`: The system responds in a timely manner if at all possible.
 
-* Resilient: The system stays responsive in the face of failure. 
+* `Resilient`: The system stays responsive in the face of failure. 
 
-* Elastic: The system stays responsive under varying workload. 
+* `Elastic`: The system stays responsive under varying workload. 
 
-* Message Driven: Reactive Systems rely on asynchronous message-passing to establish a boundary between components that ensures loose coupling, isolation and location transparency.
+* `Message Driven`: Reactive Systems rely on asynchronous message-passing to establish a boundary between components that ensures loose coupling, isolation and location transparency.
 
 `Akka` and `Vert.x` are two commonly used reactive frameworks that run on top of the JDK
 
 * `Akka` has indepented event queue.
 * `Vert.x` uses Event Bus
 
-## Reference
+## References
 
 MicroService
 
