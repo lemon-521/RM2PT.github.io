@@ -87,7 +87,7 @@ Scaling overview
 
 Running multiple instances of an application will require a way to distribute the traffic to all of them. Services have an integrated load-balancer that will distribute network traffic to all Pods of an exposed Deployment. Services will monitor continuously the running Pods using endpoints, to ensure the traffic is sent only to available Pods.
 
-       Once you have multiple instances of an Application running, you would be able to do Rolling updates without downtime.
+Once you have multiple instances of an Application running, you would be able to do Rolling updates without downtime.
 
  **Rolling updates**
 --------------------
@@ -104,38 +104,248 @@ Rolling updates allow the following actions:
 *   Rollback to previous versions
 *   Continuous Integration and Continuous Delivery of applications with zero downtime
 
-Useful Command Line
+
+Kubernetes-bootcamp Tutorials
 -------------------
 
-*   minikube version
-*   minikube start
-*   kubectl version
-*   kubectl cluster-info
-*   kubectl get nodes
-*   kubectl run kubernetes-bootcamp --image=docker.io/jocatalin/kubernetes-bootcamp:v1 --port=8080 (create a deployment)
-*   kubectl get deployments
-*   kubectl proxy
-*   curl http://localhost:8001/version
-*   **kubectl get** \- list resources
-*   **kubectl describe** \- show detailed information about a resource
-*   **kubectl logs** \- print the logs from a container in a pod
-*   **kubectl exec** \- execute a command on a container in a pod
-*   kubectl get pods
-*   kubectl describe pods
-*   kubectl logs $POD_NAME (View the container logs)
-*   kubectl exec $POD_NAME env (execute commands directly on the container once the Pod is up and running)
-*   kubectl exec -ti $POD_NAME bash
-*   kubectl expose deployment/kubernetes-bootcamp --type="NodePort" --port 8080
-*   kubectl get services
-*   kubectl describe services/kubernetes-bootcamp
-*   kubectl get pods -l run=kubernetes-bootcamp
-*   kubectl get services -l run=kubernetes-bootcamp
-*   kubectl label pod $POD_NAME app=v1
-*   kubectl describe pods $POD_NAME
-*   kubectl get pods -l app=v1
-*   kubectl delete service -l run=kubernetes-bootcamp
-*   kubectl scale deployments/kubernetes-bootcamp --replicas=4
-*   kubectl get pods -o wide
-*   kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v2 (set to new images)
-*   kubectl rollout status deployments/kubernetes-bootcamp
-*   kubectl rollout undo deployments/kubernetes-bootcamp
+Using minikube to deploy kubernetes on one computer or using docker with kubernetes on Mac and windows
+
+    $ minikube version
+    $ minikube start
+
+Get Version
+
+    $ kubectl version
+    $ kubectl cluster-info
+
+    Kubernetes master is running at https://localhost:6443
+    KubeDNS is running at https://localhost:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+
+Get Node
+
+    $ kubectl get nodes
+
+    NAME                 STATUS    ROLES     AGE       VERSION
+    docker-for-desktop   Ready     master    34m       v1.10.3
+
+Kubernetes Basic command
+
+    $ kubectl get //list resources
+    $ kubectl describe //show detailed information about a resource
+    $ kubectl logs  //print the logs from a container in a pod
+    $ kubectl exec //execute a command on a container in a pod
+
+Deployment *kubernetes-bootcamp*
+
+    $ kubectl run kubernetes-bootcamp --image=docker.io/jocatalin/kubernetes-bootcamp:v1 --port=8080
+
+    deployment.apps "kubernetes-bootcamp" created
+
+
+List deployments (docker stack ls)
+
+    $ kubectl get deployments
+
+    NAME                  DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+    kubernetes-bootcamp   1         1         1            0           6s
+
+Using proxy to access pods    
+
+    $ kubectl proxy
+    $ curl http://localhost:8001/version
+
+List pods with their name and status (docker ps)
+
+    $ kubectl get pods
+
+    NAME                                  READY     STATUS    RESTARTS   AGE
+    kubernetes-bootcamp-56cdd766d-n6n64   1/1       Running   0          1m
+
+Show detailed information of pods
+
+    $ kubectl describe pods
+
+    Name:           kubernetes-bootcamp-56cdd766d-n6n64
+    Namespace:      default
+    Node:           docker-for-desktop/192.168.65.3
+    Start Time:     Sat, 25 Aug 2018 19:17:06 +0800
+    Labels:         pod-template-hash=127883228
+                    run=kubernetes-bootcamp
+    Annotations:    <none>
+    Status:         Running
+    IP:             10.1.0.4
+    Controlled By:  ReplicaSet/kubernetes-bootcamp-56cdd766d
+    Containers:
+      kubernetes-bootcamp:
+        Container ID:   docker://b059154f1ee99cb02e3e3665ecac1b77a212ea541cc65d8b569847ec969f53b0
+        Image:          docker.io/jocatalin/kubernetes-bootcamp:v1
+        Image ID:       docker-pullable://jocatalin/kubernetes-bootcamp@sha256:0d6b8ee63bb57c5f5b6156f446b3bc3b3c143d233037f3a2f00e279c8fcc64af
+        Port:           8080/TCP
+        Host Port:      0/TCP
+        State:          Running
+          Started:      Sat, 25 Aug 2018 19:17:41 +0800
+        Ready:          True
+        Restart Count:  0
+        Environment:    <none>
+        Mounts:
+          /var/run/secrets/kubernetes.io/serviceaccount from default-token-p6tph (ro)
+    Conditions:
+      Type           Status
+      Initialized    True
+      Ready          True
+      PodScheduled   True
+    Volumes:
+      default-token-p6tph:
+        Type:        Secret (a volume populated by a Secret)
+        SecretName:  default-token-p6tph
+        Optional:    false
+        QoS Class:       BestEffort
+        Node-Selectors:  <none>
+        Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                         node.kubernetes.io/unreachable:NoExecute for 300s
+        Events:
+          Type    Reason                 Age   From                         Message
+          ----    ------                 ----  ----                         -------
+          Normal  Scheduled              5m    default-scheduler            Successfully assigned kubernetes-bootcamp-56cdd766d-n6n64 to docker-for-desktop
+          Normal  SuccessfulMountVolume  5m    kubelet, docker-for-desktop  MountVolume.SetUp succeeded for volume "default-token-p6tph"
+          Normal  Pulling                5m    kubelet, docker-for-desktop  pulling image "docker.io/jocatalin/kubernetes-bootcamp:v1"
+          Normal  Pulled                 5m    kubelet, docker-for-desktop  Successfully pulled image "docker.io/jocatalin/kubernetes-bootcamp:v1"
+          Normal  Created                5m    kubelet, docker-for-desktop  Created container
+          Normal  Started                5m    kubelet, docker-for-desktop  Started container
+
+Get logs of pod (View the container logs)
+
+    $ kubectl logs pod_name
+
+Execute commands directly on the container once the Pod is up and running
+
+    $ kubectl exec pod_name env
+
+Open bash on pods
+
+    $ kubectl exec -it pod_name bash
+
+Get services
+
+    $ kubectl get services
+
+      NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+      kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   1h
+
+Expose port to external by NodePort Service (expose internal port to outside, like docker -p xxxx:xxxx)    
+
+    $ kubectl expose deployment/kubernetes-bootcamp --type="NodePort" --port 8080
+
+      service "kubernetes-bootcamp" exposed
+
+    $ kubectl get services
+
+      NAME                  TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+      kubernetes            ClusterIP   10.96.0.1       <none>        443/TCP          1h
+      kubernetes-bootcamp   NodePort    10.100.73.232   <none>        8080:31435/TCP   15s
+
+    $ curl http://localhost:31435/version
+
+      Hello Kubernetes bootcamp! | Running on: kubernetes-bootcamp-56cdd766d-n6n64 | v=1
+
+
+
+Check deployment kubernetes-bootcamp services
+
+    $ kubectl describe services/kubernetes-bootcamp
+
+      Name:                     kubernetes-bootcamp
+      Namespace:                default
+      Labels:                   run=kubernetes-bootcamp
+      Annotations:              <none>
+      Selector:                 run=kubernetes-bootcamp
+      Type:                     NodePort
+      IP:                       10.100.73.232
+      LoadBalancer Ingress:     localhost
+      Port:                     <unset>  8080/TCP
+      TargetPort:               8080/TCP
+      NodePort:                 <unset>  31435/TCP
+      Endpoints:                10.1.0.4:8080
+      Session Affinity:         None
+      External Traffic Policy:  Cluster
+      Events:                   <none>   
+
+Using label to access pods and services
+
+    $ kubectl get pods -l run=kubernetes-bootcamp
+    $ kubectl get services -l run=kubernetes-bootcamp
+
+Set label to pods
+
+    $ kubectl label pod $POD_NAME app=v1
+    $ kubectl describe pods $POD_NAME
+    $ kubectl get pods -l app=v1
+
+Delete the services of the specific deployment
+
+    $ kubectl delete service -l run=kubernetes-bootcam
+
+Scale up deployment
+
+    $ kubectl scale deployments/kubernetes-bootcamp --replicas=4
+    $ kubectl get pods -o wide
+
+Set deployments with new image    
+
+    $ kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v2
+
+    $ kubectl rollout status deployments/kubernetes-bootcamp
+
+        Waiting for rollout to finish: 0 of 1 updated replicas are available...
+        deployment "kubernetes-bootcamp" successfully rolled out
+
+Undo changes
+
+    $ kubectl rollout undo deployments/kubernetes-bootcamp
+
+Add Kubernetes Dashboard
+
+    $ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml
+
+      secret "kubernetes-dashboard-certs" created
+      serviceaccount "kubernetes-dashboard" created
+      role.rbac.authorization.k8s.io "kubernetes-dashboard-minimal" created
+      rolebinding.rbac.authorization.k8s.io "kubernetes-dashboard-minimal" created
+      deployment.apps "kubernetes-dashboard" created
+      service "kubernetes-dashboard" created
+
+Get kubernetes system deploymenet
+
+    $ kubectl -n kube-system get deployments
+
+      NAME                   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+      kube-dns               1         1         1            1           1h
+      kubernetes-dashboard   1         1         1            1           6m
+
+Get kubernetes system pods
+
+    $ kubectl -n kube-system get pods
+
+      NAME                                         READY     STATUS    RESTARTS   AGE
+      etcd-docker-for-desktop                      1/1       Running   0          1h
+      kube-apiserver-docker-for-desktop            1/1       Running   0          1h
+      kube-controller-manager-docker-for-desktop   1/1       Running   0          1h
+      kube-dns-86f4d74b45-vlg8g                    3/3       Running   0          1h
+      kube-proxy-v5zpd                             1/1       Running   0          1h
+      kube-scheduler-docker-for-desktop            1/1       Running   0          1h
+      kubernetes-dashboard-7d5dcdb6d9-wdbvw        1/1       Running   0          8m
+
+
+Get kubernetes system services
+
+    $ kubectl -n kube-system get service
+
+      NAME                   TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)         AGE
+      kube-dns               ClusterIP   10.96.0.10    <none>        53/UDP,53/TCP   1h
+      kubernetes-dashboard   ClusterIP   10.99.247.8   <none>        443/TCP         5m      
+
+    $ kubectl proxy
+
+      Starting to serve on 127.0.0.1:8001
+
+    Open Dashboard through http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/    
