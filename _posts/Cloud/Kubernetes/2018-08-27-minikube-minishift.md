@@ -12,7 +12,7 @@ author: Yilong
 
 * Install VirtualBox and drive if on linux
 * [Minikube](https://github.com/kubernetes/minikube/releases)
-* [Minishift][https://github.com/minishift/minishift/releases]
+* [Minishift](https://github.com/minishift/minishift/releases)
 
 ### Start Kubernetes and Openshift
 
@@ -28,15 +28,16 @@ author: Yilong
 
       $ oc cluster up
       
-        This command:
+This command:
 
-          starts OKD listening on local interface on your host (127.0.0.1:8443),
+* starts OKD listening on local interface on your host (127.0.0.1:8443),
 
-          starts the web console listening on all interfaces at /console (127.0.0.1:8443),
+* tarts the web console listening on all interfaces at /console (127.0.0.1:8443),
 
-          launches the Kubernetes system components,
+* launches the Kubernetes system components,
 
-          and provisions registry, router, initial templates, and a default project.
+* and provisions registry, router, initial templates, and a default project.
+
 MacOS/Linux        
         
       $  eval $(minikube docker-env) 
