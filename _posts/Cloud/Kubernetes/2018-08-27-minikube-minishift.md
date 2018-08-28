@@ -38,6 +38,9 @@ This command:
 
 * and provisions registry, router, initial templates, and a default project.
 
+Maybe require $ oc cluster up --insecure-registry "172.30.0.0/16" or  --skip-registry-check=true
+
+
 MacOS/Linux        
         
       $  eval $(minikube docker-env) 
