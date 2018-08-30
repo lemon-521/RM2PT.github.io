@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Local Kubernetes and Openshift
+title: On-premise Kubernetes and Openshift
 date: 2018-02-13 16:57:10.000000000 +08:00
 type: post
 categories: [Cloud, Kubernetes]
 author: Yilong
 ---
 
-## Install Minikube and MiniShift by VMs
+## Install Kubernetes and OpenShfit by VMs
 ### Download Minikube and MiniShift
 
 * Install VirtualBox and drive if on linux
@@ -24,26 +24,22 @@ author: Yilong
 * minikube docker-env [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 * minishift oc-env [oc](https://www.okd.io/download.html#oc-platforms)
 
-## Install Minikube and MiniShift by Docker
+## Install Kubernetes and OpenShfit by Docker
+
+Kubernetes on docker can be done by desktop docker applications
+
+* /etc/docker/daemon.json
+
+      {
+      "insecure-registries": [
+           "172.30.0.0/16"
+         ]
+      }
+      
+* Openshift up
 
       $ oc cluster up
       
-This command:
-
-* starts OKD listening on local interface on your host (127.0.0.1:8443),
-
-* tarts the web console listening on all interfaces at /console (127.0.0.1:8443),
-
-* launches the Kubernetes system components,
-
-* and provisions registry, router, initial templates, and a default project.
-
-Maybe require $ oc cluster up --insecure-registry "172.30.0.0/16" or  --skip-registry-check=true
-
-
-MacOS/Linux        
-        
-      $  eval $(minikube docker-env) 
       
 ## Deploy application on Kubernetes and OpenShift
 
