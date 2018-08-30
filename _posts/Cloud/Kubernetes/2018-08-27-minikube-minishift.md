@@ -38,7 +38,7 @@ Kubernetes on docker can be done by desktop docker applications
       
 * Openshift up
 
-      $ oc cluster up
+      $ oc cluster up --routing-suffix=10.119.180.33.nip.io --public-hostname=10.119.180.33
       
       
 ## Deploy application on Kubernetes and OpenShift
