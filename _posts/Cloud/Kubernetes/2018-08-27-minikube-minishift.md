@@ -24,6 +24,10 @@ author: Yilong
 * minikube docker-env [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 * minishift oc-env [oc](https://www.okd.io/download.html#oc-platforms)
 
+## Install Docker Registry
+
+      $ docker run -d -p 5000:5000 --restart=always --name registry registry:2
+
 ## Install Kubernetes and OpenShfit by Docker
 
 Kubernetes on docker can be done by desktop docker applications
@@ -32,10 +36,16 @@ Kubernetes on docker can be done by desktop docker applications
 
       {
       "insecure-registries": [
+           "registry ip:5000"
            "172.30.0.0/16"
          ]
       }
-      
+  
+* Docker Restart
+
+      $ systemctl stop docker
+      $ systemctl start docker
+  
 * Openshift up
 
       $ oc cluster up --routing-suffix=10.119.180.33.nip.io --public-hostname=10.119.180.33
