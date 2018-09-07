@@ -1,7 +1,7 @@
 ---
 layout: post
 title: On-premise Kubernetes on Cluster
-date: 2018-02-13 16:57:10.000000000 +08:00
+date: 2018-09-07 23:57:10.000000000 +08:00
 type: post
 categories: [Cloud, Kubernetes]
 author: Yilong
