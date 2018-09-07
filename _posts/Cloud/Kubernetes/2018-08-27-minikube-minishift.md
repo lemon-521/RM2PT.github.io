@@ -28,6 +28,12 @@ author: Yilong
 
       $ docker run -d -p 5000:5000 --restart=always --name registry registry:2
 
+Test Docker Registry
+
+      $ docker pull ubuntu:16.04
+      $ docker tag ubuntu:16.04 registry_ip:5000/my-ubuntu
+      $ docker push registry_ip:5000/my-ubuntu
+
 ## Install Kubernetes and OpenShfit by Docker
 
 Kubernetes on docker can be done by desktop docker applications
