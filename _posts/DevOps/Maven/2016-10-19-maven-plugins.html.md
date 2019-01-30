@@ -45,3 +45,9 @@ javafx auto-package
 mvn jfx:jar
 mvn jfx:native //assemble as installer
 ```
+
+* `maven-jar-plugin`: This plugin provides the capability to build and sign JARs. But it just compiles the java files under src/main/java and src/main/resources/. It doesn't include the dependencies JAR files.
+
+* `maven-assembly-plugin`: This plugin extracts all dependency JARs into raw classes and groups them together. It can also be used to build an executable JAR by specifying the main class. It works in project with less dependencies only; for large project with many dependencies, it will cause Java class names to conflict.
+
+* `maven-shade-plugin`: It packages all dependencies into one uber-JAR. It can also be used to build an executable JAR by specifying the main class. This plugin is particularly useful as it merges content of specific files instead of overwriting them by relocating classes. This is needed when there are resource files that have the same name across the JARs and the plugin tries to package all the resource files together.
