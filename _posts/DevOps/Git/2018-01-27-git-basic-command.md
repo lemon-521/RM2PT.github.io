@@ -7,120 +7,144 @@ categories: [DevOps, Git]
 author: yylhome
 ---
 
-  $ git config --list
 
 ## Git Basic Commands
 
-  $ git config --global color.ui true
+    $ git config --list
 
-adds all new or modified files
+    $ git config --global color.ui true
 
-  $ git add --all (-a) 
+### Adds all new or modified files
 
-remove file
+    $ git add --all (-a)
 
-  $ git rm (untracked and remove real file)
+### Remove file
 
-  $ git rm --cached (only untracked)
+    $ git rm (untracked and remove real file)
 
-show unstaged difference with current files
+    $ git rm --cached (only untracked)
 
-  $ git diff (HEAD)
+### Show Unstaged difference with current files
 
-  $ git diff --staged
+    $ git diff (HEAD)
 
-  $ git diff master branch1
+    $ git diff --staged
 
-add all changes from all tracked files
+    $ git diff master branch1
 
-  $ git commit -a(—amend) -m "comments"
-  
-undoing a commit, move head one behind  
+### dd all changes from all tracked files
 
-  $ git reset —soft HEAD^ 
+    $ git commit -a(—amend) -m "comments"
+
+### Undo a commit, move head one behind  
+
+    $ git reset —-soft HEAD^
 
 If don’t commit, just HEAD
 
-  $ git reset —hard HEAD^ 
+    $ git reset —-hard HEAD^
 
-  $ git remote -v
-
-  $ git push -u(—set-up-steam) origin master (master:master)
-
-  $ git push origin branch1:branch2 (local:remote)
+### Show remote URL
+    $ git remote -v
 
 
-git clone url new_name
+### Push to remote
 
-git checkout branch_name (create branch)
+    $ git push -u(—set-up-steam) origin master (master:master)
 
-git checkout -b name (create branch and switch to it)
+    $ git push origin branch1:branch2 (local:remote)
 
-git branch -r (list remote branch)
+### Clone Repo
 
-git branch -b name origin/branchname (fetch remote branch to local)
+    $ git clone url new_name
 
-git remote show origin (show details)
+### Create Branch
 
-git push origin branch_name (push branch)
+    $ git checkout branch_name
 
-git push origin :branch_name (delete remote branch)
+    $ git checkout -b name (create branch and switch to it)
 
-git remote prune origin (clean up remote branch’s)
+### List branches
 
-git checkout name (local files will changed)
+    $ git branch
+    $ git branch -r (list remote branch)
+    $ git branch -a (all)
 
-git checkout master
+### Fetch remote branch to local
 
-git merge branch_name (merge branch into master)
+    $ git fetch
+    $ git branch name origin/branchname
+
+### Show remote details
+
+    $ git remote show origin (show details)
+
+### Push and delete remote brach
+
+    $ git push origin branch_name (push branch)
+
+    $ git push origin :branch_name (delete remote branch)
+
+    $ git remote prune origin (clean up remote branch’s)
+
+### Switch and merge branch    
+
+    $ git checkout name (local files will changed)
+
+    $ git checkout master
+
+    $ git merge branch_name (merge branch into master)
 
 If nothing new in the master, this will give a fast-forward merge
 
-git branch -d branch_name (delete branch, after merge)
+    $ git branch -d branch_name (delete branch, after merge)
 
-If have new commits in the master, this will give a recursive merging, that is a merge commit ....... (git log)
+If have new commits in the master, this will give a recursive merging, that produces a merge commit ....... (git log)
 
-git log —oneline —graph —all
+### History
+
+    $ git log —-oneline —-graph —-all
 
 Git pull = git fetch and git mete origin/master
 
-git tag (list all tags)
+### Tag to commit (after commited, before push commit)
 
-git tag -a v0.0.3 -m “version 0.0.3” (add a new tags)
+    $ git tag (list all tags)
 
-git push —tags (push tags)
+    $ git tag v0.0.3
 
-git fetch
+    $ git tag -a v0.0.3 -m “version 0.0.3” (add a new tags)
 
+    $ git push origin -—tags (push all tags)
 
 ### rebase vs merge
 
 local vs remote
 
-git rebase (it puts the different away first, then on top of remote master and branches, then commit the different. It does not merge remote to a new commit when new has new commit but without conflicts, but when conflicts, all rebase and merge require dealing with conflict first)
+* git rebase (it puts the different away first, then on top of remote master and branches, then commit the different. It does not merge remote to a new commit when new has new commit but without conflicts, but when conflicts, all rebase and merge require dealing with conflict first)
 
-git merge (merge local and remote master and branch, when remote has new commits, create an merge commit)
+* git merge (merge local and remote master and branch, when remote has new commits, create an merge commit)
 
 Branch vs Branch
 
 Suppose you are in master branch
 
-git merge branch (merge branch with master to together, create a new commit if they have different commits without conflicts, a fast-forward if one branch have not new commits)
+* git merge branch (merge branch with master to together, create a new commit if they have different commits without conflicts, a fast-forward if one branch have not new commits)
 
-git log —oneline —all —graph can see the branch log (two branch links together on the new merge commits)
+  $ git log —oneline —all —graph can see the branch log (two branch links together on the new merge commits)
 
-git rebase branch (put different commits away from the branch , commit all new commits from master in branch, then commit the different)
+* git rebase branch (put different commits away from the branch , commit all new commits from master in branch, then commit the different)
 
-git log will see, two branch become as one branch
+  $ git log will see, two branch become as one branch
 
-git config —global color.ui true
+### Other settings
 
-git config —global core.editor emacs
+    $ git config —global color.ui true
 
-git config —global merge.tool opendiff
+    $ git config —global core.editor emacs
 
-git config —list
+    $ git config —global merge.tool opendiff
 
-git log --oneline --stat
+    $ git config —list
 
-
+    $ git log --oneline --stat
