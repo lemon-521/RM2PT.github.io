@@ -240,3 +240,5 @@ kubectl get services
 
 kubectl rm -f src/main/kubernetes/
 ```
+
+The related code can be found at [Github](https://github.com/yylonly/CloudNative-JavaEE-Demo/tree/master/Section-1/javaee8-service)
