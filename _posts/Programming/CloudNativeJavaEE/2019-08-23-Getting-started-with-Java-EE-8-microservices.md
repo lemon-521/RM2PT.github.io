@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 1. Cloud Native Application Development with Java EE - Getting started with Java EE 8 microservices
+title: 1. Getting started with Java EE 8 microservices
 date: 2019-08-23 02:40:00.000000000 +08:00
 type: post
-categories: [Cloud, MicroService]
+categories: [Cloud, CloudNative-JavaEE]
 author: yyl
 ---
 
