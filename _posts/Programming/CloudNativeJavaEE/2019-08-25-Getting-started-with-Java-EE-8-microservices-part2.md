@@ -737,7 +737,7 @@ spec:
 
 To simulate a clustered deployment we are going to start the same service as two individual containers.
 Add the following snippet to your `docker-compose.yml` file:
-```yaml
+```yml
 version: "3"
 
 services:  

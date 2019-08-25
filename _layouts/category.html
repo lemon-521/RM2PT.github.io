@@ -4,7 +4,7 @@ layout: page
 
 <ul>
 {% for post in site.categories[page.cc] %}
-  <li>
+  <li class="categorylist">
     <a href="{{ post.url }}">{{ post.title }}</a>
   </li>
 {% endfor %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 1. Getting started with Java EE 8 microservices
+title: Getting started with Java EE 8 microservices
 date: 2019-08-23 02:40:00.000000000 +08:00
 type: post
 categories: [Programming, CloudNativeJavaEE]

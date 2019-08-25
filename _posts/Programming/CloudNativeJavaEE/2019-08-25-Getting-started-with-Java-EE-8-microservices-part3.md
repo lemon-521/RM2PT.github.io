@@ -17,7 +17,7 @@ relational as well as JSON data.
 
 Add the following definition to your `docker-compose.yml` file.
 
-```yaml
+```ruby
   cockroach1:
     image: cockroachdb/cockroach:v2.0.5
     hostname: cockroach1
@@ -89,7 +89,7 @@ assemble.dependsOn copyPostgresqlLibs
 
 We need to configure our Payara app server to create a JDBC resource. Edit the
 file `post-deploy.asadmin` with the following content.
-```
+```bash
 create-jdbc-connection-pool --datasourceclassname org.postgresql.ds.PGConnectionPoolDataSource --restype javax.sql.ConnectionPoolDataSource --property portNumber=26257:password='root':user='root':serverName=cockroach-db:databaseName='cloud_native_db' PostgresPool
 create-jdbc-resource --connectionpoolid PostgresPool jdbc/CloudNativeDb
 
@@ -456,3 +456,303 @@ public class MorphiaResource {
 
 Alternatively, you can use the JNoSql library to mimic the JPA APIs to access any
 NoSQL database.
+
+
+## Session replication for stateful Java webapps
+
+### Step 1: Infrastructure setup
+
+We are going to start the same webapp twice, as two separate instances. Edit your
+`docker-compose.yml` and add two services.
+
+```ruby
+  stateful-webapp-1:
+    build:
+      context: .
+    image: stateful-webapp:1.0.1
+    ports:
+    - "18080:8080"
+    networks:
+    - jee8net
+
+  stateful-webapp-2:
+    image: stateful-webapp:1.0.1
+    ports:
+    - "28080:8080"
+    networks:
+    - jee8net
+```
+
+### Step 2: Make Java webapp distributable
+
+In order for the session replication to work you need to mark it as `<distributable/>` in your `src/main/webapp/WEB-INF/web.xml`.
+Create the file and add the following content.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!-- mark webapp as distributable -->
+    <distributable/>
+
+</web-app>
+```
+
+### Step 3: Working with HttpSession in JAX-RS
+
+This here is for demo purposes. Try not to use HttpSession in your REST endpoints if possible!
+Add the following JAX-RS resource class.
+
+```java
+@RequestScoped
+@Path("session")
+public class SessionResource {
+
+    @Context
+    private HttpServletRequest request;
+
+    @GET
+    @Path("/{name}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getAttribute(@PathParam("name") String name) {
+        Object payload = Optional.ofNullable(request.getSession().getAttribute(name)).orElseThrow(NotFoundException::new);
+        return Response.ok(payload).build();
+    }
+
+    @POST
+    @Path("/{name}")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response setAttribute(@PathParam("name") String name, String payload) {
+        request.getSession().setAttribute(name, payload);
+        return Response.ok().build();
+    }
+
+}
+```
+
+### Step 4: Working with stateful JSF
+
+Add the following JSF declarations to your `web.xml` file.
+
+```xml
+    <welcome-file-list>
+        <welcome-file>faces/hello.xhtml</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>Faces Servlet</servlet-name>
+        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>/faces/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>*.jsf</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>*.faces</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>*.xhtml</url-pattern>
+    </servlet-mapping>
+```
+
+Now add the following `SessionScoped` backing bean to be used by JSF.
+
+```java
+@Named("helloBean")
+@SessionScoped
+public class HelloBean implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    private String name = "Stateful Webapp";
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+```
+
+Finally, add the following JSF XHTML file to display and set the name in the session scoped
+backing bean. Add a `hello.xhtml` file to you `src/main/webapp` folder.
+
+````html
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns:h="http://java.sun.com/jsf/html">
+<head>
+    <title>Replicated Stateful Webapp</title>
+</head>
+
+<body>
+<h1>Hello #{helloBean.name}</h1>
+<h:form>
+    <h:inputText value="#{helloBean.name}"></h:inputText>
+    <h:commandButton value="Set name" action="hello"></h:commandButton>
+</h:form>
+</body>
+</html>
+````
+
+
+## Distributed state using the JCache API
+
+### Step 1: Infrastructure setup
+
+We are going to simulate a clustered environment by running the same microservice
+twice. Add the following to your `docker-compose.yml`
+
+```yaml
+  jcache-api-1:
+    build:
+      context: .
+    image: jcache-api:1.0.1
+    ports:
+    - "18080:8080"
+    networks:
+    - jee8net
+
+  jcache-api-2:
+    image: jcache-api:1.0.1
+    ports:
+    - "28080:8080"
+    networks:
+    - jee8net
+```
+
+### Step 2: Add JCache API dependency
+
+Add the following dependency to the `build.gradle` file to use the JCache APIs.
+
+```groovy
+providedCompile 'javax.cache:cache-api:1.0.0'
+```
+
+### Step 3: Configure the Hazelcast JCache provider
+
+To configure the Hazelcast JCache provider, add the following cache definition to the `src/main/docker/hazelcast.xml` file:
+```xml
+<cache name="expiry">
+    <key-type class-name="java.lang.String"/>
+    <value-type class-name="java.lang.String"/>
+
+    <backup-count>1</backup-count>
+    <async-backup-count>0</async-backup-count>
+
+    <expiry-policy-factory>
+        <timed-expiry-policy-factory expiry-policy-type="MODIFIED" duration-amount="30" time-unit="SECONDS"/>
+    </expiry-policy-factory>
+</cache>
+```
+
+Add the following to your `Dockerfile` to copy the relevant configuration files and
+to start the Payara app server with the relevant CMD parameters.
+
+```ruby
+FROM qaware/zulu-centos-payara-micro:8u181-5.183
+
+CMD ["--hzconfigfile", "/opt/payara/hazelcast.xml", "--deploymentDir", "/opt/payara/deployments"]
+
+COPY src/main/docker/* /opt/payara/
+COPY build/libs/jcache-api.war /opt/payara/deployments/
+```
+
+### Step 4: Handle distributed state using the JCache API
+
+Finally, we add a simple JAX-RS resource to access and modify the cache and its values.
+
+```java
+@ApplicationScoped
+@Path("cache")
+@Produces(MediaType.APPLICATION_JSON)
+public class CacheResource {
+
+    @Inject
+    private CacheManager cacheManager;
+
+    @Context
+    private UriInfo uriInfo;
+
+    @GET
+    @Path("/{name}")
+    public Response getCacheByName(@PathParam("name") String name) {
+        Cache<Object, Object> cache = cacheManager.getCache(name);
+        if (cache == null) {
+            throw new NotFoundException("No cache with name " + name);
+        } else {
+            JsonObject info = Json.createObjectBuilder().add("name", cache.getName()).build();
+            return Response.ok(info).build();
+        }
+    }
+
+    @PUT
+    @Path("/{name}")
+    public Response createCacheByName(@PathParam("name") String name) {
+        Cache<String, String> cache = getOrCreateCache(name);
+
+        URI uri = uriInfo.getBaseUriBuilder()
+                .path(CacheResource.class).path(CacheResource.class, "createCacheByName")
+                .build(cache.getName());
+
+        return Response.created(uri).build();
+    }
+
+    @GET
+    @Path("/{name}/{key}")
+    public Response getCacheEntry(@PathParam("name") String name, @PathParam("key") String key) {
+        Cache<String, String> cache = getOrCreateCache(name);
+        String value = Optional.ofNullable(cache.get(key)).orElseThrow(NotFoundException::new);
+
+        try (JsonReader reader = Json.createReader(new StringReader(value))) {
+            return Response.ok(reader.readObject()).build();
+        }
+    }
+
+    @POST
+    @Path("/{name}/{key}")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response putCacheEntry(@PathParam("name") String name, @PathParam("key") String key, @NotNull JsonObject value) {
+        StringWriter json = new StringWriter();
+        try (JsonWriter writer = Json.createWriter(json)) {
+            writer.writeObject(value);
+        }
+
+        Cache<String, String> cache = getOrCreateCache(name);
+        cache.put(key, json.toString());
+
+        URI uri = uriInfo.getBaseUriBuilder()
+                .path(CacheResource.class).path(CacheResource.class, "putCacheEntry")
+                .build(name, key);
+
+        return Response.created(uri).build();
+    }
+
+    private Cache<String, String> getOrCreateCache(String name) {
+        Cache<String, String> cache = cacheManager.getCache(name, String.class, String.class);
+        if (cache == null) {
+            CompleteConfiguration<String, String> config = new MutableConfiguration<String, String>().setTypes(String.class, String.class);
+            cache = cacheManager.createCache(name, config);
+        }
+        return cache;
+    }
+}
+```
