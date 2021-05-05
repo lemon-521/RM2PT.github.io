@@ -32,7 +32,7 @@ kramdown:
    hard_wrap: false
    syntax_highlighter: rouge
 
-theme: jekyll-material-theme
+# theme: jekyll-material-theme
 
 ## add plugins
 plugins:
