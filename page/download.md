@@ -25,9 +25,9 @@ permalink: /downloads/
 * [Windows](https://github.com/RM2PT/Release/releases/download/v1.2.1/RM2PT-win32.win32.x86_64.zip)
 * [Linux](https://github.com/RM2PT/Release/releases/download/v1.2.1/RM2PT-linux.gtk.x86_64.zip)
 
-### Download (Mirrors in China)
+<!-- ### Download (Mirrors in China)
 
-* [Beihang Pan](https://bhpan.buaa.edu.cn:443/link/C28986F400B976136794C72C80B97A21) (All Versions)
+* [Beihang Pan](https://bhpan.buaa.edu.cn:443/link/C28986F400B976136794C72C80B97A21) (All Versions) -->
 
 ### RM2PT Plugins
 RM2PT plugins can be installed through `updatesite` inside of RM2PT. <br />
