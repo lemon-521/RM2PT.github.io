@@ -3,75 +3,31 @@ layout: default
 ---
 
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
-    <div class="container">
-        <h1>{{site.title}}</h1>
+<!-- Main jumbotron for a primary marketing message or call to action -->
+
+<!-- <div class="uk-card uk-card-default uk-grid-collapse uk-margin" uk-grid>
+  <div class="uk-card-media-right uk-cover-container uk-width-1-3">
+      <img src="imgs/splash.png" alt="" uk-cover>
+      <canvas width="500" height="350"></canvas>
+  </div>
+  <div class="uk-flex uk-flex-middle">
+    <div class="uk-card-body uk-width-expandy">
+        <h3 class="uk-card-title">{{site.title}}</h3>
         <p>{{site.description}} </p>
+    </div>
+  </div>
+</div> -->
+
+<div class="uk-card uk-card-default uk-flex uk-flex-middle uk-margin uk-flex-wrap-reverse">
+    <div>
+      <img class="uk-height-medium" data-src="imgs/splash.png" alt="" uk-img>
+    </div>
+    <div class="uk-container">
+      <h3>{{site.title}}</h3>
+      <p>{{site.description}}</p>
     </div>
 </div>
 
-
-<div class="container">
-  <!-- Example row of columns -->
-  <h2> Recent 10 Knowledge: </h2>
-    {% assign recentposts = site.posts | sort : 'date' | reverse %}
-
-    {% for post in recentposts limit : 10 %}
-    <div class="list-group">
-  		 <li class="list-group-item"><span class="badge">Hot</span><a href="{{post.url}}">{{post.title | truncate:500 }}</a></li>
-  	</div>
-    {% endfor %}
-
-    <h2> Knowledge Categories: </h2>
-
-    {% assign category_list = site.categories | sort %}
-    <!-- level 0 -->
-    <ul>
-    {% for category0 in category_list %} <!-- change level here -->
-        {% assign printed0 = false %} <!-- change level here -->
-        {% for post in site.posts %}
-            {% if post.categories[0] == category0[0] and printed0 == false %} <!-- change level here -->
-                <li><a href="{{ site.category_dir | prepend: site.baseurl}}/{{ category0[0] | slugify }}">{{ category0[0] }}</a></li> <!-- change level here -->
-                {% assign printed0 = true %} <!-- change level here -->
-    <!-- level 1 -->
-                <ul>
-                {% for category1 in category_list %} <!-- change level here -->
-                    {% assign printed1 = false %} <!-- change level here -->
-                    {% for post in site.posts %}
-                        {% if post.categories[0] == category0[0] and post.categories[1] == category1[0] and printed1 == false %} <!-- change level here -->
-                            <li><a href="{{ site.category_dir | prepend: site.baseurl}}/{{ category0[0] | slugify }}/{{ category1[0] | slugify }}">{{ category1[0] }}</a></li> <!-- change level here -->
-                            {% assign printed1 = true %} <!-- change level here -->
-                <!-- level 2 -->
-                    <ul>
-                    {% for category2 in category_list %} <!-- change level here -->
-                        {% assign printed2 = false %} <!-- change level here -->
-                        {% for post in site.posts %}
-                            {% if post.categories[0] == category0[0] and post.categories[1] == category1[0] and post.categories[2] == category2[0] and printed2 == false %} <!-- change level here -->
-                                <li><a href="{{ site.category_dir | prepend: site.baseurl}}/{{ category2[0] | slugify }}">{{ category2[0] }}</a></li> <!-- change level here -->
-                                {% assign printed2 = true %} <!-- change level here -->
-                    <!-- level 3 -->
-                    <!-- end of level 3 -->
-                            {% endif %}
-                        {% endfor %}
-                    {% endfor %}
-                  </ul>
-                <!-- end of level 2 -->
-                        {% endif %}
-                    {% endfor %}
-                {% endfor %}
-              </ul>
-    <!-- end of level 1 -->
-            {% endif %}
-        {% endfor %}
-    {% endfor %}
-  </ul>
-    <!-- end of level 0 -->
-
-    <!-- {{site.categories}}
-
-    {{site.posts | map: 'categories'}} -->
-
-
-  </div>
+<div class="uk-container">
+  {{ content }}
 </div>

@@ -1,0 +1,127 @@
+- section_name: Overview
+  section_url: overview
+  subsectons:
+    - sub_name: Research Fund
+      subsection_url: fund
+      ispage: true
+    - sub_name: Seminar
+      subsection_url: seminar
+      ispage: true
+    - sub_name: Publication
+      subsection_url: publication
+      ispage: true
+
+- section_name: Get Started
+  section_url: tutorial
+  subsectons:
+    - sub_name: Tutorial for Users
+      subsection_url: user
+      subsubsection:
+        - name: Create RM2PT Project
+          subsubsection_url: create_new_project
+          ispage: true
+        - name: Requirements Modeling in 4 steps
+        - name: Requirements Validation through Auto-Prototying
+
+    - sub_name: Tutorial for Developers
+      subsection_url: dev
+      subsubsection:
+        - name: Create Project of Domain-Specific Modeling Language (DSML) in  (Modeling by EMF and Sirius)
+        - name: Create Project DSML and DSL (Modeling by EMF, Xtext and Sirius)
+        - name: Create Model Transformation Project (Model2Model)
+        - name: Create Code Generation Project (Model2Text)
+          subsubsection_url: create_code_generator_project
+          ispage: true
+
+- section_name: Case Studies
+  section_url: casestudy
+  subsectons:
+    - sub_name: ATM
+      subsection_url: atm
+      ispage: true
+    - sub_name: CoCoME
+      subsection_url: cocome
+      ispage: true
+    - sub_name: Library Management System
+      subsection_url: libms
+      ispage: true
+    - sub_name: Loan Processing System
+      subsection_url: loanps
+      ispage: true
+    - sub_name: More Cases ...
+
+- section_name: Advanced Features
+  section_url: plug-ins
+  subsectons:
+    - sub_name: Requirements Modeling
+      subsubsection:
+        - name: PF Modeler
+        - name: Goal Modeler
+        - name: SysML Modeler (Req, block, state machines)
+        - name: EARs Editor
+    - sub_name: Requirements Transformation
+      subsubsection:
+        - name: PF2UML - Problem Frames to UML
+        - name: Goal2UML - Goal Model to UML
+        - name: NL2OCL - Nature Language to Object Constraint Language
+        - name: NL2UML - Nature Language to UML
+    - sub_name: Requirements Validation
+      subsubsection:
+        - name: OCL2JML - Object Constraint Language to Java Modeling Language
+
+- section_name: Research
+  section_url: research
+  subsectons:
+    - sub_name: Requirements Modeling
+      subsubsection:
+        - name: FRs Modeling - UML/SysML/MATRE
+        - name: NFRs Modeling
+        - name: Goal Modeling
+        - name: CPS modeling in Problem Frames
+        - name: NL and Visual Modeling in EARs-enhanced Requirements Diagram
+    - sub_name: Automatic Prototyping
+      subsubsection:
+        - name: Desktop Prototype
+        - name: Web Prototype
+        - name: RESTFul Prototype
+        - name: Prototype Verification by JML
+    - sub_name: Requirements Validations
+      subsubsection:
+        - name: Automated Validation with Integration TestCase Generation
+        - name: Consistent Checking by JML verification
+        - name: fUML Simulation
+    - sub_name: Prototype Refactoring
+      subsubsection:
+        - name: Enterprise System
+        - name: Cloud-native Application
+        - name: Blockchain-based System (DApp)
+
+- section_name: Documentation
+  section_url: doc
+  subsectons:
+    - sub_name: Documentation for Users
+      subsubsection:
+        - name: UML Models
+        - name: SysML Models
+        - name: SoaML/MATRE Models
+    - sub_name: Documentation for Developers
+      subsubsection:
+        - name:  Eclipse EMF / Sirius / Xtext
+        - name:  Eclipse PDE / RCP
+        - name:  Model Transformation (ATL/QVT)
+        - name: Executable UML
+        - name:  Template Language - Xtend
+        - name:  Program Verification - JML
+        - name:  Stanford NLP - CoreNLP
+
+- section_name: Downloads
+  section_url: downloads
+  ispage: true
+
+# - section_name: SiteMap
+#   section_url: sitemap
+#   ispage: true
+
+- section_name: About
+  section_url: about
+  ispage: true

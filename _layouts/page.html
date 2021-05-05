@@ -2,14 +2,22 @@
 layout: default
 ---
 
-<div class="container content">
-    
-    <div class="page-header">
-        <h1 class="post-title">{{ page.title | escape }}</h1>
-    </div>
-    
-    {{ content }}
-    
-</div>
+<article class="uk-article">
 
+    <h1 class="uk-article-title"><a class="uk-link-reset" href="">{{ page.title | escape }}</a></h1>
 
+    <p class="uk-article-meta">
+      <ul class="uk-breadcrumb">
+          <li><a href="/">Home</a></li>
+          {% for c in page.level %}
+          <li><a href="/">{{c}}</a></li>
+          {% endfor %}
+          <li class="uk-disabled"><a>{{ page.title | escape }}</a></li>
+      </ul>
+    </p>
+
+    <p class="uk-text-lead">
+      {{ content }}
+    </p>
+
+</article>

@@ -2,7 +2,6 @@
 layout: post
 title: MicroServices
 date: 2018-08-20 06:23:00.000000000 +08:00
-type: post
 categories: [Cloud, MicroService]
 author: yyl
 ---
@@ -60,9 +59,9 @@ Reactive Systems are Responsive, Resilient, Elastic and Message Driven.
 
 * `Responsive`: The system responds in a timely manner if at all possible.
 
-* `Resilient`: The system stays responsive in the face of failure. 
+* `Resilient`: The system stays responsive in the face of failure.
 
-* `Elastic`: The system stays responsive under varying workload. 
+* `Elastic`: The system stays responsive under varying workload.
 
 * `Message Driven`: Reactive Systems rely on asynchronous message-passing to establish a boundary between components that ensures loose coupling, isolation and location transparency.
 
