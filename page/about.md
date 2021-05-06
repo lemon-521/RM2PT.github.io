@@ -9,9 +9,11 @@ RM2PT was originally developed by Dr.Yang when he was pursuing a Ph.D. degree at
 
 ## BUAA Group
 BUAA group focus on Automatic Software Engineering such as Models Transformation and Code Generation.
-- [Yilong Yang](http://yilong.io) (Supervisor)
+- [Yilong Yang](http://yilong.io) (PI)
+- Li Yang (Microservices)
+- Eudrick (Microservices)
 - Yongqi Pu (Goal2UML) (Co-supervised with Tong Li (BJUT))
-- Yiming Zhu (RM2PT Process Life)
+- Yiming Zhu (RM2PT Life Process Model)
 - Yihui Jian (RM2PT for Industrial Software) (Co-supervised with Zhang Li (BUAA))
 - Peiye Yang (State Machine with Simulation) (Co-supervised with Zhang Li (BUAA))
 - Zhaotian Li (Web Services Classification)
