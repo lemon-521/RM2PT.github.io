@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 ## Background
-RM2PT was originally developed by Dr.Yang when he was pursuing a Ph.D. degree at the University of Macau and UNU-IIST with Prof. Xiaoshan Li and Zhiming Liu. Currently, RM2PT is continuously being developed and maintained by his group in [School of Software](http://soft.buaa.edu.cn) and [Software Engineering Institute](http://sei.buaa.edu.cn) at Beihang University (BUAA). RM2PT has being extended from serval directions: Requirements Modeling and Validation, System Design and Generation by collaboration with Universities and Company such as GXNU, ECNU, and BJUT.
+RM2PT was originally developed by Dr. Yang when he was pursuing a Ph.D. degree at the University of Macau and UNU-IIST with Prof. Xiaoshan Li and Zhiming Liu. Currently, RM2PT is continuously being developed and maintained by his group in [School of Software](http://soft.buaa.edu.cn) and [Software Engineering Institute](http://sei.buaa.edu.cn) at Beihang University (BUAA). RM2PT has being extended from serval directions: Requirements Modeling and Validation, System Design and Generation by collaboration with Universities and Company such as GXNU, ECNU, and BJUT.
 
 ## BUAA Group
 BUAA group focus on Automatic Software Engineering such as Models Transformation and Code Generation.
