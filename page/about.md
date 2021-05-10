@@ -27,7 +27,7 @@ GXNU group focuses on model transformation between Problem Frames and UML-based 
 - Kaifeng Lu (ServiceClassification)
 - Bing Li (RequirementEngineering)
 - Yunfang Li (NLP)
-- Yuan Cao （Weather data completion
+- Yuan Cao （Weather data completion)
 - Shangfeng Wei (Problem framework nesting)
 - Hongbin Xiao (PF2UML)
 - Yajun Deng (Text-to-SQL)
