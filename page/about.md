@@ -30,9 +30,9 @@ GXNU group focuses on model transformation between Problem Frames and UML-based 
 - Yuan Cao （Weather Data Completion)
 - Shangfeng Wei (Problem Framework Nesting)
 - Hongbin Xiao (PF2UML)
-- Yajun Deng (Text-to-SQL)
+- Yajun Deng (Text2SQL)
 - Yuansong Qin (NL2OCL)
-- Hui Liu （Automatic Test ase Generation）
+- Hui Liu （Automatic Test Case Generation）
 ## BJUT Group
 RM2PT is being integrated with Goal Model for CPS requirements modeling with Prof. Li's Group in Beijing University Of Technology.
 BJUT group focuses on model transformation between Goal Model and UML-based Requirements Model.
