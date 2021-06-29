@@ -21,7 +21,7 @@ permalink: /downloads/
 
 ### Download v1.2.1 (Links from Github)
 
-* [MacOS](https://github.com/RM2PT/Release/releases/download/v1.2.1/RM2PT-macosx.cocoa.x86_64.zip)
+* [MacOS](https://github.com/RM2PT/Release/releases/download/v1.2.1/RM2PT-macosx.cocoa.x86_64.zip) (Disable GateKeeper if RM2PT.app can not be opened by `sudo xattr -r -d com.apple.quarantine RM2PT.app`)
 * [Windows](https://github.com/RM2PT/Release/releases/download/v1.2.1/RM2PT-win32.win32.x86_64.zip)
 * [Linux](https://github.com/RM2PT/Release/releases/download/v1.2.1/RM2PT-linux.gtk.x86_64.zip)
 
