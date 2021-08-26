@@ -27,7 +27,7 @@ Wait a second, the default `Use Case Diagram` will show on the screen
 
 <img src="/imgs/createproject5.png" alt="Alt text" style="zoom:50%;" />
 
-After you add a requirements model, you can generate a prototype by right click on `cocome.remodel` -> `RM2PT` -> `Generate Object-Oriented Prototype`
+After you add a requirements model, you can generate a prototype by right click on `cocome.remodel` -> `RM2PT` ->  `OO Prototype` -> `Generate Desktop Prototype (Internal)`
 
 <img src="/imgs/createproject6.png" alt="Alt text" style="zoom:50%;" />
 
