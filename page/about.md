@@ -34,6 +34,12 @@ GXNU group focuses on model transformation between Problem Frames and UML-based 
 - Yuansong Qin (NL2OCL)
 - Hui Liu （Automatic Test Case Generation）
 
+## MPI Group
+RM2PT is being integrated with databases and blockchains with Prof. Ke's group in Macao Polytechnic Institute.
+- [Wei Ke](https://www.researchgate.net/profile/Wei-Ke-5) (PI)
+- Edmond Hoi (database)
+- Qiqi Gu (blockchain)
+
 ## BJUT Group
 RM2PT is being integrated with Goal Model for CPS requirements modeling with Prof. Li's Group in Beijing University Of Technology.
 BJUT group focuses on model transformation between Goal Model and UML-based Requirements Model.
