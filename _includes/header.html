@@ -24,9 +24,9 @@
                            {% endif %}
                           {% for subsub in sub.subsubsection%}
                             {% if subsub.subsubsection_url %}
-                              <li class="uk-nav-active"><a href="{{site.baseurl}}/{{section.section_url}}/{{sub.subsection_url}}/{{subsub.subsubsection_url}}"> {{subsub.name}} </a></li>
+                              <li class="uk-nav-active uk-text-bolder"><a href="{{site.baseurl}}/{{section.section_url}}/{{sub.subsection_url}}/{{subsub.subsubsection_url}}"> {{subsub.name}} </a></li>
                             {% else %}
-                              <li class="uk-nav-active"><a href="/#"> {{subsub.name}} </a></li>
+                              <li class="uk-nav-active uk-text-lighter"><a href="/#">(Not Available) {{subsub.name}}</a></li>
                             {% endif %}
                               {% if forloop.last == true and lastsubsecton == false%}
                                 <li class="uk-nav-divider"></li>
