@@ -10,13 +10,13 @@ RM2PT was originally developed by Dr. Yang when he was pursuing a Ph.D. degree a
 ## BUAA Software Group
 BUAA group focus on Automatic Software Engineering such as Models Transformation and Code Generation.
 - [Yilong Yang](http://yilong.io) (PI)
-- Li Yang (Microservices / Low-Code Development)
+- Li Yang (Low-Code Development / Microservices)
 - Yongqi Pu (Goal2UML, co-supervised with Tong Li in BJUT Group)
 - Peiye Yang (MDA, co-supervised with Li Zhang)
 - Jie Zhang (GUI Generation)
 - Zhuoxi Yang (GUI Generation)
 - Rong Qiu (Reverse Engineering, co-supervised with Zhiming Liu)
-- Tianshu Bao (Requirements Specification Generation, co-supervised with Jing Yang)
+- Tianshu Bao (Requirements Generation)
 
 ### Alumni
 - Yiming Zhu (Bytedance)
@@ -33,7 +33,10 @@ GXNU group focuses on model transformation between Problem Frames and UML-based 
 - Yajun Deng (Text2SQL)
 - Yuansong Qin (NL2OCL)
 - Hui Liu (Test Case Generation）
-- Yuan Cao (Data Completion)
+- Yuan Cao (Data Mining)
+- ShangZhi Tang (OCL Visualization)
+- Lin Xie (Program Verification)
+- Yitao Pu (MicroService)
 
 ### Alumni
 - Bing Li (Lecturer, Guangdong University of Science and Technology)
