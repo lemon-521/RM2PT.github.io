@@ -49,6 +49,7 @@
       subsection_url: loanps
       ispage: true
     - sub_name: More Cases ...
+      subsection_url: morecases
 
 - section_name: Advanced Features
   section_url: plug-ins

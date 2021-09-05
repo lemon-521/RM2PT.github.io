@@ -2,10 +2,71 @@
 layout: default
 ---
 
-<ul>
+<!-- <ul>
 {% for post in site.categories[page.cc] %}
   <li class="categorylist">
     <a href="{{ post.url }}">{{ post.title }}</a>
   </li>
 {% endfor %}
-</ul>
+</ul> -->
+
+<article class="uk-article">
+
+    <h1 class="uk-article-title"><a class="uk-link-reset" href="">{{ page.title | escape }}</a></h1>
+
+    <p class="uk-article-meta">
+      <ul class="uk-breadcrumb">
+          <li><a href="/">Home</a></li>
+          {% for c in page.level %}
+          <li><a href="/">{{c}}</a></li>
+          {% endfor %}
+          <li class="uk-disabled"><a>{{ page.title | escape }}</a></li>
+      </ul>
+    </p>
+
+    {% for post in site.categories[page.cc] %}
+    <div class="uk-card uk-card-hover uk-card-default uk-flex uk-flex-middle uk-margin uk-flex-wrap-reverse">
+        <div class="uk-card-media-left uk-cover-container uk-width-1-3@m">
+          <img width="600" height="400" data-src={{post.img}} alt="" uk-img>
+        </div>
+        <div class="uk-card-body uk-width-expand@m">
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.description | truncatewords: 55 }}</p>
+          <a href="{{ post.url }}" class="uk-button uk-button-text uk-align-right">Read Details</a>
+          <!-- <div class="uk-card-badge uk-label">Details</div> -->
+        </div>
+    </div>
+
+    <!-- <div class="uk-card uk-card-hover uk-card-default uk-grid-collapse uk-margin" uk-grid>
+      <div class="uk-card-media-left uk-cover-container">
+          <img src={{post.img}} alt="" width="600" height="400" uk-cover>
+          <canvas width="600" height="400"></canvas>
+      </div>
+      <div>
+          <div class="uk-card-body">
+              <h3 class="uk-card-title">{{post.title}}</h3>
+              <p>{{post.description}}</p>
+          </div>
+      </div>
+    </div> -->
+    {% endfor %}
+
+    <!-- <dl class="uk-description-list uk-description-list-divider">
+      {% for post in site.categories[page.cc] %}
+        <dt><a href="{{ post.url }}">{{ post.title }}</a></dt>
+        <dd>{{ post.description }}</dd>
+      {% endfor %}
+    </dl> -->
+
+</article>
+
+<!-- <ul class="uk-pagination uk-flex-center" uk-margin>
+    <li><a href="#"><span uk-pagination-previous></span></a></li>
+    <li><a href="#">1</a></li>
+    <li class="uk-disabled"><span>...</span></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li class="uk-active"><span>7</span></li>
+    <li><a href="#">8</a></li>
+    <li><a href="#"><span uk-pagination-next></span></a></li>
+</ul> -->
