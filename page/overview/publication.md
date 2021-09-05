@@ -20,7 +20,7 @@ permalink: /overview/publication/
 * Yilong Yang, Zhaotian Li, Jing Zhang and Yang Chen. "Transfer Learning for Web Services Classification
 ." to be presented at IEEE International Conferences on Web Services (ICWS’21), Sep. 2021. (**Short Paper**).
 
-* Bing Li, Zhi Li, **Yilong Yang***, ["Residual Attention Graph Convolutional Network for Web Services Classification"](https://doi.org/10.1016/j.neucom.2021.01.089). Neurocomputing. 440, pp. 45-57 (2021) (**JCR - Q1**)
+* Bing Li, Zhi Li, **Yilong Yang***, ["Residual Attention Graph Convolutional Network for Web Services Classification"](https://doi.org/10.1016/j.neucom.2021.01.089). Neurocomputing. 440, pp. 45-57 (2021)
 
 ### 2020
 * Yilong Yang, Nafees Qamar, Peng Liu, Katarina Grolinger, Weiru Wang, Zhi Li, Zhifang Liao. ["ServeNet: A Deep Neural Network for Web Services Classification](https://doi.org/10.1109/ICWS49710.2020.00029). presented at IEEE 12th International Conferences on Web Services (ICWS'20), Beijing, China, Oct. 2020. (**Regular Paper**).
