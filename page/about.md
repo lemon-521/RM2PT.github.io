@@ -35,7 +35,7 @@ GXNU group focuses on model transformation between Problem Frames and UML-based 
 - Hui Liu (Test Case Generation）
 - Yuan Cao (Data Mining)
 - ShangZhi Tang (OCL Visualization)
-- Lin Xie (Program Verification)
+- Ling Xie (Program Verification)
 - Yitao Pu (MicroService)
 
 ### Alumni
