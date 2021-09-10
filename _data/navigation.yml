@@ -106,8 +106,10 @@
         - name: SysML Models
         - name: SoaML/MATRE Models
     - sub_name: Documentation for Developers
+      subsection_url: dev
       subsubsection:
-        - name:  Eclipse EMF / Sirius / Xtext
+        - name:  Eclipse MDA Project
+          subsubsection_url: eclipsemda
         - name:  Eclipse PDE / RCP
         - name:  Model Transformation (ATL/QVT)
         - name: Executable UML
