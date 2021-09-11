@@ -13,15 +13,21 @@ BUAA group focus on Automatic Software Engineering such as Models Transformation
 - Li Yang (Low-Code Development / Microservices)
 - Yongqi Pu (Goal2UML, co-supervised with Tong Li in BJUT Group)
 - Peiye Yang (MDA, co-supervised with Li Zhang)
-- Jie Zhang (GUI Generation)
-- Zhuoxi Yang (GUI Generation)
+- Jie Zhang (GUI Generation, co-supervised with Qian Yu)
+- Zhuoxi Yang (GUI Generation, co-supervised with Qian Yu))
 - Rong Qiu (Reverse Engineering, co-supervised with Zhiming Liu)
-- Tianshu Bao (Requirements Generation)
+- Tianshu Bao (Requirements Generation, co-supervised with Jing Yang)
 
 ### Alumni
 - Yiming Zhu (Bytedance)
-- Zhaotian Li (Postgrudate Student in BUAA)
+- Zhaotian Li (Service Classification, Postgraduate Student in BUAA)
 - Eudrick (Zambia)
+
+## BUAA GUI Group
+GUI group focus on Automatic Generation of Software GUI based Deep Learning Methods.
+- [Qian Yu](https://scholar.google.com/citations?user=mmm90qgAAAAJ&hl=en) (PI)
+- Yanqing Wang
+- Muyuan Guo
 
 ## GXNU Group
 RM2PT is being integrated with Problem Frames for CPS requirements modeling with Prof. Li's Group in Guangxi Normal University.
@@ -47,6 +53,12 @@ RM2PT is being integrated with databases and blockchains with Prof. Ke's group i
 - [Wei Ke](https://www.researchgate.net/profile/Wei-Ke-5) (PI)
 - Edmond Hoi (Database)
 - Qiqi Gu (Blockchain)
+
+## NEPU Group
+RM2PT is being integrated with AI system and MicroServices Design and Modeling with Prof. Gao's group in Northeast Petroleum Univeristy.
+- [Juntao Gao](https://www.researchgate.net/profile/Juntao-Gao-2) (PI)
+- Bingjie Zeng (AI System Modeling and Design)
+- Shuang Chen (Microservices Modeling and Design)
 
 ## BJUT Group
 RM2PT is being integrated with Goal Model for CPS requirements modeling with Prof. Li's Group in Beijing University Of Technology.
