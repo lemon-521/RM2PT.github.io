@@ -5,9 +5,9 @@ permalink: /tutorial/dev/create_rm2pt_nlp_project
 typora-root-url: ../../../../rm2pt-website
 ---
 
-# RM2PT Generator Project
+# RM2PT NLP Project
 
-###  Create CodeGenerator Project in RM2PT
+###  Create RM2PT NLP Project in RM2PT
 
 **In RM2PT, File -> New Project**
 
