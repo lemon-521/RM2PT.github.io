@@ -49,6 +49,18 @@ Configuration Maven Library Step 3: configure project dependency in RM2PT: *Righ
 
 <img src="/imgs/RM2PTNLPProject/image-20211007162736721.png" alt="image-20211007162736721" style="zoom:50%;" />
 
+Configuration Maven Library Step 4: configure project dependency in NL2OCL Plugin: *Project / META-INF / MANIFEST.MF*
+
+ <img src="/imgs/RM2PTNLPProject/image-20211007165501903.png" alt="image-20211007165501903" style="zoom:50%;" />
+
+Then click *Runtime* Tab, Click *Add* 
+
+<img src="/imgs/RM2PTNLPProject/image-20211007165520239.png" alt="image-20211007165520239" style="zoom:50%;" />
+
+Add All required jars
+
+<img src="/imgs/RM2PTNLPProject/image-20211007165619238.png" alt="image-20211007165619238" style="zoom:50%;" />
+
 
 
 The runtime loading code template is located in *src-> package (ArtifactID) -> CoreNLP.xtend*
