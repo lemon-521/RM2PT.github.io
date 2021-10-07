@@ -32,6 +32,9 @@
         - name: Create Code Generation Project (Model2Text)
           subsubsection_url: create_code_generator_project
           ispage: true
+        - name: Create RM2PT NLP Project (NL2Model)
+          subsubsection_url: create_rm2pt_nlp_project
+          ispage: true
 
 - section_name: Case Studies
   section_url: casestudy
