@@ -28,6 +28,9 @@
     - sub_name: Tutorial for Developers
       subsection_url: dev
       subsubsection:
+        - name: Install RM2PT Developer Plugins
+          subsubsection_url: rm2pt_dev_plugin_install
+          ispage: true
         - name: Create Project of Domain-Specific Modeling Language (DSML) in  (Modeling by EMF and Sirius)
         - name: Create Project DSML and DSL (Modeling by EMF, Xtext and Sirius)
         - name: Create Model Transformation Project (Model2Model)
