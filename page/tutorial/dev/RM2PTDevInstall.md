@@ -28,9 +28,9 @@ Choose `http://rm2pt.com/update` from the list, and then select `RM2PT for Devel
 
 <img src="/imgs/RM2PTDevInstall/image-20211102182440350.png" alt="image-20211102182440350" style="zoom:50%;" />
 
-#### Option 2: Outline Install 
+#### Option 2: Outline Install
 
-Click `Add` -> `Archive`, choose the download `net.mydreamy.requirementmodel.updatesite-x.x.x-SNAPSHOT.zip`
+Click `Add` -> `Archive`, choose the developer plugin file `net.mydreamy.requirementmodel.updatesite-x.x.x-SNAPSHOT.zip` (Download from [RM2PT Download Page](/downloads))
 
 <img src="/imgs/RM2PTDevInstall/image-20211102205312270.png" alt="image-20211102205312270" style="zoom:50%;" />
 
@@ -44,4 +44,4 @@ Choose `Install anyway` and `Restart Now`
 
 <img src="/imgs/RM2PTDevInstall/image-20211102205657340.png" alt="image-20211102205657340" style="zoom:50%;" />
 
-Now, you have the developer plugins in your RM2PT environment. 
+Now, you have the developer plugins in your RM2PT environment.
