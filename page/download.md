@@ -14,7 +14,7 @@ permalink: /downloads/
 
 ###  Prerequisite
 
-`Note that JDK 8 and 17 does not support`
+`Note that JDK 8 and 17 does not support, Apple Silicon M1 can install x86_64 JDK through Rosetta 2`
 * **[OpenJDK 11 (Temurin 11)](https://adoptium.net)** must be installed to run RM2PT
 * **JAVA_HOME** is set to your JDK11 directory
 
@@ -35,6 +35,7 @@ In addition, the offline package (v1.2.1) for developers can be downloaded from 
 
 ### Nightly Builds (面向对象分析与设计 - 课程专用)
 
-* [MacOS](https://www.icloud.com/iclouddrive/0nCyg5Ver79yKyevxFW-Mvr-w#RM2PT-MacOS) (Disable GateKeeper if RM2PT.app can not be opened by `sudo xattr -r -d com.apple.quarantine RM2PT.app`)
-* [Windows](https://www.icloud.com/iclouddrive/008nJ12eyaebkRnQTxoelr53Q#RM2PT-Windows)
-* [Linux](https://www.icloud.com/iclouddrive/0BZg6FLtwsxslVpxnHUfWAHjg#RM2PT-Linux)
+* [MacOS](https://www.icloud.com/iclouddrive/0rO9Qug08pBKiHTviGHj2ZkMA#RM2PT-macosx.cocoa) (Disable GateKeeper if RM2PT.app can not be opened by `sudo xattr -r -d com.apple.quarantine RM2PT.app`)
+* [Windows](https://www.icloud.com/iclouddrive/0OHAGG6IU3cGv8pzFAIDuH0mw#RM2PT-win32.win32)
+* [Linux](https://www.icloud.com/iclouddrive/0GmFypKWJWEQJ_fyJlYT3w5oA#RM2PT-linux.gtk)
+* [Developers Plugin](https://www.icloud.com/iclouddrive/0KvlqR97u_IuffPvyzsVy3iyg#net.mydreamy.requirementmodel.updatesite-1.2)

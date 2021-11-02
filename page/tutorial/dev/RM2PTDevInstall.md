@@ -44,3 +44,4 @@ Choose `Install anyway` and `Restart Now`
 
 <img src="/imgs/RM2PTDevInstall/image-20211102205657340.png" alt="image-20211102205657340" style="zoom:50%;" />
 
+Now, you have the developer plugins in your RM2PT environment. 
