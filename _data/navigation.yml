@@ -21,16 +21,24 @@
           subsubsection_url: create_new_project
           ispage: true
         - name: Requirements Modeling in 4 steps
+          subsubsection_url: create_requirements_model
+          ispage: true
         - name: Requirements Validation through Auto-Prototying
 
     - sub_name: Tutorial for Developers
       subsection_url: dev
       subsubsection:
+        - name: Install RM2PT Developer Plugins
+          subsubsection_url: rm2pt_dev_plugin_install
+          ispage: true
         - name: Create Project of Domain-Specific Modeling Language (DSML) in  (Modeling by EMF and Sirius)
         - name: Create Project DSML and DSL (Modeling by EMF, Xtext and Sirius)
         - name: Create Model Transformation Project (Model2Model)
         - name: Create Code Generation Project (Model2Text)
           subsubsection_url: create_code_generator_project
+          ispage: true
+        - name: Create RM2PT NLP Project (NL2Model)
+          subsubsection_url: create_rm2pt_nlp_project
           ispage: true
 
 - section_name: Case Studies

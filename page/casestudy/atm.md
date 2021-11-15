@@ -11,7 +11,7 @@ ATM concerns the customer to withdraw and credit money. CoCoME mainly contains t
 
 ### Use Case Diagram
 
-<img src="/imgs/atm-ucd.png" alt="Alt text" style="zoom: 50%;" />
+<img src="/imgs/atm-ucd.png" alt="Alt text" style="zoom: 50%;" /> 
 
 ### System Sequence Diagrams
 
