@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Goal2UCM
+title: RM2Doc
 permalink: /rm2doc/
 ---
 
-## RM2Doc
+
 
 ### Introduction
 
