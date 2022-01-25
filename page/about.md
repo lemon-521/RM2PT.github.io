@@ -27,7 +27,6 @@ BUAA group focus on Automatic Software Engineering such as Models Transformation
 GUI group focus on Automatic Generation of Software GUI based Deep Learning Methods.
 - [Qian Yu](https://scholar.google.com/citations?user=mmm90qgAAAAJ&hl=en) (PI)
 - Yanqing Wang
-- Muyuan Guo
 
 ## GXNU Group
 RM2PT is being integrated with Problem Frames for CPS requirements modeling with Prof. Li's Group in Guangxi Normal University.
