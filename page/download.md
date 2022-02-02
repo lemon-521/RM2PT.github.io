@@ -8,22 +8,27 @@ permalink: /downloads/
 
 ![logo](/imgs/splash.png)
 
-## Version 1.2.1 features:
-* GUI Test in RCPTT
-* RM2PT for developers
+## Version 1.2.2 features:
+* Add Mac M1 Support
+* JRE is directly embeded into RM2PT
 
-###  Prerequisite
+###  Prerequisite (Not required for the latest version)
 
 `Note that JDK 8 and 17 does not support, Apple Silicon M1 can install x86_64 JDK through Rosetta 2`
 * **[OpenJDK 11 (Temurin 11)](https://adoptium.net)** must be installed to run RM2PT
 * **JAVA_HOME** is set to your JDK11 directory
 
+### Download latest RM2PT and Plugins - v1.2.2
+* [All Version](https://github.com/RM2PT/Release/releases/tag/v1.2.2)
 
 ### Download v1.2.1 (Links from Github)
 
 * [MacOS](https://github.com/RM2PT/Release/releases/download/v1.2.1/RM2PT-macosx.cocoa.x86_64.zip) (Disable GateKeeper if RM2PT.app can not be opened by `sudo xattr -r -d com.apple.quarantine RM2PT.app`)
 * [Windows](https://github.com/RM2PT/Release/releases/download/v1.2.1/RM2PT-win32.win32.x86_64.zip)
 * [Linux](https://github.com/RM2PT/Release/releases/download/v1.2.1/RM2PT-linux.gtk.x86_64.zip)
+
+### Acrhieved history versions
+* [All Version](https://github.com/RM2PT/Release/releases)
 
 <!-- ### Download (Mirrors in China)
 
@@ -33,7 +38,7 @@ permalink: /downloads/
 RM2PT plugins can be installed through `updatesite` inside of RM2PT. <br />
 In addition, the offline package (v1.2.1) for developers can be downloaded from [Github](https://github.com/RM2PT/Release/releases/download/v1.2.1/net.mydreamy.requirementmodel.updatesite-1.2.0-SNAPSHOT.zip).
 
-### Nightly Builds (面向对象分析与设计 - 课程专用)
+### 面向对象分析与设计 - 课程专用
 
 * [MacOS](https://www.icloud.com/iclouddrive/0rO9Qug08pBKiHTviGHj2ZkMA#RM2PT-macosx.cocoa) (Disable GateKeeper if RM2PT.app can not be opened by `sudo xattr -r -d com.apple.quarantine RM2PT.app`)
 * [Windows](https://www.icloud.com/iclouddrive/0OHAGG6IU3cGv8pzFAIDuH0mw#RM2PT-win32.win32)
