@@ -124,14 +124,14 @@
     - sub_name: Documentation for Developers
       subsection_url: dev
       subsubsection:
-        - name:  Eclipse MDA Project
+        - name: Eclipse MDA Developement
           subsubsection_url: eclipsemda
-        - name:  Eclipse PDE / RCP
-        - name:  Model Transformation (ATL/QVT)
+        - name: Eclipse Plugin Developement
+        - name: Eclipse RCP Developement
         - name: Executable UML
-        - name:  Template Language - Xtend
-        - name:  Program Verification - JML
-        - name:  Stanford NLP - CoreNLP
+        - name: Template Language - Xtend
+        - name: Program Verification - JML
+        - name: Stanford NLP - CoreNLP
 
 - section_name: Downloads
   section_url: downloads

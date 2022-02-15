@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Requirements Modeling and Automatic Prototyping
 shorttitle: RM2PT
-date: 2013-2021
+date: 2013-2022
 email: yilongyang@buaa.edu.cn
 description: Automatic Prototyping for Requirements Validation
 baseurl: "" # the subpath of your site, e.g. /blog

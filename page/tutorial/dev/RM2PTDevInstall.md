@@ -30,7 +30,7 @@ Choose `http://rm2pt.com/update` from the list, and then select `RM2PT for Devel
 
 #### Option 2: Offline Install
 
-Click `Add` -> `Archive`, choose the developer plugin file `net.mydreamy.requirementmodel.updatesite-x.x.x-SNAPSHOT.zip` (Download from [RM2PT Download Page](/downloads))
+Click `Add` -> `Archive`, choose the developer plugin file net.mydreamy.requirementmodel.`updatesite`-x.x.x-SNAPSHOT.zip (Download from [RM2PT Download Page](/downloads))
 
 <img src="/imgs/RM2PTDevInstall/image-20211102205312270.png" alt="image-20211102205312270" style="zoom:50%;" />
 

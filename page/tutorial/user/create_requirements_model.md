@@ -34,7 +34,7 @@ Then, let's create the first UseCase `withdrawCash` and create an `Assoication` 
 
 ### **Step 2** : System Sequence Diagram for Use Case
 
-Now, let's create a `system sequence diagram` for the use case `withdrawCash` by double clicking the use case icon, the wizard will be opened, then create `OK` , then a system sequence diagram `withdrawCashSSD` and a service interface `withdrawCashService` 
+Now, let's create a `system sequence diagram` for the use case `withdrawCash` by double clicking the use case icon, the wizard will be opened, then create `OK` , then a system sequence diagram `withdrawCashSSD` and a service interface `withdrawCashService`
 
 <img src="/imgs/create_requirements_model/image-20211021025549986.png" alt="image-20211021025549986" style="zoom:50%;" />
 
@@ -42,15 +42,15 @@ RM2PT will navigate the system sequence diagram as follows:
 
 <img src="/imgs/create_requirements_model/image-20211021030100019.png" alt="image-20211021030100019" style="zoom:50%;" />
 
-Then create a callmessage `inputCard` from `Cashier` to `:WithdrawCashService` by using Pattle `CallMessage` 
+Then create a callmessage `inputCard` from `Cashier` to `:WithdrawCashService` by using Pattle `CallMessage`
 
 <img src="/imgs/create_requirements_model/image-20211021031032432.png" alt="image-20211021031032432" style="zoom:50%;" />
 
-`Note that` select the option `Create a default ReturnMessage for the CallMessage` if the system has a directly return message  for this call message, the result is shown as follows:
+`Note that` select the option `Create a default ReturnMessage` for the CallMessage if the system has a directly return message  for this call message, the result is shown as follows:
 
 <img src="/imgs/create_requirements_model/image-20211021031045578.png" alt="image-20211021031045578" style="zoom:50%;" />
 
-From the `Protperties` pane on the bottom, you can modify the operation name if any, let's add parameter `cardID `for `inputCard` message 
+From the `Protperties` pane on the bottom, you can modify the operation name if any, let's add parameter `cardID `for `inputCard` message
 
 <img src="/imgs/create_requirements_model/image-20211021031506621.png" alt="image-20211021031506621" style="zoom:50%;" />
 
@@ -60,7 +60,7 @@ We will add the following 4 messages `inputPassword(pasword)` `withDraw(amount)`
 
 ### **Step 3**: OCL Contract for System Operation
 
-OCL is object constraint language for UML.  Now, we can copy and paste the following contracts into `atm.remodel` file 
+OCL is object constraint language for UML.  Now, we can copy and paste the following contracts into `atm.remodel` file
 
 ```c
 	Contract WithdrawCashService::inputCard(cardID :Integer) : Boolean {
@@ -178,7 +178,7 @@ Switch to the `ATM Conceputal Class Diagram` Tab to show the empty domain model.
 
 <img src="/imgs/create_requirements_model/image-20211021034241123.png" alt="image-20211021034241123" style="zoom:50%;" />
 
-Create the class `BandCard`  and`User` 
+Create the class `BandCard`  and`User`
 
 <img src="/imgs/create_requirements_model/image-20211021035132596.png" alt="image-20211021035132596" style="zoom:50%;" />
 
@@ -200,8 +200,8 @@ Finally, we add the assocations between the classes of `BankCard` and `User`
 
 <img src="/imgs/create_requirements_model/image-20211021040445513.png" alt="image-20211021040445513" style="zoom:50%;" />
 
-`Note that` the assocation will merge to one if the classes has bi-directional assocations, you can seperate the bi-directional assocations into two associations by click `Seperate the bi-directional assocaition into associations`.
+`Note that` the assocation will merge to one if the classes has bi-directional assocations, you can seperate the bi-directional assocations into two associations by click 'Seperate the bi-directional assocaition` into associations.
 
 <img src="/imgs/create_requirements_model/image-20211021040511220.png" alt="image-20211021040511220" style="zoom:50%;" />
 
-Now the first-round requirements modeling is finished, you can generate the prototype from this model. 
+Now the first-round requirements modeling is finished, you can generate the prototype from this model.

@@ -27,7 +27,7 @@ Wait a second, the default `Use Case Diagram` will show on the screen
 
 <img src="/imgs/create_new_project_wizard/image-20211021015911374.png" alt="image-20211021015911374" style="zoom:50%;" />
 
-`Note That you can create a requirements model from scratch or import a project from our repository` 
+`Note that` you can create a requirements model from scratch or import a project from our repository
 
 * Import RM2PT project from Github. You can see the tutorial [here](/tutorial/user/import_rm2pt_project).
 
