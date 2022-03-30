@@ -14,6 +14,8 @@ BUAA group focus on Automatic Software Engineering such as Models Transformation
 - Yongqi Pu (Goal2UML, co-supervised with Tong Li in BJUT Group)
 - Peiye Yang (Security Modeling, co-supervised with Li Zhang)
 - Yihui Jian (Contract Visualization, co-supervised with Li Zhang)
+- Yong Zhu (Req2GUI)
+- Wenxiao Song (SysML and UAF)
 - Zhen Tian (System Design)
 - Jie Zhang (Automatic GUI Generation, co-supervised with Qian Yu)
 - Tianshu Bao (Automatic Documentation of Requirements Models, co-supervised with Jing Yang)
@@ -32,20 +34,8 @@ GUI group focus on Automatic Generation of Software GUI based Deep Learning Meth
 RM2PT is being integrated with Problem Frames for CPS requirements modeling with Prof. Li's Group in Guangxi Normal University.
 GXNU group focuses on model transformation between Problem Frames and UML-based Requirements Model, Enterprise System Generation from requirements model
 - [Zhi Li](http://www.se.gxnu.edu.cn/zhili) (PI)
-- Yunfang Li (EARS)
-- Shangfeng Wei (Problem Frames)
-- Hongbin Xiao (PF2UML)
-- Yajun Deng (Text2SQL)
 - Yuansong Qin (NL2OCL)
 - Hui Liu (Test Case Generation）
-- Yuan Cao (Data Mining)
-- ShangZhi Tang (OCL Visualization)
-- Ling Xie (Program Verification)
-- Yitao Pu (MicroService)
-
-### Alumni
-- Bing Li (Lecturer, Guangdong University of Science and Technology)
-- Jie Deng (Software Engineer, Trusfort)
 
 ## MPI Group
 RM2PT is being integrated with databases and blockchains with Prof. Ke's group in Macao Polytechnic Institute.
