@@ -30,18 +30,6 @@ GUI group focus on Automatic Generation of Software GUI based Deep Learning Meth
 - [Qian Yu](https://scholar.google.com/citations?user=mmm90qgAAAAJ&hl=en) (PI)
 - Yanqing Wang
 
-## GXNU Group
-RM2PT is being integrated with Problem Frames for CPS requirements modeling with Prof. Li's Group in Guangxi Normal University.
-GXNU group focuses on model transformation between Problem Frames and UML-based Requirements Model, Enterprise System Generation from requirements model
-- [Zhi Li](http://www.se.gxnu.edu.cn/zhili) (PI)
-- Yuansong Qin (NL2OCL)
-- Hui Liu (Test Case Generation）
-
-## MPI Group
-RM2PT is being integrated with databases and blockchains with Prof. Ke's group in Macao Polytechnic Institute.
-- [Wei Ke](https://www.researchgate.net/profile/Wei-Ke-5) (PI)
-- Qiqi Gu (Blockchain)
-
 ## NEPU Group
 RM2PT is being integrated with AI system and MicroServices Design and Modeling with Prof. Gao's group in Northeast Petroleum Univeristy.
 - [Juntao Gao](https://www.researchgate.net/profile/Juntao-Gao-2) (PI)
@@ -53,6 +41,19 @@ RM2PT is being integrated with AI system and MicroServices Design and Modeling w
 RM2PT is being integrated with Goal Model for CPS requirements modeling with Prof. Li's Group in Beijing University Of Technology.
 BJUT group focuses on model transformation between Goal Model and UML-based Requirements Model.
 - [Tong Li](http://yanzhao.bjut.edu.cn/ds/6/2020315/15842600889962634_1.html) (PI)
+
+## MPI Group
+RM2PT is being integrated with databases and blockchains with Prof. Ke's group in Macao Polytechnic Institute.
+- [Wei Ke](https://www.researchgate.net/profile/Wei-Ke-5) (PI)
+- Qiqi Gu (Blockchain)
+
+
+## GXNU Group
+RM2PT is being integrated with Problem Frames for CPS requirements modeling with Prof. Li's Group in Guangxi Normal University.
+GXNU group focuses on model transformation between Problem Frames and UML-based Requirements Model, Enterprise System Generation from requirements model
+- [Zhi Li](http://www.se.gxnu.edu.cn/zhili) (PI)
+- Yuansong Qin (NL2OCL)
+- Hui Liu (Test Case Generation）
 
 ## ECNU Group
 RM2PT is being enhanced by Formal Methods with Prof. Li and Zhao's group at East China Normal University. ECNU groups focus on  JML-annotated Prototype Generation and Consistency proof by verifying transformation rules of RM2PT
