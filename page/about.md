@@ -35,7 +35,7 @@ RM2PT is being integrated with AI system and MicroServices Design and Modeling w
 - [Juntao Gao](https://www.researchgate.net/profile/Juntao-Gao-2) (PI)
 - Bingjie Zeng (AI System Modeling and Design)
 - Shuang Chen (Microservices Modeling and Design)
-- Shuanglong Chang (RM2PT Enhancement)
+- Shuanglong Chang (Test Input Generation for Requirments Validation)
 
 ## BJUT Group
 RM2PT is being integrated with Goal Model for CPS requirements modeling with Prof. Li's Group in Beijing University Of Technology.
