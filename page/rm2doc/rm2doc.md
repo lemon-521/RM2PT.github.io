@@ -8,51 +8,68 @@ permalink: /rm2doc/
 
 ### Introduction
 
-RM2Doc is a tool for automatic generation of a requirements document from a requirements model.
+**RM2Doc** is a tool for automatic generation of a *requirements document* from a *requirements model*. The **benefits** of RM2Doc are as follows:
+
+1. Automatic generation of ISO/IEC/IEEE 29148-2018 conformed requirements documents from UML models without any templates.
+2. Automatic generation of the flow description from a use case without additional information.
+3. Automatic generation the semantic description of system operations only based on the formal expression of OCL.
 
 ![image-20211126174857182](../../imgs/RM2Doc/image-20211126174857182.png)
 
 
 
-### Use of RM2Doc
+### Input of RM2Doc — Requirements Model
 
-##### Download
+![rm](../../imgs/RM2Doc/rm.png)
 
-Click [here](https://github.com/Tians996/RM2Doc-Tool/raw/main/com.rm2pt.generator.rm2doc.updatesite-1.0.0-SNAPSHOT.zip) to download.
+The input to RM2Doc is a UML requirements model with OCL constraints. The model includes: , a use case diagram, system sequence diagrams, contracts of and system operations.
 
-##### Install
+- **A conceptual class diagram:** A conceptual class diagram is a concept-relation model, which illustrates abstract and meaningful concepts and their relations in the problem domain, in which the concepts are specified as classes, the relations of the concepts are specified as the associations between the classes, and the properties of the concepts are specified as the attributes of the classes.
 
-Install in rm2pt, if you don't have rm2pt, [download here](https://github.com/RM2PT/Release/releases)
+- **A use case diagram:** A use case diagram captures domain processes as use cases in terms of interactions between the system and its users. It contains a set of use cases for a system, actors represented a type of users of the system or external systems that the system interacts with, the relations between the actors and these use cases, and relations among use cases.
 
+- **System sequence diagrams:** A system sequence diagram describes a particular domain process of a use case. It contains the actors that interact with the system, the system and the system events that the actors generate, their order, and inter-system events. Compared with the sequence diagram in design models, a system sequence diagram treats all systems as a black box and contains system events across the system boundary between actors and systems without object lifelines and internal interactions between objects.
+- **Contracts of system operations:** The contract of a system operation specifies the conditions that the state of the system is assumed to satisfy before the execution of the system operation, called the pre-condition and the conditions that the system state is required to satisfy after the execution (if it terminated), called the post-condition of the system operation. Typically, the pre-condition specifies the properties of the system state that need to be checked when system operation is to be executed, and the postcondition defines the possible changes that the execution of the system operation is to realize.
 
+### Two main features
 
-<img src="../../imgs/RM2Doc/image-20211017150545091.png" alt="image-20211017150545091" style="zoom: 50%;" />
+#### Generate operations description
 
-<img src="../../imgs/RM2Doc/image-20211017150807041.png" alt="image-20211017150807041" style="zoom: 50%;" />
+![gen op description](../../imgs/RM2Doc/gen op description.png)
 
-<img src="../../imgs/RM2Doc/image-20211017150921155.png" alt="image-20211017150921155" style="zoom: 50%;" />
+RM2Doc can **generate natural language operations description** based on the **contracts of system operation** in the requirements model.
 
-<img src="../../imgs/RM2Doc/image-20211017150951456.png" alt="image-20211017150951456" style="zoom: 50%;" />
+- **Definition Section:** In the definition section, the objects used jointly by the precondition section and the post-condition section are defined.
+- **Precondition Section:** The precondition specifies the properties of the system state that need to be checked when system operation is to be executed. In addition to the checking of objects and attributes shown in Figure 1 (c), the precondition also includes the checking
+  of links between objects.
+- **Post-condition Section:** The post-condition defines the possible changes that the execution of the system operation is to realize. In addition to creating and adding objects, adding links between objects, and modifying the attributes of objects as shown in Figure 2, the postconditions include the deletion of objects and the removal of links between objects.
 
-##### Create or import a project
+For the different operations, we defined a total of 25 transformation rules for the three sections. Transformation rules are presented in this form:
+$$
+\begin{array}{l}
+    \textit{Rule}: \frac{\textit{OCL Expression}}{\textit{Natural Language}}
+\end{array}
+$$
+The transformation rule contains two parts: the above section is an OCL expression in the contracts, and the bottom part is the corresponding natural language. By algorithmically matching the OCL expressions to the conversion rules, an operation description can be generated as shown below.
 
-For creating or importing a RM2PT project，you can see the tutorial [here](https://rm2pt.com/tutorial/user/create_new_project).
+<img src="../../imgs/RM2Doc/nl.png" alt="nl" style="zoom: 80%;" />
 
-##### Generate comments for contracts
+#### Generate requirements document
 
-After you add a requirements model, you can generate comments for contracts by right click on `cocome.remodel` -> `RM2Doc`-> ` RM2Doc Generate comments for contracts`
+<center class="half">
+    <img src="../../imgs/RM2Doc/outline.png" width="345"/><img src="../../imgs/RM2Doc/mapping.png" width="770"/>
+</center>
 
-<img src="../../imgs/RM2Doc/image-20211126212838240.png" alt="image-20211126212838240" style="zoom: 60%;" />
+RM2Doc can generate five parts of a document:
 
-Refresh your remodel file to see the generated comments
+- The **product functions** section and **user characteristics** section are generated from the use case diagram.
+- The **use case description** part is generated from the use case diagram and system sequence diagrams.
+-  The **system operation description** part is generated from contracts of system operations.
+- The **entity ananlysis** part  is generated from the conceptual class diagram.
 
-##### Generate a document
+In the rest of the requirements document, we have predefined guidelines for writing in accordance with the **ISO/IEC/IEEE 29148-2018**. 
 
-You can generate document by right click on `cocome.remodel` -> `RM2Doc` -> `RM2Doc Generate document for models`
+The image below shows a part of CoCoME's requirements document. For more details, please see https://github.com/RM2PT/CaseStudies.
 
-<img src="../../imgs/RM2Doc/image-20211126213021140.png" alt="image-20211126213021140" style="zoom: 60%;" />
-
-The generated document is in the doc-gen folder
-
-
+![doc](../../imgs/RM2Doc/doc.png)
 
