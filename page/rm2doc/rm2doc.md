@@ -6,6 +6,8 @@ permalink: /rm2doc/
 
 
 
+
+
 ### Introduction
 
 **RM2Doc** is a tool for automatic generation of a *requirements document* from a *requirements model*. The **benefits** of RM2Doc are as follows:
@@ -14,13 +16,13 @@ permalink: /rm2doc/
 2. Automatic generation of the flow description from a use case without additional information.
 3. Automatic generation the semantic description of system operations only based on the formal expression of OCL.
 
-![image-20211126174857182](../../imgs/RM2Doc/image-20211126174857182.png)
+<img src="../../imgs/RM2Doc/image-20211126174857182.png" alt="image-20211126174857182" style="zoom: 35%;" />
 
 
 
 ### Input of RM2Doc — Requirements Model
 
-![rm](../../imgs/RM2Doc/rm.png)
+<img src="../../imgs/RM2Doc/rm.png" alt="rm" style="zoom: 50%;" />
 
 The input to RM2Doc is a UML requirements model with OCL constraints. The model includes: , a use case diagram, system sequence diagrams, contracts of and system operations.
 
@@ -35,7 +37,7 @@ The input to RM2Doc is a UML requirements model with OCL constraints. The model 
 
 #### Generate operations description
 
-![gen op description](../../imgs/RM2Doc/gen op description.png)
+<img src="../../imgs/RM2Doc/genopdescription.png" alt="genopdescription" style="zoom: 100%;" />
 
 RM2Doc can **generate natural language operations description** based on the **contracts of system operation** in the requirements model.
 
@@ -57,8 +59,9 @@ The transformation rule contains two parts: the above section is an OCL expressi
 #### Generate requirements document
 
 <center class="half">
-    <img src="../../imgs/RM2Doc/outline.png" width="345"/><img src="../../imgs/RM2Doc/mapping.png" width="770"/>
+    <img src="../../imgs/RM2Doc/outline.png" alt="outline" style="zoom: 72.5%;" /><img src="../../imgs/RM2Doc/mapping.png" alt="mapping" style="zoom: 88%;"/>
 </center>
+
 
 RM2Doc can generate five parts of a document:
 
@@ -70,6 +73,5 @@ RM2Doc can generate five parts of a document:
 In the rest of the requirements document, we have predefined guidelines for writing in accordance with the **ISO/IEC/IEEE 29148-2018**. 
 
 The image below shows a part of CoCoME's requirements document. For more details, please see https://github.com/RM2PT/CaseStudies.
-
-![doc](../../imgs/RM2Doc/doc.png)
+<img src="../../imgs/RM2Doc/doc.png" alt="doc" style="zoom: 80%;" />
 
