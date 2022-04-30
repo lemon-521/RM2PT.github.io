@@ -56,8 +56,6 @@ RM2PT is being integrated with databases and blockchains with Prof. Ke's group i
 RM2PT is being integrated with Problem Frames for CPS requirements modeling with Prof. Li's Group in Guangxi Normal University.
 GXNU group focuses on model transformation between Problem Frames and UML-based Requirements Model, Enterprise System Generation from requirements model
 - [Zhi Li](http://www.se.gxnu.edu.cn/zhili) (PI)
-- Yuansong Qin (NL2OCL)
-- Hui Liu (Test Case Generation）
 
 ## ECNU Group
 RM2PT is being enhanced by Formal Methods with Prof. Li and Zhao's group at East China Normal University. ECNU groups focus on  JML-annotated Prototype Generation and Consistency proof by verifying transformation rules of RM2PT
