@@ -5,20 +5,24 @@ permalink: /about/
 ---
 
 ## Background
-RM2PT was originally developed by Dr. Yang when he was pursuing a Ph.D. degree at the University of Macau and UNU-IIST with Prof. Xiaoshan Li and Zhiming Liu. Currently, RM2PT is continuously being developed and maintained by his group in [School of Software](http://soft.buaa.edu.cn) and [Software Engineering Institute](http://sei.buaa.edu.cn) at Beihang University (BUAA). RM2PT has being extended from serval directions: Requirements Modeling and Validation, System and Archiecture Design, Code Generation, AI-based SE by collaboration with Universities and Company such as GXNU, MPI, NEPU, BJUT, and ECNU.
+RM2PT was originally developed by Dr. Yang when he was pursuing a Ph.D. degree at the University of Macau and UNU-IIST with Prof. Xiaoshan Li and Zhiming Liu. Currently, RM2PT is continuously being developed and maintained by his group in [School of Software](http://soft.buaa.edu.cn) and [Software Engineering Institute](http://sei.buaa.edu.cn) at Beihang University (BUAA). RM2PT has being extended from serval directions: Requirements Modeling and Validation, System and Architecture Design, Code Generation, AI-based SE by collaboration with Universities and Company such as GXNU, MPI, NEPU, BJUT, and ECNU.
 
 ## BUAA Software Group
 BUAA group focus on Automatic Software Engineering such as Models Transformation and Code Generation.
 - [Yilong Yang](http://yilong.io) (PI)
-- Li Yang (Microservices Architecture)
-- Yongqi Pu (Goal2UML, co-supervised with Tong Li in BJUT Group)
-- Peiye Yang (Security Modeling, co-supervised with Li Zhang)
-- Yihui Jian (Contract Visualization, co-supervised with Li Zhang)
-- Yong Zhu (Req2GUI)
-- Wenxiao Song (SysML and UAF)
-- Zhen Tian (System Design)
-- Jie Zhang (Automatic GUI Generation, co-supervised with Qian Yu)
-- Tianshu Bao (Automatic Documentation of Requirements Models, co-supervised with Jing Yang)
+- Yang Li (Automatic Generation of Microservices Architecture from Requirements Model)
+- Yang Zhang (Automatic Generation of Microservices Back-ends from Requirements Model)
+- Zhen Tian (Automatic Design Generation from Requirements)
+- Yongqi Pu (Automatic Requirements Transformation)
+- Tianshu Bao (Automatic Generation of SRS Documentation from Requirements Models)
+- Wenxiao Song (Model-Driven System Engineering for Mission Task)
+- Yong Zhu (Automatic GUI Generation from Requirements and Design Images)
+- Jie Zhang (Automatic GUI Generation from Design Images)
+- Runkun Zhang (Automatic GUI Generation from Requirements Model)
+- Qilong Shi (Automatic OO Code Generation from Un-complete OO Contract)
+- Peiye Yang (Automatic Localization and Fixing Errors of System Operation Contract, co-supervised with Li Zhang)
+- Yihui Jian (Automatic Generation of Dependable Enterprise Application from Requirements Model, co-supervised with Li Zhang)
+
 
 ### Alumni
 - Yiming Zhu (Bytedance)

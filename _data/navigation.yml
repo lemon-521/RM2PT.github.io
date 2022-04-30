@@ -71,6 +71,9 @@
         - name: EARs Editor
     - sub_name: Requirements Transformation
       subsubsection:
+        - name: RM2Doc - Automatic Generation SRS from Requirements Models
+          subsubsection_url: ../../../advs/rm2doc
+          ispage: true
         - name: PF2UML - Problem Frames to UML
         - name: Goal2UML - Goal Model to UML
         - name: NL2OCL - Nature Language to Object Constraint Language
@@ -89,7 +92,7 @@
         - name: GUI Modeling
     - sub_name: Requirements Analysis and Transformation
       subsubsection:
-        - name: RM2Doc - Automatic Requirements Documentation
+        - name: RM2Doc - Automatic Generation SRS from Requirements Models
           subsubsection_url: ../../../rm2doc
           ispage: true
         - name: iStar2UML - Automatic Generation of UML Model from iStar Model

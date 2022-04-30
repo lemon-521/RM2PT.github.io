@@ -4,10 +4,6 @@ title: RM2Doc
 permalink: /rm2doc/
 ---
 
-
-
-
-
 ### Introduction
 
 **RM2Doc** is a tool for automatic generation of a *requirements document* from a *requirements model*. The **benefits** of RM2Doc are as follows:
@@ -70,8 +66,7 @@ RM2Doc can generate five parts of a document:
 -  The **system operation description** part is generated from contracts of system operations.
 - The **entity ananlysis** part  is generated from the conceptual class diagram.
 
-In the rest of the requirements document, we have predefined guidelines for writing in accordance with the **ISO/IEC/IEEE 29148-2018**. 
+In the rest of the requirements document, we have predefined guidelines for writing in accordance with the **ISO/IEC/IEEE 29148-2018**.
 
 The image below shows a part of CoCoME's requirements document. For more details, please see https://github.com/RM2PT/CaseStudies.
 <img src="../../imgs/RM2Doc/doc.png" alt="doc" style="zoom: 80%;" />
-
