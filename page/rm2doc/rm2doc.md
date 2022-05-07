@@ -4,6 +4,8 @@ title: RM2Doc
 permalink: /rm2doc/
 ---
 
+Download and use of RM2Doc can be found [here](https://rm2pt.com/advs/rm2doc).
+
 ### Introduction
 
 **RM2Doc** is a tool for automatic generation of a *requirements document* from a *requirements model*. The **benefits** of RM2Doc are as follows:
@@ -43,20 +45,16 @@ RM2Doc can **generate natural language operations description** based on the **c
 - **Post-condition Section:** The post-condition defines the possible changes that the execution of the system operation is to realize. In addition to creating and adding objects, adding links between objects, and modifying the attributes of objects as shown in Figure 2, the postconditions include the deletion of objects and the removal of links between objects.
 
 For the different operations, we defined a total of 25 transformation rules for the three sections. Transformation rules are presented in this form:
-$$
-\begin{array}{l}
-    \textit{Rule}: \frac{\textit{OCL Expression}}{\textit{Natural Language}}
-\end{array}
-$$
+
+<img src="../../imgs/RM2Doc/image-20220424142859481.png" alt="image-20220424142859481" style="zoom: 40%;" />
+
 The transformation rule contains two parts: the above section is an OCL expression in the contracts, and the bottom part is the corresponding natural language. By algorithmically matching the OCL expressions to the conversion rules, an operation description can be generated as shown below.
 
 <img src="../../imgs/RM2Doc/nl.png" alt="nl" style="zoom: 80%;" />
 
 #### Generate requirements document
 
-<center class="half">
-    <img src="../../imgs/RM2Doc/outline.png" alt="outline" style="zoom: 72.5%;" /><img src="../../imgs/RM2Doc/mapping.png" alt="mapping" style="zoom: 88%;"/>
-</center>
+<img src="../../imgs/RM2Doc/image-20220507180457264.png" alt="image-20220507180457264" style="zoom: 100%;" />
 
 
 RM2Doc can generate five parts of a document:
