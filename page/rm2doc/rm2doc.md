@@ -46,7 +46,7 @@ RM2Doc can **generate natural language operations description** based on the **c
 
 For the different operations, we defined a total of 25 transformation rules for the three sections. Transformation rules are presented in this form:
 
-<img src="../../imgs/RM2Doc/image-20220424142859481.png" alt="image-20220424142859481" style="zoom: 40%;" />
+<img src="../../imgs/RM2Doc/image-20220424142859481.png" alt="image-20220424142859481" style="zoom: 20%;" />
 
 The transformation rule contains two parts: the above section is an OCL expression in the contracts, and the bottom part is the corresponding natural language. By algorithmically matching the OCL expressions to the conversion rules, an operation description can be generated as shown below.
 
