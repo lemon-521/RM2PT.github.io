@@ -4,26 +4,25 @@ title: RM2Doc
 permalink: /advs/rm2doc
 ---
 
-### Introduction
+### Download and Installation
 
-**RM2Doc** is a tool for automatic generation of a *requirements document* from a *requirements model*. The **benefits** of RM2Doc are as follows:
+#### Need
 
-1. Automatic generation of ISO/IEC/IEEE 29148-2018 conformed requirements documents from UML models without any templates.
-2. Automatic generation of the flow description from a use case without additional information.
-3. Automatic generation the semantic description of system operations only based on the formal expression of OCL.
+RM2Doc is an advanced feature of **RM2PT**. We recommend you to use RM2Doc in RM2PT. If you don't have RM2PT, download [here](https://rm2pt.com/downloads/).
 
-<img src="../../imgs/RM2Doc/image-20211126174857182.png" alt="image-20211126174857182" style="zoom: 35%;" />
+#### Installation of RM2Doc
 
+Open RM2PT, click on `Help` -> `Install New Software`
 
-### RM2Doc Download
-
-Click [here](https://github.com/Tians996/RM2Doc-Tool/raw/main/com.rm2pt.generator.rm2doc.updatesite-1.0.0-SNAPSHOT.zip) to download.
-
-### RM2Doc Install
-
-Install in rm2pt, if you don't have rm2pt, [download here](https://github.com/RM2PT/Release/releases)
+<img src="../../imgs/RM2Doc/image-20220507173100117.png" alt="image-20220507173100117" style="zoom: 70%;" />
 
 
+
+Type http://rm2pt.com/RM2Doc-UpdateSite in the Work with field, select RM2Doc and click Next.
+
+<img src="../../imgs/RM2Doc/image-20220507173453144.png" alt="image-20220507173453144" style="zoom: 50%;" />
+
+**If the update site does not work**, you can choose to install it offline. Click [here](https://github.com/RM2PT/RM2Doc-UpdateSite/releases/download/v1.0.0/com.rm2pt.generator.rm2doc.updatesite-1.0.0-SNAPSHOT.zip) to download RM2Doc. Follow the steps below to install.
 
 <img src="../../imgs/RM2Doc/image-20211017150545091.png" alt="image-20211017150545091" style="zoom: 50%;" />
 
@@ -33,22 +32,27 @@ Install in rm2pt, if you don't have rm2pt, [download here](https://github.com/RM
 
 <img src="../../imgs/RM2Doc/image-20211017150951456.png" alt="image-20211017150951456" style="zoom: 50%;" />
 
-### Create or import a project
+### Use of RM2Doc 
 
-For creating or importing a RM2PT project，you can see the tutorial [here](https://rm2pt.com/tutorial/user/create_new_project).
+#### Need
 
-### Generate comments for contracts
+In order to generate the documentation, you need a requirements model, the **RM2PT project**. For creating or importing a RM2PT project，you can see the tutorial [here](https://rm2pt.com/tutorial/user/create_new_project).
 
-After you add a requirements model, you can generate comments for contracts by right click on `cocome.remodel` -> `RM2Doc`-> ` RM2Doc Generate comments for contracts`
+#### Generate NL Contract
 
-<img src="../../imgs/RM2Doc/image-20211126212838240.png" alt="image-20211126212838240" style="zoom: 60%;" />
+After you add a requirements model, you can generate NL contracts for OCL contracts by right click on `cocome.remodel` -> `RM2PT`-> ` Advance Features`-> ` Generate NL Contract`
 
-Refresh your remodel file to see the generated comments
 
-### Generate a document
+<img src="../../imgs/RM2Doc/image-20220507174915467.png" alt="image-20220507174915467" style="zoom: 60%;" />
 
-You can generate document by right click on `cocome.remodel` -> `RM2Doc` -> `RM2Doc Generate document for models`
+Refresh your remodel file to see the generated NL contracts.
 
-<img src="../../imgs/RM2Doc/image-20211126213021140.png" alt="image-20211126213021140" style="zoom: 60%;" />
+#### Generate SRS
+
+You can generate a document by right click on `cocome.remodel` -> `RM2PT`-> ` Advance Features`-> ` Generate ISO/IEC/IEEE 29148-2018 SRS`
+
+<img src="../../imgs/RM2Doc/image-20220507175314891.png" alt="image-20220507175314891" style="zoom: 60%;" />
 
 The generated document is in the doc-gen folder
+
+<img src="../../imgs/RM2Doc/image-20220507175508334.png" alt="image-20220507175508334" style="zoom: 100%;" />
