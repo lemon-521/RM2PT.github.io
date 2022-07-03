@@ -24,6 +24,8 @@
           subsubsection_url: create_requirements_model
           ispage: true
         - name: Requirements Validation through Auto-Prototying
+          subsubsection_url: validate_through_prototype
+          ispage: true
 
     - sub_name: Tutorial for Developers
       subsection_url: dev
