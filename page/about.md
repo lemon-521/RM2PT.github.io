@@ -23,12 +23,21 @@ BUAA group focus on Automatic Software Engineering such as Models Transformation
 - Zhengyang Zhao (Automatic Golang Code Generation)
 
 ### Alumni
-- Yiming Zhu (Bytedance)
 - Zhaotian Li (Postgraduate Student in BUAA)
-- Eudrick (Zambia)
-- Tianshu Bao 
 - Yibo Liu
 - Jie Zhang (Bytedance)
+- Yiming Zhu (Bytedance)
+- Eudrick (Zambia)
+- Tianshu Bao 
+- Zhiyang Cheng (Postgraduate Student in TsingHua)
+- Fan Zhang
+- Zhaoyun Xu
+- Jie Chen
+- Chen Chen
+- Yang Zhao
+- Lingyu Guo
+- Pengfeng Huang
+
 
 ## NEPU Group
 RM2PT is being integrated with AI system and MicroServices Design and Modeling with Prof. Gao's group in Northeast Petroleum Univeristy.
