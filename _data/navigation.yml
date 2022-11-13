@@ -67,22 +67,55 @@
   subsectons:
     - sub_name: Requirements Modeling
       subsubsection:
+        - name: Semi-Structure NL Requirements Editor (UserStory / UseCase Description / EARS)
+          subsubsection_url: ../../../advs/semireqs
+          ispage: true 
         - name: PF Modeler
-        - name: Goal Modeler
-        - name: SysML Modeler (Req, block, state machines)
-        - name: EARs Editor
-    - sub_name: Requirements Transformation
+        - name: iStar Modeler
+        - name: SysML Modeler 
+
+    - sub_name: Requirements Validation and Transformation
       subsubsection:
+        - name: InputGen - Automated Generation of Prototype Input for Rapid Requirements Validation
+          subsubsection_url: ../../../advs/inputgen
+          ispage: true
         - name: RM2Doc - Automatic Generation SRS from Requirements Models
           subsubsection_url: ../../../advs/rm2doc
           ispage: true
+        - name: iStar2UML - Automated Generation of UML from iStar Model
         - name: PF2UML - Problem Frames to UML
-        - name: Goal2UML - Goal Model to UML
-        - name: NL2OCL - Nature Language to Object Constraint Language
-        - name: NL2UML - Nature Language to UML
-    - sub_name: Requirements Validation
+
+    - sub_name: Formal Contract - Object Constraint Language
       subsubsection:
+        - name: NL2OCL - Nature Language to Object Constraint Language
+          subsubsection_url: ../../../advs/nl2ocl
+          ispage: true
+        - name: OCL2NL - Generation NL from Object Constraint Language
+          subsubsection_url: ../../../advs/rm2doc
+          ispage: true
         - name: OCL2JML - Object Constraint Language to Java Modeling Language
+
+    - sub_name: Automated Generation of Achirecture and Design
+      subsubsection:
+        - name: RM2DM - Automatic Generation of Monolith Design from Requirements Model  
+          subsubsection_url: ../../../advs/rm2dm
+          ispage: true
+        - name: RM2MS - Automatic Generation of MicroServices Architecture from Requirements Model
+          subsubsection_url: ../../../advs/rm2ms
+          ispage: true
+       
+    - sub_name: Automatic Generation of Target System
+      subsubsection:
+        - name: RM2EA - Automatic Generation of Enterprise Application from Requirements Model 
+          subsubsection_url: ../../../advs/rm2ea
+          ispage: true        
+        - name: RM2GUI - Automatic Generation of GUI from Requirements Model
+          subsubsection_url: ../../../advs/rm2gui
+          ispage: true        
+        - name: Image2GUI - Automatic Generation GUI from Images
+          subsubsection_url: ../../../advs/image2gui
+          ispage: true        
+        - name: RM2DApp - Automatic Generation of Blockchain-based System (DApp)
 
 - section_name: Research
   section_url: research
