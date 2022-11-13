@@ -14,20 +14,21 @@ BUAA group focus on Automatic Software Engineering such as Models Transformation
 - Yang Zhang (Automatic Generation of Microservices Back-ends from Requirements Model)
 - Zhen Tian (Automatic Design Generation from Requirements)
 - Yongqi Pu (Automatic Requirements Transformation)
-- Tianshu Bao (Automatic Generation of SRS Documentation from Requirements Models)
 - Wenxiao Song (Model-Driven System Engineering for Mission Task)
 - Yong Zhu (Automatic GUI Generation from Requirements and Design Images)
-- Jie Zhang (Automatic GUI Generation from Design Images)
 - Runkun Zhang (Automatic GUI Generation from Requirements Model)
 - Qilong Shi (Automatic OO Code Generation from Un-complete OO Contract)
 - Peiye Yang (Automatic Localization and Fixing Errors of System Operation Contract, co-supervised with Li Zhang)
 - Yihui Jian (Automatic Generation of Dependable Enterprise Application from Requirements Model, co-supervised with Li Zhang)
-
+- Zhengyang Zhao (Automatic Golang Code Generation)
 
 ### Alumni
 - Yiming Zhu (Bytedance)
-- Zhaotian Li (Service Classification, Postgraduate Student in BUAA)
+- Zhaotian Li (Postgraduate Student in BUAA)
 - Eudrick (Zambia)
+- Tianshu Bao 
+- Yibo Liu
+- Jie Zhang (Bytedance)
 
 ## BUAA GUI Group
 GUI group focus on Automatic Generation of Software GUI based Deep Learning Methods.
