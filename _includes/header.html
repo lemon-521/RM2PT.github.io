@@ -1,10 +1,72 @@
+<div id="offcanvas-nav" uk-offcanvas="overlay: true" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+      <!-- <span uk-icon="home"></span> -->
+      <ul class="uk-nav uk-nav-default uk-nav-parent-icon" uk-nav>
+        <li class="uk-active"><a class="uk-logo" href="/">RM2PT</a></li>
+
+        {% for section in site.data.navigation %}
+          {% if section.ispage == true %}
+            <li><a href="{{site.baseurl}}/{{section.section_url}}">{{ section.section_name }}</a></li>
+          {% else %}
+            <li class="uk-parent">
+                <a href="#">{{ section.section_name }}</a>
+                    <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-sub">
+                      {% assign subsecton = section.subsectons %}
+                      {% for sub in subsecton %}
+                        {% assign lastsubsecton = forloop.last %}
+                         {% if sub.subsubsection.size > 0 %}
+                            <li class="uk-nav-active uk-text-bold">
+                              {{sub.sub_name}}
+                              <ul>
+                              {% for subsub in sub.subsubsection%}
+                                {% if subsub.subsubsection_url %}
+                                  <li class="uk-nav-active uk-text-normal"><a href="{{site.baseurl}}/{{section.section_url}}/{{sub.subsection_url}}/{{subsub.subsubsection_url}}"><span uk-icon="check"></span> {{subsub.name}} </a></li>
+                                {% else %}
+                                  <li class="uk-nav-active uk-text-lighter"><a href="{{page.permalink}}" > {{subsub.name}}</a></li>
+                                {% endif %}
+                                  <!-- {% if forloop.last == true and lastsubsecton == false%}
+                                    <li class="uk-nav-divider"></li>
+                                  {% endif %} -->
+                              {% endfor %}
+                              </ul>
+                            </li>
+                         {% else %}
+                         <!-- subsection without subsubsection-->
+                            <li class="uk-nav-active "><a href="{{site.baseurl}}/{{section.section_url}}/{{sub.subsection_url}}">{{sub.sub_name}}</a></li>
+                         {% endif %}
+
+                      {% endfor %}
+                    </ul>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+</div>
 
 
 <nav class="uk-navbar uk-navbar-container uk-margin" uk-navbar>
     <div class="uk-navbar-left">
-        <!-- <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a> -->
-        <a class="uk-navbar-item uk-logo uk-margin-left" href="/">RM2PT</a>
-        <ul class="uk-navbar-nav">
+        <!-- <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></a> -->
+
+        <a uk-navbar-toggle-icon="" href="#offcanvas-nav" uk-toggle="" class="uk-navbar-toggle uk-hidden@m uk-icon uk-navbar-toggle-icon" aria-expanded="false">
+          <!-- <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <rect y="9" width="20" height="2"></rect>
+            <rect y="3" width="20" height="2"></rect>
+            <rect y="15" width="20" height="2"></rect>
+          </svg> -->
+        </a>
+
+
+       <!-- <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav">
+           <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">RM2PT</span>
+       </a> -->
+
+        <a class="uk-logo uk-hidden@m" href="/">RM2PT </a>
+        <a class="uk-logo uk-navbar-item uk-margin-left uk-visible@m" href="/">RM2PT </a>
+
+        <ul class="uk-navbar-nav uk-margin-auto-vertical uk-visible@m">
+          <!-- <a class="uk-navbar-item uk-logo uk-margin-left" href="/">RM2PT</a> -->
           {% for section in site.data.navigation %}
             {% if section.ispage == true %}
               <li><a href="{{site.baseurl}}/{{section.section_url}}">{{ section.section_name }}</a></li>
@@ -17,22 +79,45 @@
                         {% for sub in subsecton %}
                           {% assign lastsubsecton = forloop.last %}
                            {% if sub.subsubsection.size > 0 %}
-                              <li class="uk-nav-active uk-text-bold"><span uk-icon="chevron-double-right"></span>{{sub.sub_name}}</li>
+                              <li class="uk-nav-active uk-text-bold">{{sub.sub_name}}</li>
                            {% else %}
-                           <!-- subsection without subsubsection-->
                               <li class="uk-nav-active "><a href="{{site.baseurl}}/{{section.section_url}}/{{sub.subsection_url}}">{{sub.sub_name}}</a></li>
                            {% endif %}
                           {% for subsub in sub.subsubsection%}
                             {% if subsub.subsubsection_url %}
-                              <li class="uk-nav-active uk-text-bolder"><a href="{{site.baseurl}}/{{section.section_url}}/{{sub.subsection_url}}/{{subsub.subsubsection_url}}"> {{subsub.name}} </a></li>
+                              <li class="uk-nav-active uk-text-normal"><a href="{{site.baseurl}}/{{section.section_url}}/{{sub.subsection_url}}/{{subsub.subsubsection_url}}"><span uk-icon="check"></span> {{subsub.name}} </a></li>
                             {% else %}
-                              <li class="uk-nav-active uk-text-lighter"><a href="/#">(Not Available) {{subsub.name}}</a></li>
+                              <li class="uk-nav-active uk-text-lighter"><a href="{{page.permalink}}#"> {{subsub.name}}</a></li>
                             {% endif %}
                               {% if forloop.last == true and lastsubsecton == false%}
                                 <li class="uk-nav-divider"></li>
                               {% endif %}
                           {% endfor %}
                         {% endfor %}
+                        <!-- {% assign subsecton = section.subsectons %}
+                        {% for sub in subsecton %}
+                          {% assign lastsubsecton = forloop.last %}
+                           {% if sub.subsubsection.size > 0 %}
+                              <li class="uk-nav-active uk-text-bold">
+                                {{sub.sub_name}}
+                                <ul>
+                                {% for subsub in sub.subsubsection%}
+                                  {% if subsub.subsubsection_url %}
+                                    <li class="uk-nav-active uk-text-bold"><a href="{{site.baseurl}}/{{section.section_url}}/{{sub.subsection_url}}/{{subsub.subsubsection_url}}"><span uk-icon="check"></span> {{subsub.name}} </a></li>
+                                  {% else %}
+                                    <li class="uk-nav-active uk-text-lighter"><a href="/#" > {{subsub.name}}</a></li>
+                                  {% endif %}
+                                    {% if forloop.last == true and lastsubsecton == false%}
+                                      <li class="uk-nav-divider"></li>
+                                    {% endif %}
+                                {% endfor %}
+                                </ul>
+                              </li>
+                           {% else %}
+                              <li class="uk-nav-active "><a href="{{site.baseurl}}/{{section.section_url}}/{{sub.subsection_url}}">{{sub.sub_name}}</a></li>
+                           {% endif %}
+
+                        {% endfor %} -->
                       </ul>
                   </div>
               </li>

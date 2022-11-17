@@ -21,11 +21,18 @@
           subsubsection_url: create_new_project
           ispage: true
         - name: Requirements Modeling in 4 steps
+          subsubsection_url: create_requirements_model
+          ispage: true
         - name: Requirements Validation through Auto-Prototying
+          subsubsection_url: validate_through_prototype
+          ispage: true
 
     - sub_name: Tutorial for Developers
       subsection_url: dev
       subsubsection:
+        - name: Install RM2PT Developer Plugins
+          subsubsection_url: rm2pt_dev_plugin_install
+          ispage: true
         - name: Create Project of Domain-Specific Modeling Language (DSML) in  (Modeling by EMF and Sirius)
         - name: Create Project DSML and DSL (Modeling by EMF, Xtext and Sirius)
         - name: Create Model Transformation Project (Model2Model)
@@ -38,67 +45,111 @@
 
 - section_name: Case Studies
   section_url: casestudy
-  subsectons:
-    - sub_name: ATM
-      subsection_url: atm
-      ispage: true
-    - sub_name: CoCoME
-      subsection_url: cocome
-      ispage: true
-    - sub_name: Library Management System
-      subsection_url: libms
-      ispage: true
-    - sub_name: Loan Processing System
-      subsection_url: loanps
-      ispage: true
-    - sub_name: More Cases ...
-      subsection_url: morecases
+  ispage: true
+  # subsectons:
+  #   - sub_name: ATM
+  #     subsection_url: atm
+  #     ispage: true
+  #   - sub_name: CoCoME
+  #     subsection_url: cocome
+  #     ispage: true
+  #   - sub_name: Library Management System
+  #     subsection_url: libms
+  #     ispage: true
+  #   - sub_name: Loan Processing System
+  #     subsection_url: loanps
+  #     ispage: true
+  #   - sub_name: More Cases ...
+  #     subsection_url: morecases
 
 - section_name: Advanced Features
   section_url: plug-ins
   subsectons:
     - sub_name: Requirements Modeling
       subsubsection:
+        - name: Semi-Structure NL Requirements Editor (UserStory / UseCase Description / EARS)
+          subsubsection_url: ../../../advs/semireqs
+          ispage: true 
         - name: PF Modeler
-        - name: Goal Modeler
-        - name: SysML Modeler (Req, block, state machines)
-        - name: EARs Editor
-    - sub_name: Requirements Transformation
+        - name: iStar Modeler
+        - name: SysML Modeler 
+
+    - sub_name: Requirements Validation and Transformation
       subsubsection:
+        - name: InputGen - Automated Generation of Prototype Input for Rapid Requirements Validation
+          subsubsection_url: ../../../advs/inputgen
+          ispage: true
+        - name: RM2Doc - Automatic Generation SRS from Requirements Models
+          subsubsection_url: ../../../advs/rm2doc
+          ispage: true
+        - name: iStar2UML - Automated Generation of UML from iStar Model
         - name: PF2UML - Problem Frames to UML
-        - name: Goal2UML - Goal Model to UML
-        - name: NL2OCL - Nature Language to Object Constraint Language
-        - name: NL2UML - Nature Language to UML
-    - sub_name: Requirements Validation
+
+    - sub_name: Formal Contract - Object Constraint Language
       subsubsection:
+        - name: NL2OCL - Nature Language to Object Constraint Language
+          subsubsection_url: ../../../advs/nl2ocl
+          ispage: true
+        - name: OCL2NL - Generation NL from Object Constraint Language
+          subsubsection_url: ../../../advs/rm2doc
+          ispage: true
         - name: OCL2JML - Object Constraint Language to Java Modeling Language
+
+    - sub_name: Automated Generation of Achirecture and Design
+      subsubsection:
+        - name: RM2DM - Automatic Generation of Monolith Design from Requirements Model  
+          subsubsection_url: ../../../advs/rm2dm
+          ispage: true
+        - name: RM2MS - Automatic Generation of MicroServices Architecture from Requirements Model
+          subsubsection_url: ../../../advs/rm2ms
+          ispage: true
+       
+    - sub_name: Automatic Generation of Target System
+      subsubsection:
+        - name: RM2EA - Automatic Generation of Enterprise Application from Requirements Model 
+          subsubsection_url: ../../../advs/rm2ea
+          ispage: true        
+        - name: RM2GUI - Automatic Generation of GUI from Requirements Model
+          subsubsection_url: ../../../advs/rm2gui
+          ispage: true        
+        - name: Image2GUI - Automatic Generation GUI from Images
+          subsubsection_url: ../../../advs/image2gui
+          ispage: true        
+        - name: RM2DApp - Automatic Generation of Blockchain-based System (DApp)
 
 - section_name: Research
   section_url: research
   subsectons:
-    - sub_name: Requirements Modeling
+    - sub_name: Requirements and Architecture Modeling
       subsubsection:
-        - name: FRs Modeling - UML/SysML/MATRE
-        - name: NFRs Modeling
-        - name: Goal Modeling
-        - name: CPS modeling in Problem Frames
-        - name: NL and Visual Modeling in EARs-enhanced Requirements Diagram
-    - sub_name: Automatic Prototyping
+        - name: Requirements Modeling for AI Systems
+        - name: Architecture Modeling for Cloud-Native Application
+        - name: GUI Modeling
+    - sub_name: Requirements Analysis and Transformation
       subsubsection:
-        - name: Desktop Prototype
-        - name: Web Prototype
-        - name: RESTFul Prototype
-        - name: Prototype Verification by JML
-    - sub_name: Requirements Validations
+        - name: RM2Doc - Automatic Generation SRS from Requirements Models
+          subsubsection_url: ../../../rm2doc
+          ispage: true
+        - name: iStar2UML - Automatic Generation of UML Model from iStar Model
+          subsubsection_url: ../../../istar
+          ispage: true
+        - name: PF2UML - Automatic Generation of UML Model from Problem Frames
+        - name: Story2UML - Automatic Generation of UML Model from User Story
+        - name: NL2OCL - Automatic Generation of OCL Contract from Nature Language
+    - sub_name: Requirements Validation and Fixing
       subsubsection:
-        - name: Automated Validation with Integration TestCase Generation
-        - name: Consistent Checking by JML verification
-        - name: fUML Simulation
-    - sub_name: Prototype Refactoring
+        - name: Auto-Prototyping for Requirements Validation
+        - name: Integration TestCase Generation for Requirements Validation
+        - name: TestInput Generation for Requirements Validation
+        - name: Auto-Fixing Requirements Contract
+    - sub_name: Automatic Design and Code Generation
       subsubsection:
-        - name: Enterprise System
-        - name: Cloud-native Application
-        - name: Blockchain-based System (DApp)
+        - name: RM2GUI - Automatic GUI Generation from Requirements Model
+        - name: Photo2GUI - Automatic GUI Generation from Requirements Model
+        # - name: RM2Design - Automatic OO Design Generation from Requirements Model
+        - name: RM2EA - Automatic Generation of Enterprise Application
+        - name: RM2Service - Automatic Generation of Cloud-native Application
+        - name: RM2DApp - Automatic Generation of Blockchain-based System (DApp)
 
 - section_name: Documentation
   section_url: doc
@@ -111,14 +162,14 @@
     - sub_name: Documentation for Developers
       subsection_url: dev
       subsubsection:
-        - name:  Eclipse MDA Project
+        - name: Eclipse MDA Developement
           subsubsection_url: eclipsemda
-        - name:  Eclipse PDE / RCP
-        - name:  Model Transformation (ATL/QVT)
+        - name: Eclipse Plugin Developement
+        - name: Eclipse RCP Developement
         - name: Executable UML
-        - name:  Template Language - Xtend
-        - name:  Program Verification - JML
-        - name:  Stanford NLP - CoreNLP
+        - name: Template Language - Xtend
+        - name: Program Verification - JML
+        - name: Stanford NLP - CoreNLP
 
 - section_name: Downloads
   section_url: downloads

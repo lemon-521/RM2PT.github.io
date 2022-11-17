@@ -1,32 +1,36 @@
 ---
 layout: page
 title: RM2PT Tutorial
-permalink: /tutorial/user/create_new_project_from_text_model
+permalink: /tutorial/user/create_new_project
+typora-root-url: ../../../../rm2pt-website
 ---
 
-## Create a RM2PT Project from sketch
+## Create RM2PT project
 
-RM2PT can be integreated into any eclipse project. This turorial shows how to create a requirements model and generate prototype in JavaFx project.
+Right click on `Model Explorer` -> `New` -> `Project`
 
-1. Open RM2PT, and create a `JavaFX project` through the wizard.  (Do not open JavaFX persepcitve)
+<img src="/imgs/createproject1.png" alt="Alt text" style="zoom:50%;" />
 
-2. Under the project, create a folder `requirementsmodel` and a new file `modelname.remodel` as textual requirements model, fill the following skeleton in `modelname.remodel`
+Choose `RM2PT` -> `RM2PT Project` -> `Next`
 
-```
-UseCaseModel helloworld {
+<img src="/imgs/createproject2.png" alt="Alt text" style="zoom:50%;" />
 
-}
-```
-and then save it.
+Type RM2PT project name -> `Next`
 
-3. Right click the textual model `modelname.remodel` to create a graphic model `modelname.arid` through the wizard (`New`->`Other`->`Sirius`->`Represteantions File`. Note that selection `RequirementModel` is chosen on last step of `Viewpoints Selection`).
+<img src="/imgs/create_new_project_wizard/image-20211021015756249.png" alt="image-20211021015756249" style="zoom:50%;" />
 
-4. Add the required library (e.g [commons-lang](data/commons-lang3-3.8.1.jar)) to your project.
+Type Requirements Model name -> `Finish`
 
-5. Modify the requirements model as your desired (at least `a use case diagram`, `system sequence diagram`, and `contracts of system operations`, and `a conceptual class diagram`) through `modelname-arid` or `modelname.remodel`.
+<img src="/imgs/create_new_project_wizard/image-20211021015817173.png" alt="image-20211021015817173" style="zoom:50%;" />
 
-6. Generate protoypes from `modelname.remodel`, all the code will be in folder `src-gen`.
+Wait a second, the default `Use Case Diagram` will show on the screen
 
-7. Set genereate folder `src-gen` as source folder. Open `Prototype.fxgraph` to generate `Prototype.xml` if it is not exist.
+<img src="/imgs/create_new_project_wizard/image-20211021015911374.png" alt="image-20211021015911374" style="zoom:50%;" />
 
-8. Run the prototype and enjoy through `Main.java` under `gui` package,
+`Note that` you can create a requirements model from scratch or import a project from our repository
+
+* Import RM2PT project from Github. You can see the tutorial [here](/tutorial/user/import_rm2pt_project).
+
+* Create a requirements model from scratch  You can see the tutorial [here](/tutorial/user/import_rm2pt_project).
+
+Moreover, you can create RM2PT grahpical model from RM2PT text model. You can see the turorial [here](/tutorial/user/create_new_project_from_text_model)

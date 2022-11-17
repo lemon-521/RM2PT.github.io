@@ -6,21 +6,27 @@ permalink: /overview/publication/
 
 ### Publications
 
+### 2022
+* Tianshu Bao, Jing Yang, Yongfeng Yin, Yilong Yang. "RM2Doc: A Tool for Automatic Generation of Requirements Documents from Requirements Models". to presented at the 44th International Conferences on Software Engineering (ICSE'22), Pittsburgh, PA, USA, May 2022. (**Demonstration Track**)
+
+
 ### 2021
-* Yilong Yang, Younggi Bok, Zhuoxi Yang, Eric Sheriff and Tong Li. "Goal2UCM: Automatic Generation of Use Case Model from iStar Model". to be presented at The 14th International iStar Workshop as part of the 40th International Conference on Conceptual Modeling, Oct. 2021.
 
-* Bing Li, Zhi Li, Yilong Yang. “NFRNet: A Deep Neural Network for Automatic Classification of Non-Functional Requirements.” to be presented at IEEE International Requirements Engineering Conference (RE’21), Sep. 2021. (**Demonstration Track**)
+* Jing Zhang, Changran Lei , Yilong Yang , Borui Wang, and Yang Chen. [“MMA-Net: A MultiModal-Attention-based Deep Neural Network for Web Services Classification”](https://doi.org/10.1007/978-3-030-91431-8_48). presented at International Conference Service-Oriented Computing (ICSOC’21), Dubai, UAE, November 2021 (**Short Paper**).
 
-* Shangfeng Wei, Zhi Li, Yilong Yang, Hongbin Xiao. "Zoom4PF: A Tool for Refining Static and Dynamic Domain Descriptions in Problem Frames".  to be presented at IEEE International Requirement Engineering Conference (RE'21), Sep. 2021 (**Demonstration Track**)
+* Yilong Yang, Younggi Bok, Zhuoxi Yang, Eric Sheriff and Tong Li. ["Goal2UCM: Automatic Generation of Use Case Model from iStar Model"](http://ceur-ws.org/Vol-2983/iStar21_paper_4.pdf). presented at The 14th International iStar Workshop as part of the 40th International Conference on Conceptual Modeling, St. John's, NL, Canada, October 2021.
 
-* Hongbin Xiao, Zhi Li, Yilong Yang, Jie Deng, and Shangfeng Wei. “An Extended Meta-Model of Problem Frames for Enriching Environmental Descriptions”. to be presented at IEEE International Workshop on Environment-Driven Requirements Engineering (EnviRE), Sep. 2021.
+* Bing Li, Zhi Li, Yilong Yang. [“NFRNet: A Deep Neural Network for Automatic Classification of Non-Functional Requirements.”](https://doi.org/10.1109/RE51729.2021.00057) presented at IEEE International Requirements Engineering Conference (RE’21), Notre Dame Basilica, USA, Sep. 2021. (**Demonstration Track**)
 
-* Jing Zhang, Yang Chen, Yilong Yang*, Changran Lei, Deqiang Wang. "ServeNet-LT: A Normalized Multi-head Deep Neural Network for Long-tailed Web Services Classification." to be presented at IEEE International Conferences on Web Services (ICWS’21), Sep. 2021. (**Regular Paper**)
+* Shangfeng Wei, Zhi Li, Yilong Yang, Hongbin Xiao. ["Zoom4PF: A Tool for Refining Static and Dynamic Domain Descriptions in Problem Frames"](https://doi.org/10.1109/RE51729.2021.00047) presented at IEEE International Requirement Engineering Conference (RE'21), Notre Dame Basilica, USA, Sep. 2021 (**Demonstration Track**)
 
-* Yilong Yang, Zhaotian Li, Jing Zhang and Yang Chen. "Transfer Learning for Web Services Classification
-." to be presented at IEEE International Conferences on Web Services (ICWS’21), Sep. 2021. (**Short Paper**).
+* Hongbin Xiao, Zhi Li, Yilong Yang, Jie Deng, and Shangfeng Wei. [“An Extended Meta-Model of Problem Frames for Enriching Environmental Descriptions”](https://doi.org/10.1109/REW53955.2021.00077). presented at IEEE International Workshop on Environment-Driven Requirements Engineering (EnviRE), Sep. 2021.
 
-* Bing Li, Zhi Li, **Yilong Yang***, ["Residual Attention Graph Convolutional Network for Web Services Classification"](https://doi.org/10.1016/j.neucom.2021.01.089). Neurocomputing. 440, pp. 45-57 (2021)
+* Jing Zhang, Yang Chen, Yilong Yang, Changran Lei, Deqiang Wang. ["ServeNet-LT: A Normalized Multi-head Deep Neural Network for Long-tailed Web Services Classification."](https://doi.org/10.1109/ICWS53863.2021.00025). presented at IEEE International Conferences on Web Services (ICWS’21), Chicago, IL, USA. September 2021. (**Regular Paper**).
+
+* Yilong Yang, Zhaotian Li, Jing Zhang and Yang Chen. ["Transfer Learning for Web Services Classification"](https://doi.org/10.1109/ICWS53863.2021.00036). presented at IEEE International Conferences on Web Services (ICWS’21), Chicago, IL, USA. September 2021. (**Short Paper**).
+
+* Bing Li, Zhi Li, Yilong Yang, ["Residual Attention Graph Convolutional Network for Web Services Classification"](https://doi.org/10.1016/j.neucom.2021.01.089). Neurocomputing. 440, pp. 45-57 (2021)
 
 ### 2020
 * Yilong Yang, Nafees Qamar, Peng Liu, Katarina Grolinger, Weiru Wang, Zhi Li, Zhifang Liao. ["ServeNet: A Deep Neural Network for Web Services Classification](https://doi.org/10.1109/ICWS49710.2020.00029). presented at IEEE 12th International Conferences on Web Services (ICWS'20), Beijing, China, Oct. 2020. (**Regular Paper**).
