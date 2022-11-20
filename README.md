@@ -1,9 +1,10 @@
 
 ## Prerequest 
 
-Install Rudy
+Install `Rudy` and `Gem` (Ruby Package Managemenet)
 
 ## install bundler jekyll 
+
 ```
 gem install bundler jekyll
 ```
