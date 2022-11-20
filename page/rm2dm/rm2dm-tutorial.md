@@ -18,7 +18,7 @@ Open RM2PT, click on `Help` -> `Install New Software`
 
 
 
-Type http://rm2pt.com/RM2DM-UpdateSite in the Work with field, select DesignModelGenerator and click Next.
+Type `http://rm2pt.com/RM2DM-UpdateSite` in the Work with field, select DesignModelGenerator and click Next.
 
 <img src="../../imgs/RM2DM/updatesite.png" alt="updatesite" style="zoom: 80%;" />
 
