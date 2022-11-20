@@ -38,7 +38,7 @@ Type http://rm2pt.com/RM2DM-UpdateSite in the Work with field, select DesignMode
 
 In order to generate the documentation, you need a requirements model, the **RM2PT project**. For creating or importing a RM2PT project，you can see the tutorial [here](https://rm2pt.com/tutorial/user/create_new_project).
 
-#### Generate NL Contract
+#### Generate Design Model
 
 After you add a requirements model, you can generate the design model from the requirements model by right click on `cocome.remodel` -> `RM2PT-Dev`-> ` Generate Design Model`
 
