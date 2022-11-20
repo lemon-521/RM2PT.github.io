@@ -13,13 +13,13 @@ Download and use of RM2DM can be found [here](https://rm2pt.com/advs/rm2dm).
 1. Automatic generation of the class diagram from UML requirements models.
 2. Automatic generation of sequence diagrams for each system operation.
 
-<img src="../../imgs/RM2DM/OverviewofRM2DM.png" alt="OverviewofRM2DM" style="zoom: 35%;" />
+<img src="../../imgs/RM2DM/OverviewofRM2DM.png" alt="OverviewofRM2DM" style="zoom: 100%;" />
 
 
 
 ### Input of RM2DM — Requirements Model
 
-<img src="../../imgs/RM2DM/RequirementsModel.png" alt="RequirementsModel" style="zoom: 50%;" />
+<img src="../../imgs/RM2DM/RequirementsModel.png" alt="RequirementsModel" style="zoom: 80%;" />
 
 The input to RM2DM is a UML requirements model with OCL constraints. The model includes: a conceptual class diagram, a use case diagram, system sequence diagrams, contracts of system operations.
 
@@ -35,8 +35,6 @@ The input to RM2DM is a UML requirements model with OCL constraints. The model i
 RM2DM takes validated requirements models as input and generates EMF compliant UML design models consisting of a class diagram and sequence diagrams. The class diagram describes the static structure and sequence diagrams are generated for each system operation, describing the dynamic behavior of the system.
 
 #### Generation of Class Diagram
-
-<img src="../../imgs/RM2DM/genopdescription.png" alt="genopdescription" style="zoom: 100%;" />
 
 RM2DM can **generate class diagram** based on the **conceptual class diagram and system sequence diagram** in the requirements model. Three rules are defined.
 
@@ -57,12 +55,12 @@ There are three sections in system operation contract.
 The definition and postcondition parts of the system operation contract describe the system’s dynamic behavior. The OCL statements in definition and postcondition can be converted into messages in the sequence diagram. In order to transform OCL statements in definition and postcondition into messages, a total of 17 transformation rules are defined. Transformation
 rules are presented in this form:
 
-<img src="../../imgs/RM2DM/Rule.png" alt="Rule" style="zoom: 20%;" />
+<img src="../../imgs/RM2DM/Rule.png" alt="Rule" style="zoom: 60%;" />
 
 The transformation rule contains two parts: the above is an OCL expression in the contracts, and the bottom part is the generated message and the message’s sender and receiver. Algorithm 1 shows how to apply the rules to generate
 messages from system operation contract.
 
-<img src="../../imgs/RM2DM/algorithm1.png" alt="algorithm1" style="zoom: 80%;" />
+<img src="../../imgs/RM2DM/algorithm1.png" alt="algorithm1" style="zoom: 50%;" />
 
 ### CoCoME Case Study
 
@@ -74,4 +72,4 @@ The image below shows a part of CoCoME's design model. For more details, please 
 <img src="../../imgs/RM2DM/ClassDiagram.png" alt="ClassDiagram" style="zoom: 80%;" />
 
 #### Generated Sequence Diagram 
-<img src="../../imgs/RM2DM/SequenceDiagram.png" alt="doc" style="zoom: 80%;" />
+<img src="../../imgs/RM2DM/SequenceDiagram.png" alt="doc" style="zoom: 60%;" />
