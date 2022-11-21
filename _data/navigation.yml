@@ -108,13 +108,14 @@
        
     - sub_name: Automatic Generation of Target System
       subsubsection:
-        - name: RM2EA - Automatic Generation of Enterprise Application from Requirements Model 
-          subsubsection_url: ../../../advs/rm2ea
-          ispage: true        
-        - name: RM2GUI - Automatic Generation of GUI from Requirements Model
+        - name: RM2GUI - Automatic Generation of Frontend GUI from Requirements Model
           subsubsection_url: ../../../advs/rm2gui
           ispage: true        
-        - name: RM2DApp - Automatic Generation of Blockchain-based System (DApp)
+        - name: RM2EIS - Automatic Generation of Enterprise Information System (SpringBoot-based Backend) from Requirements Model 
+          subsubsection_url: ../../../advs/rm2eis
+          ispage: true        
+        - name: RM2Go - Automatic Generation of Enterprise Information System (Golang-based BackEnd) from Requirements Model 
+        - name: RM2DApp - Automatic Generation of Blockchain-based System (DApp) from Requirements Model 
 
 - section_name: Research
   section_url: research
