@@ -74,7 +74,7 @@
         - name: iStar Modeler
         - name: SysML Modeler 
 
-    - sub_name: Requirements Validation and Transformation
+    - sub_name: Requirements Validation and Refinements
       subsubsection:
         - name: InputGen - Automated Generation of Prototype Input for Rapid Requirements Validation
           subsubsection_url: ../../../advs/inputgen
@@ -87,13 +87,15 @@
 
     - sub_name: Formal Contract - Object Constraint Language
       subsubsection:
-        - name: NL2OCL - Nature Language to Object Constraint Language
-          subsubsection_url: ../../../advs/nl2ocl
-          ispage: true
-        - name: OCL2NL - Generation NL from Object Constraint Language
+        - name: OCL2NL - Automatic Generation of Nature Language from Object Constraint Language
           subsubsection_url: ../../../advs/rm2doc
           ispage: true
-        - name: OCL2JML - Object Constraint Language to Java Modeling Language
+        - name: NL2OCL - Interative Generation of Object Constraint Language from Nature Language
+          subsubsection_url: ../../../advs/nl2ocl
+          ispage: true
+        - name: DeepOCL - Object Constraint Language Generation from NL
+          subsubsection_url: ../../../advs/nl2ocl
+          ispage: true
 
     - sub_name: Automated Generation of Achirecture and Design
       subsubsection:
@@ -111,9 +113,6 @@
           ispage: true        
         - name: RM2GUI - Automatic Generation of GUI from Requirements Model
           subsubsection_url: ../../../advs/rm2gui
-          ispage: true        
-        - name: Image2GUI - Automatic Generation GUI from Images
-          subsubsection_url: ../../../advs/image2gui
           ispage: true        
         - name: RM2DApp - Automatic Generation of Blockchain-based System (DApp)
 
