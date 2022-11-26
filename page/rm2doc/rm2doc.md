@@ -57,11 +57,11 @@ The transformation rule contains two parts: the above section is an OCL expressi
 <img src="../../imgs/RM2Doc/image-20220507180457264.png" alt="image-20220507180457264" style="zoom: 100%;" />
 
 
-RM2Doc can generate five parts of a document:
+#### RM2Doc can generate five parts of a document:
 
 - The **product functions** section and **user characteristics** section are generated from the use case diagram.
 - The **use case description** part is generated from the use case diagram and system sequence diagrams.
--  The **system operation description** part is generated from contracts of system operations.
+- The **system operation description** part is generated from contracts of system operations.
 - The **entity ananlysis** part  is generated from the conceptual class diagram.
 
 In the rest of the requirements document, we have predefined guidelines for writing in accordance with the **ISO/IEC/IEEE 29148-2018**.
