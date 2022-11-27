@@ -4,14 +4,26 @@ title: RM2DM
 permalink: /advs/rm2dm
 ---
 
-### Download and Installation
 
-#### Prerequest
+## Introduction
+
+**RM2DM** is a tool for automatic generation of *OO design model* from *requirements models*. The **benefits** of RM2DM are as follows:
+
+1. Automatic generation of the class diagram. RM2DM can generate fabricated classes, decompose the system operations into primitive operations and encapsulate primitive operations into classes. The class diagram describes the design of the static structure of the system.
+2. Automatic generation of sequence diagrams. RM2DM can generate sequence diagrams for each system operation based on system sequence diagrams and system operation contracts. Unlike system sequence diagrams that describe the interactions between users and the system, sequence diagrams illustrate the dynamic behavioral design inside the system in terms of how objects within the system collaborate to accomplish system operations.
+
+The video cast its feature is listed as follows (Youtube):
+<iframe class="uk-width-1-3@m" width="560" height="315" src="https://www.youtube.com/embed/lrs57CjzmU8" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>RM2DM Youtube Video</iframe>
+
+
+
+
+## RM2DM Installation
+### Prerequest
 
 RM2DM is an advanced feature of **RM2PT**. We recommend you to use RM2DM in RM2PT. If you don't have RM2PT, download [here](https://rm2pt.com/downloads/).
 
-#### Installation of RM2DM
-
+### Online Installation
 Open RM2PT, click on `Help` -> `Install New Software`
 
 <img src="../../imgs/RM2DM/InstallNewSoftware.png" alt="InstallNewSoftware" style="zoom: 80%;" />
@@ -21,6 +33,8 @@ Open RM2PT, click on `Help` -> `Install New Software`
 Type `http://rm2pt.com/RM2DM-UpdateSite` in the Work with field, select DesignModelGenerator and click Next.
 
 <img src="../../imgs/RM2DM/updatesite.png" alt="updatesite" style="zoom: 80%;" />
+
+### Offline Installation
 
 **If the update site does not work**, you can choose to install it offline. Click [here](https://github.com/RM2PT/RM2DM-UpdateSite/releases/download/v1.0.0/com.rm2pt.generator.design.updatesite-1.0.0-SNAPSHOT.zip) to download RM2DM. Follow the steps below to install.
 
@@ -32,7 +46,7 @@ Type `http://rm2pt.com/RM2DM-UpdateSite` in the Work with field, select DesignMo
 
 <img src="../../imgs/RM2DM/local4.png" alt="local4" style="zoom: 80%;" />
 
-### Use of RM2DM 
+## RM2DM Tutorial 
 
 #### Prerequest
 
