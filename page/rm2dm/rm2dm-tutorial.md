@@ -48,11 +48,11 @@ Type `http://rm2pt.com/RM2DM-UpdateSite` in the Work with field, select DesignMo
 
 ## RM2DM Tutorial 
 
-#### Prerequest
+### Prerequest
 
 In order to generate the documentation, you need a requirements model, the **RM2PT project**. For creating or importing a RM2PT project，you can see the tutorial [here](https://rm2pt.com/tutorial/user/create_new_project). We recommend importing RM2PT projects from Git, which is avaliable at [CaseStudies](https://github.com/RM2PT/CaseStudies). The tutorial is [here](https://rm2pt.com/tutorial/user/import_rm2pt_project).
 
-#### Generate Design Model
+### Generate Design Model
 
 Here we use CoCoME as an example.
 
@@ -65,10 +65,10 @@ The generated design model is in the DesignModel folder
 
 <img src="../../imgs/RM2DM/GenerateResult.png" alt="GenerateResult" style="zoom: 80%;" />
 
-##### Generated Class Diagram(After adjusting layout)
+#### Generated Class Diagram(After adjusting layout)
 <img src="../../imgs/RM2DM/ClassDiagram.png" alt="ClassDiagram" style="zoom: 100%;" />
 
-##### Generated Sequence Diagram 
+#### Generated Sequence Diagram 
 <img src="../../imgs/RM2DM/SequenceDiagram.png" alt="doc" style="zoom: 60%;" />
 
 
