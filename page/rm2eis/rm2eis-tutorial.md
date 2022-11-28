@@ -4,9 +4,12 @@ title: RM2EIS
 permalink: /advs/rm2eis
 ---
 
-**## Introduction**
+## Introduction
 
-A demo video can be found at [here](https://youtu.be/M8m14bCdc-o)
+A demo video can be found as follows:
+
+<iframe class="uk-width-1-3@m" width="560" height="315" src="https://youtu.be/M8m14bCdc-o" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>RM2DM Youtube Video</iframe>
+
 
 **RM2EIS** is a tool for automatic generation of an **EIS** from a **requirements model**. The **benefits** are as follows:
 
@@ -19,7 +22,7 @@ A demo video can be found at [here](https://youtu.be/M8m14bCdc-o)
 <img src="../../imgs/RM2EIS/RM2EIS.png" style="zoom: 100%;" />
 
 
-**### Input of RM2EIS — Requirements Model**
+### Input of RM2EIS — Requirements Model
 
 <img src="../../imgs/RM2Doc/rm.png" alt="rm" style="zoom: 50%;" />
 
@@ -41,7 +44,7 @@ The input to RM2Doc is a UML requirements model with OCL constraints. The model 
 
 
 
-**### Output of RM2EIS — EIS**
+### Output of RM2EIS — EIS
 
 **EIS**(Enterprise Information System) integrates business logic, improving business productivity and shortening service, product development, and marketing life cycles.
 
@@ -58,15 +61,15 @@ EIS is important in industrial and commercial domain, but it can only be formall
 
 
 
-**### Features**
+## Features
 
-#### Overview
+### Overview
 RM2EIS takes the requirement model as input and uses a transformation algorithm to process and parse the user requirement information contained in the requirement model. For the OCL expressions contained in the system operation contract, RM2EIS needs transformation rule to transform them into the system operation code that drives the running of the EIS. Finally, the method outputs a complete and executable
 EIS, which can be further deployed in K8S.
 
 
 
-##### SpringBoot-based EIS Generation
+#### SpringBoot-based EIS Generation
 **Mapping OO operations to CRUD:**
 For EIS, CRUD is the most basic operation, so RM2EIS improves OO methods as shown.
 
@@ -83,7 +86,7 @@ generation method is used, which includes design patterns, development experienc
 
 
 
-##### K8S Auto Deployment
+#### K8S Auto Deployment
 
 To facilitate users, RM2EIS can generate supporting deployment scripts, including code packaging and containerization, service orchestration, and environment initialization. Users can configure the service information to generate corresponding scripts. In addition to deploying the EIS locally, RM2EIS supports one-click cloud migration With the help of the jkube2 plug-in by integrating the deployment into the maven phase. With containerized management, EIS can easily implement elastic services, error tracing and other features. The cloud service is unaware of Restful interfaces exposed to the outside. Accordingly, RM2EIS also provides a cease-of-deployment instruction.
 
