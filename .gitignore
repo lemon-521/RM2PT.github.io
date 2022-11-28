@@ -4,3 +4,4 @@ Gemfile.lock
 .DS_Store
 vendor
 _posts/Documentation/Developer/EclipseMDA/assets/image-20210203141257288.png
+.history/
