@@ -13,10 +13,10 @@ permalink: /advs/rm2ms
 2. Automated microservices identification
 
 3. Microservices visualization.
-   
-   <img title="" src="..\..\imgs\RM2MS\overview.jpg" alt="">
-   The video cast its feature is listed as follows (Youtube):
-   <iframe class="uk-width-1-3@m" width="560" height="315" src="https://www.youtube.com/embed/1PTBn7WLNiM" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>RM2MS Youtube Video</iframe>
+
+The video cast its feature is listed as follows (Youtube):
+
+<iframe class="uk-width-1-3@m" width="560" height="315" src="https://www.youtube.com/embed/1PTBn7WLNiM" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>RM2MS Youtube Video</iframe>
 
 ## Download and Installation
 
@@ -37,16 +37,14 @@ Type http://rm2pt.com/RM2MS-UpdateSite in the Work with field, select RM2MS and 
 
 **If the update site does not work**, you can choose to install it offline. Click [here](https://github.com/RM2PT/RM2MS-UpdateSite/releases/download/v1.0.0/com.rm2pt.generator.microservice.updatesite-1.0.0-SNAPSHOT.zip) to download RM2MS. Follow the steps below to install.
 
-
-
-
-
 <img title="" src="../../imgs/RM2MS/image-3.png" alt="image-3" style="zoom: 50%;" data-align="left">
 <img src="../../imgs/RM2MS/image-4.png" alt="image-4" style="zoom: 50%;" />
 <img src="../../imgs/RM2MS/image-5.png" alt="image-5" style="zoom: 50%;" />
 <img src="../../imgs/RM2MS/image-6.png" alt="image-6" style="zoom: 50%;" />
 
-## Use of RM2MS
+## RM2MS Tutorial
+
+<img title="" src="..\..\imgs\RM2MS\overview.jpg" alt="">
 
 ### Input of RM2MS — Requirements Model
 
