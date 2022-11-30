@@ -2,7 +2,7 @@
 
    自然语言编译器主要由用例描述组成，我们将以用户故事的形式展现，用户在书写需求时可以将用例描述细化为两个部分：1.基本流程：该部分主要以EARS形式呈现，用户在书写时可以描述当前需求为用户需求或者系统需求以及他们之间的执行顺序。2.补充信息：该部分主要的书写内容为，在当前用例下，在与遇到特殊情况系统应当作出怎样的行动。
 
-   ![图片](imgs/JG1.png)
+   ![图片](imgs/UseCaseEditor-project/JG1.png)
 
 ## 用例描述（用户故事形式）：
 
@@ -18,7 +18,7 @@
 ### 案例讲解
    该部分采用基础用户故事形式，作为一个<用户角色>, 我想要<完成活动>, 以便于<实现价值>。案例中红色字段为必填项，紫色字段为选填项。
    
-   ![图片](imgs/US.png)
+   ![图片](imgs/UseCaseEditor-project/US.png)
 
 ## 用例内部表述（EARS形式）案例：
 
@@ -44,22 +44,22 @@
 在系统中，用于指定特性，用关键字Where表示 syntax : WHERE (feature is included) the (system name) shall (system response)
 例子: “Where the control system includes an overspeed protection function, the control system shall test the availability of the overspeed protection function prior to aircraft dispatch.” 例子：控制系统包括超速保护功能的，控制系统应在飞机调度前测试超速保护功能的可用性。
 
-   ![图片](imgs/EARS1.png)
+   ![图片](imgs/UseCaseEditor-project/EARS1.png)
    
 ### 案例讲解
    该部分采用基础EARS形式，本部分整体为选填项，当需要对用例进行内部描述时进行填写，其中NUM.后面的需要表述当前需求是用户需求还是系统需求（User/System），另外案例中红色字段为必填项，紫色字段为选填项。
    
-   ![图片](imgs/EARSn.png)
+   ![图片](imgs/UseCaseEditor-project/EARSn.png)
 
 ## 补充信息案例：
 
    该部分采用基本的自然语言描述形式，对需求的细节进行补充，另外案例中红色字段为必填项，紫色字段为选填项，对细节进行补充。
 
-  ![图片](imgs/KCn.png)
+  ![图片](imgs/UseCaseEditor-project/KCn.png)
   
 ## 案例：
 
- ![图片](imgs/AL.png)
+ ![图片](imgs/UseCaseEditor-project/AL.png)
   
 # Use Case Editor安装说明：
 
@@ -77,5 +77,5 @@
 
 7.重启后在任意文件夹下新建后缀名为.re的文件，按后续介绍书写自然语言需求，关键词会出现高亮，说明插件安装成功。
 
-  ![图片](imgs/uce.png)
+  ![图片](imgs/UseCaseEditor-project/uce.png)
 
