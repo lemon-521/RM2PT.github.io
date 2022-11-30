@@ -8,7 +8,7 @@ permalink: /advs/rm2eis
 
 A demo video can be found as follows:
 
-<iframe class="uk-width-1-3@m" width="560" height="315" src="https://youtu.be/M8m14bCdc-o" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>RM2DM Youtube Video</iframe>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/M8m14bCdc-o" title="RM2EIS-demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>RM2EIS Youtube Video</iframe>
 
 
 **RM2EIS** is a tool for automatic generation of an **EIS** from a **requirements model**. The **benefits** are as follows:
