@@ -8,6 +8,10 @@ permalink: /overview/seminar/
 
 Note that all the video are hosted on Youtube, make sure you can reach it before watching the video.
 
+### KR'22 - RM2PT Overview (Audio:Chinese)
+
+<iframe width="560" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://screencast-o-matic.com/embed?sc=c3lq0UVv5Ar&v=6&ff=1&title=0&controls=1" allowfullscreen="true"></iframe>
+
 ### ICSE'22 (Automatic Generation of Requirements Documents from Requirements Models)
 
 <iframe class="uk-width-1-3@m" width="560" height="315" src="https://www.youtube.com/embed/4z0Z5mrLfBc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
