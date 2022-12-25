@@ -73,7 +73,9 @@ We count the time efficiency of using the prototype for requirements validation.
 On average, the enhanced prototype can improve 56.43% times efficiency of requirements validation than the original generated prototype from RM2PT. 
 
 <img src="../../imgs/InputGen/shiyan2.png" alt="8result" width="80%" height="80%" />
+
 In practice, developers need to spend time modeling the administrator and their operations and manually adding initial data to the generated prototype for requirements validation. We compared this time and the time cost of writing the YAML file. As Table II shows that on average, it takes 0.29 hours to write the YAML file with the same initial data, less than thirty minutes, while modeling the administrator and manually adding the same data takes 4.11 hours. 
+
 
 
 In short, InputGen is an effective automated prototype approach than the manual inputting, which can assist in requirements validation and make it easier for customers and developers to find errors in their requirements.
