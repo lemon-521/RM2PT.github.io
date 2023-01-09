@@ -16,7 +16,7 @@ permalink: /advs/inputgen
 3. **Supporting rapid requirements validation**. Compared with the original prototype generated from RM2PT, InputGen can automatically refactor the generatedthen prototype from the same *requirements model* without any templates. Then refactoried prototype can automatically generate the validated input data of the system operation, this will boost the validation process.
 
 The video cast its feature is listed as follows (Youtube):
-<iframe class="uk-width-1-3@m" width="560" height="315" src="https://www.youtube.com/embed/RtPybSKmXFw" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>InputGen Youtube Video</iframe>
+<iframe class="uk-width-1-3@m" width="560" height="315" src="https://www.youtube.com/embed/lgsF8Z2XjDU" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>InputGen Youtube Video</iframe>
 
 
 ### InputGen Installation
