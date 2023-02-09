@@ -8,13 +8,13 @@ permalink: /overview/publication/
 
 ### 2023
 
-* Zhen Tian, Yilong Yang, Sheng Cheng. [“RM2DM: A Tool for Automatic Generation of OO Design Models from Requirements Models”](). to be presented at the 45th International Conferences on Software Engineering (*ICSE’23*), Melbourne, Australia, May 2023. (Demonstration Track)
+* Zhen Tian, Yilong Yang, Sheng Cheng. “RM2DM: A Tool for Automatic Generation of OO Design Models from Requirements Models”. to be presented at the 45th International Conferences on Software Engineering (*ICSE’23*), Melbourne, Australia, May 2023. (Demonstration Track)
 
-* Shuanglong Chang, Juntao Gao, Yilong Yang. [“InputGen: A Tool for Automatic Generation of Prototype Inputs to Support Rapid Requirements Validation”](). presented at the 45th International Conferences on Software Engineering (*ICSE’23*), Melbourne, Australia, May 2023. (Demonstration Track)
+* Shuanglong Chang, Juntao Gao, Yilong Yang. “InputGen: A Tool for Automatic Generation of Prototype Inputs to Support Rapid Requirements Validation”. to be presented at the 45th International Conferences on Software Engineering (*ICSE’23*), Melbourne, Australia, May 2023. (Demonstration Track)
 
-* Xiaoming Wang, Yilong Yang, Weiru Wang, Yuanhua Zhou, Yongfeng Yin, Zhiguo Gong. [“Generative Adversarial Networks based Motion Learning Towards Robotic Calligraphy Synthesis”](). CAAI Transactions on Intelligence Technology. 2023. Accepted.
+* Xiaoming Wang, Yilong Yang, Weiru Wang, Yuanhua Zhou, Yongfeng Yin, Zhiguo Gong. “Generative Adversarial Networks based Motion Learning Towards Robotic Calligraphy Synthesis”. CAAI Transactions on Intelligence Technology. 2023. (Accepted).
 
-* Yilong Yang, Yibo Liu, Tianshu Bao, Weiru Wang, Yongfeng Yin. ["DeepOCL: A Deep Natural Network for OCL Generation from Unrestricted Nature Language"](). CAAI Transactions on Intelligence Technology. 2023. Accepted.
+* Yilong Yang, Yibo Liu, Tianshu Bao, Weiru Wang, Yongfeng Yin. "DeepOCL: A Deep Natural Network for OCL Generation from Unrestricted Nature Language". CAAI Transactions on Intelligence Technology. 2023. (Accepted).
 
 ### 2022
 
