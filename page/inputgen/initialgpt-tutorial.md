@@ -18,7 +18,7 @@ permalink: /advs/initialgpt
 The video cast its feature is listed as follows (Youtube):
 <iframe class="uk-width-1-3@m" width="560" height="315" src="https://www.youtube.com/embed/cn7zHcC_ziY" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>InitialGPT Youtube Video</iframe>
 
-<img src="../../imgs/InputGen/InitialGPT_Overview11.png" alt="InitialGPT_Overview11" width="70%" height="70%" />
+<img src="../../imgs/InputGen/InitialGPT_Overview11.png.png" alt="InitialGPT_Overview11" width="70%" height="70%" />
 
 
 ### InitialGPT Installation
