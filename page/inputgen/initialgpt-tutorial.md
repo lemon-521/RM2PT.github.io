@@ -16,7 +16,7 @@ permalink: /advs/initialgpt
 3. **Supporting rapid requirements validation**. Compared with the original prototype generated from RM2PT and InputGen, the enhanced prototype can automatically generate substantial and reasonable initial data of the prototype, this will boost the validation process.
 
 The video cast its feature is listed as follows (Youtube):
-<iframe class="uk-width-1-3@m" width="560" height="315" src="https://www.youtube.com/embed/cn7zHcC_ziY" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>InitialGPT Youtube Video</iframe>
+<iframe class="uk-width-1-3@m" width="560" height="315" src="https://www.youtube.com/embed/jj4SLqe5kWI" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>InitialGPT Youtube Video</iframe>
 
 <img src="../../imgs/InputGen/InitialGPT_Overview11.png.png" alt="InitialGPT_Overview11" width="70%" height="70%" />
 
@@ -29,7 +29,7 @@ InitialGPT is an advanced feature of **RM2PT**. We recommend you to use InitialG
 
 ### Installation
 
-Click [here](https://github.com/RM2PT/InputGen-UpdateSite/releases/download/v1.0.0/com.rm2pt.generator.inputgen.updatesite-1.0.0-SNAPSHOT.zip) to download InitialGPT. Follow the steps below to install.
+Click [here](https://github.com/lemon-521/InitialGPT/releases/download/V1.0.0/com.rm2pt.generator.initialgpt.updatesite-1.0.0-SNAPSHOT.zip) to download InitialGPT. Follow the steps below to install.
 
 <img src="../../imgs/InputGen/2offline.png" alt="2offline" width="70%" height="70%" />
 
