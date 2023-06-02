@@ -13,7 +13,7 @@ permalink: /advs/rapidms
 
 The video cast its feature is listed as follows (Youtube):
 
-<iframe class="uk-width-1-3@m" width="560" height="315" src="https://youtu.be/ggFbw8JrZFY" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>RapidMS Youtube Video</iframe>
+<iframe class="uk-width-1-3@m" width="560" height="315" src="https://www.youtube.com/watch?v=H-zFJJxEgq4&t=3s" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>RapidMS Youtube Video</iframe>
 
 ## Download and Installation
 
