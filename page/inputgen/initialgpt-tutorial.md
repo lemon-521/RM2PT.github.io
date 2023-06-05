@@ -98,13 +98,12 @@ After automatically refactoring and enhancing the generated prototype by the too
 ### For example
  Click on the initial data generation button and in the data generation screen
 
-1. first select whether to use a proxy or not, if so please fill in your own proxy port.
+1. First select the model, currently ChatGPT's gpt-3.5-turbo is used, other large language models will be added later.
+<img src="../../imgs/InputGen/InitialGPT_kaishi.png" alt="InitialGPT_kaishi" width="70%" height="70%" />
 
-2. Select the model, currently using ChatGPT's gpt-3.5-turbo, other large language models will be added later.
+2. Click on Generate Settings and then choose whether to use a proxy on the pop-up page. If you do, please delete "no" and fill in your own proxy port.
 
-<img src="../../imgs/InputGen/InitialGPT_generate5.png" alt="InitialGPT_generate5" width="70%" height="70%" />
-
-3. Click on Generate Settings and set the various data information to be generated on the pop-up page.
+3. Fill in your openai key.
 
 4. here you can set the number of entities we want to generate for each entity. Also, you can add as many prompts as you want to the note box.
 <img src="../../imgs/InputGen/InitialGPT_generate6.png" alt="InitialGPT_generate6" width="70%" height="70%" />
