@@ -79,6 +79,9 @@
         - name: InputGen - Automated Generation of Prototype Input for Rapid Requirements Validation
           subsubsection_url: ../../../advs/inputgen
           ispage: true
+        - name: InitialGPT -  ChatGPT-enhanced Initialization Data Generation for Rapid Requirements Validation
+          subsubsection_url: ../../../advs/initialgpt
+          ispage: true                    
         - name: RM2Doc - Automatic Generation SRS from Requirements Models
           subsubsection_url: ../../../advs/rm2doc
           ispage: true
