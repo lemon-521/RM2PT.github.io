@@ -117,36 +117,22 @@
 - section_name: Research
   section_url: research
   subsectons:
-    - sub_name: Requirements and Architecture Modeling
+    - sub_name: Foundation of MDA
       subsubsection:
-        - name: Requirements Modeling for AI Systems
-        - name: Architecture Modeling for Cloud-Native Application
-        - name: GUI Modeling
-    - sub_name: Requirements Analysis and Transformation
+        - name: OMG MOF
+        - name: W3C Ontology
+        - name: Domain Specific Language (DSL)
+    - sub_name: Application of MDA
       subsubsection:
-        - name: RM2Doc - Automatic Generation SRS from Requirements Models
-          subsubsection_url: ../../../rm2doc
-          ispage: true
-        - name: iStar2UML - Automatic Generation of UML Model from iStar Model
-          subsubsection_url: ../../../istar
-          ispage: true
-        - name: PF2UML - Automatic Generation of UML Model from Problem Frames
-        - name: Story2UML - Automatic Generation of UML Model from User Story
-        - name: NL2OCL - Automatic Generation of OCL Contract from Nature Language
-    - sub_name: Requirements Validation and Fixing
+        - name: DSL for ArkUI Modeling and Generation
+        - name: AutoSAR-CH for Modeling Automotive System 
+    - sub_name: Automatic Software Engineering
       subsubsection:
         - name: Auto-Prototyping for Requirements Validation
         - name: Integration TestCase Generation for Requirements Validation
-        - name: TestInput Generation for Requirements Validation
-        - name: Auto-Fixing Requirements Contract
-    - sub_name: Automatic Design and Code Generation
+    - sub_name: Intelligent Software Engineering
       subsubsection:
-        - name: RM2GUI - Automatic GUI Generation from Requirements Model
         - name: Photo2GUI - Automatic GUI Generation from Requirements Model
-        # - name: RM2Design - Automatic OO Design Generation from Requirements Model
-        - name: RM2EA - Automatic Generation of Enterprise Application
-        - name: RM2Service - Automatic Generation of Cloud-native Application
-        - name: RM2DApp - Automatic Generation of Blockchain-based System (DApp)
 
 - section_name: Documentation
   section_url: doc
