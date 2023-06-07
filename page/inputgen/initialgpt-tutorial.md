@@ -13,12 +13,10 @@ permalink: /advs/initialgpt
 2. **Automatic Data Prompts Generation for ChatGPT**. We propose a method for automatically generating prompts for large language models from requirement models, which can be used to generate initial data for prototypes.
 
 3. **Less time Required for Requirements Validation**. Compared with the original prototype generated from RM2PT and InputGen, the enhanced prototype can automatically generate substantial and reasonable initial data of the prototype, this will boost the validation process.
+<img src="../../imgs/InputGen/InitialGPT_Overview11.png.png" alt="InitialGPT_Overview11" width="70%" height="70%" />
 
 The video cast its feature is listed as follows (Youtube):
 <iframe class="uk-width-1-3@m" width="560" height="315" src="https://www.youtube.com/embed/jj4SLqe5kWI" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>InitialGPT Youtube Video</iframe>
-
-<img src="../../imgs/InputGen/InitialGPT_Overview11.png.png" alt="InitialGPT_Overview11" width="70%" height="70%" />
-
 
 ### InitialGPT Installation
 
@@ -91,11 +89,10 @@ After automatically refactoring and enhancing the generated prototype by the too
 
 - **Prompting Large Language Models**. A method is proposed to automatically generate prompts for large language models based on the requirement model, aiming to prompt GPT-3 to generate more compliant, reasonable, and effective data that satisfies the requirements.
 
-<img src="../../imgs/InputGen/2offline.png" alt="2offline" width="70%" height="70%" />
-
 
 ### For example
- Click on the initial data generation button and in the data generation screen
+In the system status, Click on the initial data generation button and in the data generation screen
+<img src="../../imgs/InputGen/InitialGPT_chushi.png" alt="InitialGPT_chushi" width="70%" height="70%" />
 
 1. First select the model, currently ChatGPT's gpt-3.5-turbo is used, other large language models will be added later.
 <img src="../../imgs/InputGen/InitialGPT_kaishi.png" alt="InitialGPT_kaishi" width="70%" height="70%" />
@@ -116,7 +113,7 @@ After automatically refactoring and enhancing the generated prototype by the too
 <img src="../../imgs/InputGen/InitialGPT_generate8.png" alt="InitialGPT_generate8" width="70%" height="70%" />
 
 8. The generated data will also be saved and can be imported again by clicking the loadfile button.
-
+<img src="../../imgs/InputGen/InitialGPT_load.png" alt="InitialGPT_load" width="70%" height="70%" />
 
 For more details, please see [CaseStudies](https://github.com/RM2PT/CaseStudies).
 
