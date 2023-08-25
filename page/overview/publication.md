@@ -8,13 +8,27 @@ permalink: /overview/publication/
 
 ### 2023
 
-* Zhen Tian, Yilong Yang, Sheng Cheng. “RM2DM: A Tool for Automatic Generation of OO Design Models from Requirements Models”. to be presented at the 45th International Conferences on Software Engineering (*ICSE’23*), Melbourne, Australia, May 2023. (Demonstration Track)
+* Yang Li, Yang Zhang, Yilong Yang，Weiru Wang, Yongfeng Yin. “RM2MS: A Tool for Automatic Identification of Microservices from Requirements Models”. to be presented at the 26th International Conferences on Model Driven Engineering Languages and Systems
+ (*MODELS’23*), Västerås, Sweden, October 2023. (Demonstration Track)
 
-* Shuanglong Chang, Juntao Gao, Yilong Yang. “InputGen: A Tool for Automatic Generation of Prototype Inputs to Support Rapid Requirements Validation”. to be presented at the 45th International Conferences on Software Engineering (*ICSE’23*), Melbourne, Australia, May 2023. (Demonstration Track)
+* Yang Zhang , Yang Li , Yilong Yang ，Shuang Chen， Juntao Gao，Weiru Wang，Yongfeng Yin. “RapidMS: A Tool for Supporting Rapid Microservices Generation and Refinement from Requirements Model”. to be presented at the 26th International Conferences on Model Driven Engineering Languages and Systems (*MODELS’23*), Västerås, Sweden, October 2023. (Demonstration Track)
 
-* Xiaoming Wang, Yilong Yang, Weiru Wang, Yuanhua Zhou, Yongfeng Yin, Zhiguo Gong. “Generative Adversarial Networks based Motion Learning Towards Robotic Calligraphy Synthesis”. CAAI Transactions on Intelligence Technology. 2023. (Accepted).
+* Yilong Yang, Bingjie Zeng, ZhiChing Chen, Juntao Gao. "PF-HCPS: Extending Problem Frames for Supporting Human-Cyber-Physical System Collaboration". to be presented at the Workshop on Environment-Driven Requirements Engineering (*EnviRE'23*), Hannover, Germany, September 2023.
 
-* Yilong Yang, Yibo Liu, Tianshu Bao, Weiru Wang, Yongfeng Yin. "DeepOCL: A Deep Natural Network for OCL Generation from Unrestricted Nature Language". CAAI Transactions on Intelligence Technology. 2023. (Accepted).
+* Yilong Yang, Yuyu Cheng, Juntao Gao. “A Survey on Metaverse: Technologies, Applications,Future Trends and Challenges”. to be presented at the 2023 IEEE International Conference on Metaverse (*Metaverse 2023*), Portsmouth, UK, August 2023.
+
+* Yongxin Zhao, Wenhan Wu, Yuan Fei, Zhihao Liu, Yang Li, Yilong Yang, Ling Shi, Bo Zhang. ["An architecture refactoring approach to reducing software hierarchy complexity"](https://doi.org/10.1002/smr.2573). Journal of Software: Evolution and Process (*SEP'23*)，May 2023. (Early Access)
+
+* Hemanth Gudaparthi, Nan Niu, Yilong Yang, Matthew Van Doren, Reese Johnson. ["Deep Learning's Fitness for Purpose: A Transformation Problem Frame's Perspective"](https://doi.org/10.1049/cit2.12237). CAAI Transactions on Intelligence Technology (*CIT'23'*) 8(2), pp 343-354, Jun 2023.
+
+* Zhen Tian, Yilong Yang, Sheng Cheng. [“RM2DM: A Tool for Automatic Generation of OO Design Models from Requirements Models”](https://doi.org/10.1109/ICSE-Companion58688.2023.00020).  presented at the 45th International Conferences on Software Engineering (*ICSE’23*), Melbourne, Australia, May 2023. (Demonstration Track)
+
+* Shuanglong Chang, Juntao Gao, Yilong Yang. [“InputGen: A Tool for Automatic Generation of Prototype Inputs to Support Rapid Requirements Validation”](https://doi.org/10.1109/ICSE-Companion58688.2023.00038). presented at the 45th International Conferences on Software Engineering (*ICSE’23*), Melbourne, Australia, May 2023. (Demonstration Track)
+
+* Yilong Yang, Yibo Liu, Tianshu Bao, Weiru Wang, Yongfeng Yin. ["DeepOCL: A Deep Natural Network for OCL Generation from Unrestricted Nature Language"](https://doi.org/10.1049/cit2.12207). CAAI Transactions on Intelligence Technology (*CIT'23'*), May 2023. (Early Access)
+
+* Xiaoming Wang, Yilong Yang, Weiru Wang, Yuanhua Zhou, Yongfeng Yin, Zhiguo Gong. [“Generative Adversarial Networks based Motion Learning Towards Robotic Calligraphy Synthesis”](https://doi.org/10.1049/cit2.12198). CAAI Transactions on Intelligence Technology (*CIT'23'*), Mar 2023. (Early Access).
+
 
 ### 2022
 
