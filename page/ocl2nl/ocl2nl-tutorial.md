@@ -7,7 +7,7 @@ permalink: /advs/ocl2nl
 
 ##  Introduction
 
-**OCL2NL is a tool **for automatic generation of **natural language** from the **OCL contracts**.
+**OCL2NL is a tool**  for automatic generation of **natural language** from the **OCL contracts**.
 
  The **benefits** of **OCL2NL** are as follows:
 
