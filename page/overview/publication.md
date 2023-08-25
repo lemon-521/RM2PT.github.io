@@ -17,7 +17,7 @@ permalink: /overview/publication/
 
 * Yilong Yang, Yuyu Cheng, Juntao Gao. “A Survey on Metaverse: Technologies, Applications,Future Trends and Challenges”. to be presented at the 2023 IEEE International Conference on Metaverse (*Metaverse 2023*), Portsmouth, UK, August 2023.
 
-* Yongxin Zhao, Wenhan Wu, Yuan Fei, Zhihao Liu, Yang Li, Yilong Yang, Ling Shi, Bo Zhang. ["An architecture refactoring approach to reducing software hierarchy complexity"](https://doi.org/10.1002/smr.2573). Journal of Software: Evolution and Process (*SEP'23*)，May 2023. (Early Access)
+* Yongxin Zhao, Wenhan Wu, Yuan Fei, Zhihao Liu, Yang Li, Yilong Yang, Ling Shi, Bo Zhang. ["An Architecture Refactoring Approach to Reducing Software Hierarchy Complexity"](https://doi.org/10.1002/smr.2573). Journal of Software: Evolution and Process (*SEP'23*)，May 2023. (Early Access)
 
 * Hemanth Gudaparthi, Nan Niu, Yilong Yang, Matthew Van Doren, Reese Johnson. ["Deep Learning's Fitness for Purpose: A Transformation Problem Frame's Perspective"](https://doi.org/10.1049/cit2.12237). CAAI Transactions on Intelligence Technology (*CIT'23'*) 8(2), pp 343-354, Jun 2023.
 
