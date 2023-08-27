@@ -56,9 +56,11 @@ Before using the prototype to validate the requirements, you can use the Load Fi
 
 
 ### Automatic input data generation of system operations
-You can right-click the ".remodel" file, select the "Generate Validate Script" function, and a wizard window will appear. A validation script can be automatically generated after selecting the relevant attributes according to the prompts.
+ In the system operation enterItem, you can choose to click the LoadFromState button to generate input data, if you think that the input data does not meet your requirements, you can also click the input box to choose other candidates. Moreover, you can click the InputReset button to reset all inputs and manually input them by yourself.
 
-<img src="../../imgs/ValidGen/wizard.png" alt="wizard" width="70%" height="70%" />
+The image below shows a part of CoCoME's automatic input data generation of the system operation enterItem. For more details, please see [CaseStudies](https://github.com/RM2PT/CaseStudies).
+
+<img src="../../imgs/InputGen/7enterItem.png" alt="7enterItem" width="70%" height="70%" />
 
 
 ### Evaluation Results
