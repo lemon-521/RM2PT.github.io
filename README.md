@@ -14,6 +14,8 @@ gem install bundler jekyll
 1. Add your directory under page and image folder (e.g. page/xxx and imgs/xxx)
 2. add your markdown file and images (e.g page/xxx/xxx.md, images are saved under imgs/xxx)
 
+`All the tools have only one page under the directory **/advs/**`
+
 ## Run jekyll locally
 
 ```

@@ -11,32 +11,24 @@ RM2PT was originally developed by Dr. Yang when he was pursuing a Ph.D. degree a
 BUAA group focus on Automatic Software Engineering such as Models Transformation and Code Generation.
 - [Yilong Yang](http://yilong.io) (PI)
 - Yang Li (Automatic Generation of Microservices Architecture from Requirements Model)
+- Yongqi Pu (Automatic Requirements Elicilation and Modeling)
 - Yang Zhang (Automatic Generation of Microservices Back-ends from Requirements Model)
-- Zhen Tian (Automatic Design Generation from Requirements)
-- Yongqi Pu (Automatic Requirements Transformation)
-- Wenxiao Song (Model-Driven System Engineering for Mission Task)
-- Yong Zhu (Automatic GUI Generation from Requirements and Design Images)
+- Zhen Tian (Automatic Design Generation and Refinements from Requirements)
 - Runkun Zhang (Automatic GUI Generation from Requirements Model)
-- Qilong Shi (Automatic OO Code Generation from Un-complete OO Contract)
+- Hongyue Pan (Automatic TestScript Generation for Requirements Validation)
+- Wenxiao Song (Model-Driven Archiecture - MOF and Profiles)
+- Yong Zhu (Automatic GUI Generation from ArkDSL)
+- MengMeng Zhao (Automatic GUI Generation from Images)
+- Qizhen Li (Automatic Generation and Visualation of Formal Contract for Easy Understanding and Specifying)
+- Sizuo Liu (Automatic Generation of OCL Formal Contract through Large Language Model)
+- Kan Wang (Neural Network Quantization and Verification for Large Language Model)
+- Pengfei Liu (DSL AutoLayout)
+- Longyan Cui (Mobile Apps Generation through Larage Language Model)
 - Peiye Yang (Automatic Localization and Fixing Errors of System Operation Contract, co-supervised with Li Zhang)
 - Yihui Jian (Automatic Generation of Dependable Enterprise Application from Requirements Model, co-supervised with Li Zhang)
-- Zhengyang Zhao (Automatic Golang Code Generation)
 
 ### Alumni
-- Zhaotian Li (Postgraduate Student in BUAA)
-- Yibo Liu
-- Jie Zhang (Bytedance)
-- Yiming Zhu (Bytedance)
-- Eudrick (Zambia)
-- Tianshu Bao 
-- Zhiyang Cheng (Postgraduate Student in TsingHua)
-- Fan Zhang
-- Zhaoyun Xu
-- Jie Chen
-- Chen Chen
-- Yang Zhao
-- Lingyu Guo
-- Pengfeng Huang
+- [Student List]() 
 
 
 ## NEPU Group

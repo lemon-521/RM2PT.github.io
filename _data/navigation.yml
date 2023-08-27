@@ -33,13 +33,12 @@
         - name: Install RM2PT Developer Plugins
           subsubsection_url: rm2pt_dev_plugin_install
           ispage: true
-        - name: Create Project of Domain-Specific Modeling Language (DSML) in  (Modeling by EMF and Sirius)
-        - name: Create Project DSML and DSL (Modeling by EMF, Xtext and Sirius)
-        - name: Create Model Transformation Project (Model2Model)
-        - name: Create Code Generation Project (Model2Text)
+        - name: Create Project of Domain-Specific Modeling Language (Modeling by EMF, Xtext and Sirius)
+        - name: Create Model Transformation M2M Project (Model to Model)
+        - name: Create Code Generation M2T Project (Model to Text)
           subsubsection_url: create_code_generator_project
           ispage: true
-        - name: Create RM2PT NLP Project (NL2Model)
+        - name: Create RM2PT NLP (N2M) Project (Nature Language to Model)
           subsubsection_url: create_rm2pt_nlp_project
           ispage: true
 
@@ -68,8 +67,6 @@
     - sub_name: Requirements Modeling
       subsubsection:
         - name: Semi-Structure NL Requirements Editor (UserStory / UseCase Description / EARS)
-          subsubsection_url: ../../../advs/semireqs
-          ispage: true 
         - name: PF Modeler
         - name: iStar Modeler
         - name: SysML Modeler 
@@ -103,9 +100,13 @@
         - name: RM2DM - Automatic Generation of Monolith Design from Requirements Model  
           subsubsection_url: ../../../advs/rm2dm
           ispage: true
+        - name: RapidMS - Microservice Architecture Generation and Refinement from Requirements Model
+          subsubsection_url: ../../../advs/rapidms
+          ispage: true       
         - name: RM2MS - Automatic Generation of MicroServices Architecture from Requirements Model
           subsubsection_url: ../../../advs/rm2ms
           ispage: true
+
        
     - sub_name: Automatic Generation of Target System
       subsubsection:
