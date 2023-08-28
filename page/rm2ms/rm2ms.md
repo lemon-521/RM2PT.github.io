@@ -30,6 +30,22 @@ The input to RM2MS is a UML requirements model with OCL constraints. The model i
 
 - **Contracts of system operations:** The contract of a system operation specifies the conditions that the state of the system is assumed to satisfy before the execution of the system operation, called the pre-condition and the conditions that the system state is required to satisfy after the execution (if it terminated), called the post-condition of the system operation. Typically, the pre-condition specifies the properties of the system state that need to be checked when system operation is to be executed, and the postcondition defines the possible changes that the execution of the system operation is to realize.
 
+### MetaModel
+
+Since the UML requirements Metamodel is relatively large, we will only introduce the parts we need for conversion. the UML requirements metamodel is divided into two major parts, Use Case Model and Domain Model.
+
+![OverviewofRM2DM](../../imgs/RM2MS/umlsxt2.png)
+
+### MetaModel extension
+
+In order to facilitate the representation of microservice architecture design, this paper extends the original requirements model to depict both function and database decomposition. Following a domain-driven development approach, the boundary context establishes the current model’s scope and the problem space. In this regard, the paper introduces the UseCaseContext and the EntityContext for decomposing the model into use case functionality and domain data respectively. 
+    UseCaseContext: The focus of microservices should be on business functions, with use cases serving as a means to describe the system’s functionality from the user’s viewpoint. \textit{UseCaseContext} determines which use cases fall under the microservice functional scope. By decomposing the system into use cases collections, microservices can be dedicated to specific business functions, thereby enhancing their comprehension, development, and maintenance. 
+    EntityContext: Entity boundaries signify the segregation of data entities, as dictated by the principle of “each service having its own database” in the microservice architecture. These demarcated data entities are stored within their respective subordinate microservices.
+
+The user can frame the boundaries directly on the Use Case Diagram or drag and drop other use cases into the microservice boundary. After this, a boundary with the same name is automatically generated on the conceptual class diagram and the user simply drags and drops the classes required by the microservice into the boundary to complete the concept boundary.
+
+<img title="" src="../../imgs/RM2MS/metamodel (2).png" alt="OverviewofRM2DM" style="zoom: 100%;">
+
 ### Three main features
 
 RM2MS tools takes the validated requirements model as imput. For the input requirements model, RM2MS first extracts the dependency diagram and then identifies the microservices based on it. Finally RM2MS converts the microservices architecture solution to microservices design model.
