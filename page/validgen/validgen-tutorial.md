@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ValidGen
-permalink: /advs/validgen
+permalink: /advs/validgen/
 ---
 
 ### Introduction

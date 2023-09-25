@@ -1,7 +1,7 @@
 ---
 layout: page
 title: RM2PT Tutorial
-permalink: /tutorial/user/import_rm2pt_project
+permalink: /tutorial/user/import_rm2pt_project/
 typora-root-url: ../../../../rm2pt-website
 ---
 

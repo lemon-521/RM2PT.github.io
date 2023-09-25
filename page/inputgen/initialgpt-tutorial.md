@@ -1,7 +1,7 @@
 ---
 layout: page
 title: InitialGPT
-permalink: /advs/initialgpt
+permalink: /advs/initialgpt/
 ---
 
 ## Introduction

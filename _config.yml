@@ -21,7 +21,7 @@ description: Automatic Prototyping for Requirements Validation
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://rm2pt.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  yylonly
-permalink: /:categories/:title.html
+permalink: /:categories/:title/
 
 # Build settings
 

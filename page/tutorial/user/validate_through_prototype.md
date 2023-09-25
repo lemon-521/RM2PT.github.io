@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Requirements Validation through Auto-Prototying
-permalink: /tutorial/user/validate_through_prototype
+permalink: /tutorial/user/validate_through_prototype/
 typora-root-url: ../../../../rm2pt-website
 ---
 

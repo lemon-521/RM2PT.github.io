@@ -1,7 +1,7 @@
 ---
 layout: page
 title: RM2PT Tutorial
-permalink: /tutorial/user/create_requirements_model
+permalink: /tutorial/user/create_requirements_model/
 typora-root-url: ../../../../rm2pt-website
 ---
 

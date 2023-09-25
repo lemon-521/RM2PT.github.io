@@ -1,7 +1,7 @@
 ---
 layout: page
 title: RM2Doc
-permalink: /advs/rm2doc
+permalink: /advs/rm2doc/
 ---
 
 

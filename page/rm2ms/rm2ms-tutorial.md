@@ -1,7 +1,7 @@
 ---
 layout: page
 title: RM2MS
-permalink: /advs/rm2ms
+permalink: /advs/rm2ms/
 ---
 
 ## Introduction

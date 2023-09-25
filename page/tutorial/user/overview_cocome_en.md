@@ -1,7 +1,7 @@
 ---
 layout: page
 title: RM2PT Tutorial
-permalink: /tutorial/user/overview_cocome_en
+permalink: /tutorial/user/overview_cocome_en/
 typora-root-url: ../../../../rm2pt-website
 ---
 

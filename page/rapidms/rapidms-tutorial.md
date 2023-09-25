@@ -1,7 +1,7 @@
 ---
 layout: page
 title: RapidMS
-permalink: /advs/rapidms
+permalink: /advs/rapidms/
 ---
 
 ## Introduction

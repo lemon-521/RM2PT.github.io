@@ -1,7 +1,7 @@
 ---
 layout: page
 title: OCL2NL
-permalink: /advs/ocl2nl
+permalink: /advs/ocl2nl/
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: InputGen
-permalink: /advs/inputgen
+permalink: /advs/inputgen/
 ---
 
 ## Introduction

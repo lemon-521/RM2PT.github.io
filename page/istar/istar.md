@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Goal2UCM
-permalink: /advs/istar2uml
+permalink: /advs/istar2uml/
 ---
 
 # Goal2UCM

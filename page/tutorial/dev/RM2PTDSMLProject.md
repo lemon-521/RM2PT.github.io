@@ -1,7 +1,7 @@
 ---
 layout: page
 title: RM2PT Tutorial
-permalink: /tutorial/dev/create_rm2pt_dsml_project
+permalink: /tutorial/dev/create_rm2pt_dsml_project/
 typora-root-url: ../../../../rm2pt-website
 ---
 

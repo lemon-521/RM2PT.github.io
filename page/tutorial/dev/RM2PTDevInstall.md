@@ -1,7 +1,7 @@
 ---
 layout: page
 title: RM2PT Developer Plugin Installing
-permalink: /tutorial/dev/rm2pt_dev_plugin_install
+permalink: /tutorial/dev/rm2pt_dev_plugin_install/
 typora-root-url: ../../../../rm2pt-website
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: RM2EIS
-permalink: /advs/rm2eis
+permalink: /advs/rm2eis/
 ---
 
 ## Introduction
