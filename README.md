@@ -22,3 +22,5 @@ gem install bundler jekyll
 cd rm2pt-website
 bundle exec jekyll serve
 ```
+
+Test CI/CD
