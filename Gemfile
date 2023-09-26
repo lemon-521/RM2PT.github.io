@@ -32,3 +32,5 @@ end
 gem "webrick", "~> 1.7"
 gem 'bootstrap', "~> 4.0"
 gem "jekyll-material-theme"
+
+gem "rexml", "~> 3.2"
