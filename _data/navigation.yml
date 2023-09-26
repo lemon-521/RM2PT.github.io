@@ -150,7 +150,7 @@
       subsection_url: dev
       subsubsection:
         - name: Eclipse MDA Developement
-          subsubsection_url: eclipsemda
+          subsubsection_url: ../../../eclipsemda
         - name: Eclipse Plugin Developement
         - name: Eclipse RCP Developement
         - name: Executable UML
