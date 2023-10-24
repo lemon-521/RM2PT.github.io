@@ -17,7 +17,7 @@ permalink: /advs/validgen/
 
 The video cast its feature is listed as follows (Youtube):
 
-<iframe width="930" height="522" src="https://www.youtube.com/embed/sM96T4UJEeo" title="ValidGen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="930" height="522" src="https://youtu.be/uC3JG7eZBXk" title="ValidGen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### ValidGen Installation
 
@@ -29,15 +29,15 @@ ValidGen is an advanced feature of **RM2PT**. We recommend you use ValidGen in R
 
 Open RM2PT, click on `Help` -> `Install New Software`
 
-Type https://map1e-fans.github.io/com.rm2pt.generator.validgen.release in the Work with field, select Validation Script Generator, and click Next.
+Type https://rm2pt.com/ValidGen-UpdateSite/ in the Work with field, select Validation Script Generator, and click Next.
 
 <img src="../../imgs/ValidGen/install_wizard.png" alt="install_wizard" width="80%" height="80%" />
 
 ### Offline Installation
 
-** **If the update site does not work**, you can choose to install it offline. Click [here](https://github.com/Map1e-fans/com.rm2pt.generator.validgen.release/releases/download/Release/ValidGen.jar) to download InputGen. Follow the steps below to install.
+** **If the update site does not work**, you can choose to install it offline. Click [here](https://github.com/RM2PT/ValidGen-UpdateSite/releases/download/v1.0.0/ValidGen.jar) to download InputGen. Follow the steps below to install.
 
-You can also download ValidGen installed in RM2PT [here](https://github.com/Map1e-fans/com.rm2pt.generator.validgen.release/releases/download/Release/RM2PT.with.ValidGen.zip).
+You can also download ValidGen installed in RM2PT [here](https://github.com/RM2PT/ValidGen-UpdateSite/releases/download/v1.0.0/RM2PT-win32.win32.x86_64_with_ValidGen.zip).
 
 <img src="../../imgs/ValidGen/2offline.png" alt="2offline" width="70%" height="70%" />
 

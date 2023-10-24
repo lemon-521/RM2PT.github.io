@@ -4,7 +4,7 @@ title: ValidGen
 permalink: /validgen/
 ---
 
-Download and use of ValidGen can be found [here](https://github.com/Map1e-fans/com.rm2pt.generator.validgen.release/releases/tag/Release).
+Download and use of ValidGen can be found [here](https://github.com/RM2PT/ValidGen-UpdateSite).
 
 ### Introduction
 **ValidGen** is a tool for automatically generating the validation scripts to automatically execute the prototype without human interactions to Support Rapid Requirements Validation
@@ -15,8 +15,6 @@ Download and use of ValidGen can be found [here](https://github.com/Map1e-fans/c
 2. **Input data auto-loading**. ValidGen integrates the InputGen to automatically generate the input data for system operation, which does not need to prepare input data in advance and further simplifies the user’s process.
 
 3. **Supporting rapid requirements validation**. Compared with manually operating the prototype system to complete the requirements validation, the time cost of using this tool is only about 40%, and the time cost including the construction of the scenario model is only about 60%.
-
-<img src="../../imgs/ValidGen/OverviewOfValidGen.svg" alt="OverviewOfValidGen" width="60%" height="60%" style="zoom:25%;" />
 
 ### Input of VaildGen
 
