@@ -17,7 +17,7 @@ permalink: /advs/validgen/
 
 The video cast its feature is listed as follows (Youtube):
 
-<iframe width="517" height="290" src="https://www.youtube.com/embed/uC3JG7eZBXk" title="ValidGen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="517" height="290" src="https://www.youtube.com/embed/AP9Ymg1ewIA" title="ValidGen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### ValidGen Installation
 
