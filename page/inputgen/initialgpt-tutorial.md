@@ -26,7 +26,7 @@ InitialGPT is an advanced feature of **RM2PT**. We recommend you to use InitialG
 
 ### Installation
 
-Click [here](https://github.com/lemon-521/InitialGPT/releases/download/V1.1.0/com.rm2pt.generator.initialgpt.updatesite-1.0.0-SNAPSHOT.zip) to download InitialGPT. Follow the steps below to install.
+Click [here](https://github.com/lemon-521/InitialGPT/releases/download/V2.0.2/com.rm2pt.generator.initialgpt.updatesite-1.0.0-SNAPSHOT.zip) to download InitialGPT. Follow the steps below to install.
 
 <img src="../../imgs/InputGen/2offline.png" alt="2offline" width="70%" height="70%" />
 
