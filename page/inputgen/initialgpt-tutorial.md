@@ -109,7 +109,7 @@ After automatically refactoring and enhancing the generated prototype by the too
 In the system status, Click on the initial data generation button and in the data generation screen
 <img src="../../imgs/InputGen/InitialGPT_chushi.png" alt="InitialGPT_chushi" width="70%" height="70%" />
 
-1. First select the model, currently ChatGPT's gpt-3.5-turbo is used, other large language models will be added later.
+1. The first step is to select a model. The current models used are ChatGPT's gpt-4 and gpt-3.5-turbo; more large language models will be added later.
 <img src="../../imgs/InputGen/InitialGPT_kaishi.png" alt="InitialGPT_kaishi" width="70%" height="70%" />
 
 2. Click on Generate Settings and then choose whether to use a proxy on the pop-up page. If you do, please delete "no" and fill in your own proxy port.
