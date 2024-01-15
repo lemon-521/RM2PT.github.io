@@ -6,6 +6,10 @@ permalink: /overview/publication/
 
 ### Publications
 
+### 2024
+
+* Hongyue Pan, Yilong Yang. "ValidGen: A Tool for Automatic Generation of Validation Scripts to Support Rapid Requirements Validation". to be presented at the 46th International Conference on Software Engineering (*ICSE’24*), Lisbon, Portugal, April 2024. (Demonstration Track)
+
 ### 2023
 
 * Yang Li, Yang Zhang, Yilong Yang，Weiru Wang, Yongfeng Yin. “RM2MS: A Tool for Automatic Identification of Microservices from Requirements Models”. to be presented at the 26th International Conferences on Model Driven Engineering Languages and Systems
